@@ -2,14 +2,18 @@
 <html lang="en">
 {% include head.html %}
 <body>
-{% include header.html %}
-<main>
-    <div class="uk-section uk-section-small uk-section-default">
-        <div class="uk-container uk-container-small">
-            {{ content }}
+<div data-uk-height-viewport="offset-bottom: 10px">
+    {% include header.html %}
+
+    <main>
+        <div class="uk-section uk-section-small uk-section-default">
+            <div class="uk-container uk-container-small">
+                {{ content }}
+            </div>
         </div>
-    </div>
-</main>
-{% include footer.html %}
+    </main>
+
+    {% include footer.html %}
+</div>
 </body>
 </html>
