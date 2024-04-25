@@ -1,5 +1,6 @@
 ---
-title = "About"
+layout: default
+title: About
 ---
 
 I’m the CTO at Structural (though my opinions and writing on this site are all my own). And while I'm passionate about
