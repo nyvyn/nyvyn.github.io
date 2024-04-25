@@ -1,11 +1,8 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>{{ page.title }}</title>
-</head>
+{% include head.html %}
 <body>
-{% include profile.html %}
+{% include header.html %}
 <main>
     <div class="uk-section uk-section-small uk-section-default">
         <div class="uk-container uk-container-small">
@@ -13,5 +10,6 @@
         </div>
     </div>
 </main>
+{% include footer.html %}
 </body>
 </html>

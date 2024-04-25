@@ -1,17 +1,9 @@
-# For technical reasons,this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via ( site.title ly, ( site.email y, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }Y.
-title: Ron Lancaster
-email: doc@firelord.net
+author: Ron Lancaster
+copyright: 2024
 description: >- # this means to ignore newlines until "baseurl:" 
-  <ronlancaster.com - thoughts on tech and leadership>
+  Thoughts on tech and leadership
+email: me@ronlancaster.com
+title: Ron Lancaster
 url: "https://www.ronlancaster.com" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: ronlancaster
-github_ username: nyvyn
 
 markdown: kramdown
