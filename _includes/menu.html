@@ -1,10 +1,5 @@
-<li class="uk-active">
-    <a href="{{ site.url }}"><span>{{ site.title }}</span></a>
+{% for item in site.data.menu.docs %}
+<li>
+    <a href="{{ item.url }}">{{ item.title }}</a>
 </li>
-<div class="uk-navbar-dropdown" data-uk-dropdown="offset: -20">
-    <ul class="uk-nav uk-navbar-dropdown-nav">
-        <li class="uk-active">
-            <a href="/about">About</a>
-        </li>
-    </ul>
-</div>
+{% endfor %}

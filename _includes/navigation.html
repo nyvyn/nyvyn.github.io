@@ -1,7 +1,7 @@
 <nav class="uk-container uk-container-xsmall uk-navbar uk-navbar-container uk-navbar-transparent" data-uk-navbar>
     <div class="uk-navbar-left uk-hidden@s">
         <ul class="uk-navbar-nav">
-            {% if page.url == "/" %}
+            {% if page.url != "/" %}
             <li><a href='/'> <span data-uk-icon="arrow-left"></span>Home</a></li>
             {% endif %}
         </ul>
@@ -27,7 +27,7 @@
 
     <div class="uk-navbar-right uk-visible@s">
         <ul class="uk-navbar-nav">
-            {% if page.url == "/" %}
+            {% if page.url != "/" %}
             <li><a href='/'> <span data-uk-icon="arrow-left"></span>Home</a></li>
             {% endif %}
 
