@@ -1,7 +1,6 @@
 ---
-layout: page
-title: "Ron Lancaster"
-permalink: /
+layout: default
+title: Home
 ---
 
-This is a test.
+<h1>{{ "Hello World!" | downcase }}</h1>
