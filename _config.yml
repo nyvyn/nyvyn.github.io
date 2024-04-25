@@ -7,3 +7,4 @@ title: Ron Lancaster
 url: "https://www.ronlancaster.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 markdown: kramdown
+timezone: US/Central
