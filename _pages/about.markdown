@@ -4,9 +4,11 @@ title: About
 permalink: /about.html
 ---
 
-I’m the CTO at Structural (though my opinions and writing on this site are all my own). And while I'm passionate about
-technology, I also love spending time with my family, snowboarding in the winters, martial arts, writing, and cycling
-all year round.
+I'm passionate about technology and the practical applicatioon of AI.
+I also love spending time with my family,
+snowboarding in the winters, martial arts, writing, and cycling all year round.
+
+(All opinions and writing on this site are my own.)
 
 ***
 

@@ -1,5 +1,43 @@
----
-layout: default
----
+<!doctype html>
+<html lang="en">
+{% include head.html %}
+<body>
+<div data-uk-height-viewport="min-height: 300">
+    {% include navigation.html %}
 
-{{ content }}
+    <div class="uk-section uk-section-small uk-section-muted">
+        <div class="uk-container uk-container-small">
+            <header>
+                <h1 class="uk-heading-large">
+                    <bold>Thoughts</bold>
+                    <span class="uk-text-light uk-text-muted">
+                        on technology, artificial intelligence, and leadership
+                    </span>
+                </h1>
+            </header>
+        </div>
+    </div>
+
+    <div class="uk-section uk-section-small uk-section-default uk-section-overlap">
+        <div class="uk-container uk-container-small">
+            <h2 class="uk-heading uk-text-lighter uk-margin-small-bottom">
+                Ron Lancaster • Fractional CTO
+            </h2>
+            <h2 class="uk-heading-divider uk-text-lighter uk-margin-remove-top">
+                Helping businesses grow with AI
+            </h2>
+        </div>
+    </div>
+
+    <main>
+        <div class="uk-section uk-section-small uk-section-default ">
+            <div class="uk-container uk-container-xsmall">
+                {{ content }}
+            </div>
+        </div>
+    </main>
+
+    {% include footer.html %}
+</div>
+</body>
+</html>

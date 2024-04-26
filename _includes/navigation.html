@@ -1,10 +1,33 @@
-<nav class="uk-container uk-container-xsmall uk-navbar uk-navbar-container uk-navbar-transparent" data-uk-navbar>
+<nav class="uk-container uk-container-small uk-navbar uk-navbar-container uk-navbar-transparent"
+     data-uk-navbar
+     style="width: 100%">
+
     <div class="uk-navbar-left uk-hidden@s">
         <ul class="uk-navbar-nav">
             {% if page.url != "/" %}
             <li><a href='/'> <span data-uk-icon="arrow-left"></span>Home</a></li>
+            {% else %}
+            <a class="uk-navbar-item uk-logo" href="/">
+                <img alt="User avatar"
+                     src="/assets/avatar/avatar.png"
+                     style="aspect-ratio: 1;"
+                     width="24"
+                >
+            </a>
             {% endif %}
         </ul>
+    </div>
+
+    <div class="uk-navbar-left uk-visible@s">
+        <div class="uk-navbar-nav">
+            <a class="uk-navbar-item uk-logo" href="/">
+                <img alt="User avatar"
+                     src="/assets/avatar/avatar.png"
+                     style="aspect-ratio: 1;"
+                     width="24"
+                >
+            </a>
+        </div>
     </div>
 
     <div class="uk-navbar-right uk-hidden@s">
@@ -27,7 +50,7 @@
     <div class="uk-navbar-right uk-visible@s">
         <ul class="uk-navbar-nav">
             {% if page.url != "/" %}
-            <li><a href='/'> <span data-uk-icon="arrow-left"></span>Home</a></li>
+            <li><a href='/'><span data-uk-icon="arrow-left"></span>Home</a></li>
             {% endif %}
 
             {% include menu.html %}
