@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: About
 ---
 
@@ -13,13 +13,13 @@ all year round.
 
 **Chief Product Officer**  
 Augeo
-October 2022 - Present
+February 2023 - February 2024
 
 Leading product for workplace engagement and consumer loyalty offerings.
 
-**CTO**  
+**Chief Technology Officer**  
 Structural
-June 2018 - September 2022
+June 2018 - February 2023
 
 Structural connects people and teams with data-rich profiles, intelligent search, and real-time insight.
 
