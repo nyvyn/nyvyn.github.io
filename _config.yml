@@ -6,5 +6,17 @@ email: me@ronlancaster.com
 title: Ron Lancaster
 url: "https://www.ronlancaster.com" # the base hostname & protocol for your site, e.g. http://example.com
 
+# Output options
 markdown: kramdown
 timezone: US/Central
+
+# Exclude these files from production site
+exclude:
+  - CHANGELOG.md
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - screenshot.png
+  - docs/

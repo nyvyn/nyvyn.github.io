@@ -1,4 +1,4 @@
-<head>
+<head xmlns="">
     <title>{{ site.title }}</title>
     <meta content="{{ site.description }}" name="description">
     <meta charset="utf-8">
@@ -15,11 +15,16 @@
     <meta content="#ffffff" name="theme-color">
 
     <!-- UIkit CSS -->
-    <link href="/assets/css/uikit.min.css" rel="stylesheet"/>
+    <link href="{{ "
+    /assets/css/uikit.min.css" | prepend: site.baseurl }}?{{ site.time | date: '%s%N' }}" rel="stylesheet">
 
-    <link href="/assets/custom/overrides.css" rel="stylesheet"/>
+    <!-- Custom CSS -->
+    <link href="{{ "
+    /assets/css/overrides.css" | prepend: site.baseurl }}?{{ site.time | date: '%s%N' }}" rel="stylesheet">
 
     <!-- UIkit JS -->
-    <script src="/assets/js/uikit.min.js"></script>
-    <script defer src="/assets/js/uikit-icons.min.js"></script>
+    <script src="{{ "
+    /assets/js/uikit.min.js" | prepend: site.baseurl }}?{{ site.time | date: '%s%N' }}"></script
+    <script src="{{ "
+    /assets/js/uikit-icons.js" | prepend: site.baseurl }}?{{ site.time | date: '%s%N' }}"></script
 </head>
