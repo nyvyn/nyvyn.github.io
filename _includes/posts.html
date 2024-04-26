@@ -2,7 +2,7 @@
     {% for post in site.posts %}
     <li>
         <div class="uk-width-xlarge uk-margin-auto">
-            <a href="{{ post.url }}">{{ post.title }}</a>
+            {% include post.html %}
         </div>
     </li>
     {% endfor %}
