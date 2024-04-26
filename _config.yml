@@ -3,12 +3,16 @@ copyright: 2024
 description: >-
   Thoughts on tech and leadership
 email: me@ronlancaster.com
-title: Ron Lancaster
+title: q1
 url: "https://www.ronlancaster.com"
 
 # Output options
 markdown: kramdown
+permalink: /writing/:title:output_ext
 timezone: US/Central
+
+include:
+  - _pages
 
 # Exclude these files from production site
 exclude:
@@ -20,3 +24,6 @@ exclude:
   - README.md
   - screenshot.png
   - docs/
+  - _site/
+  - .idea/
+  - .github/

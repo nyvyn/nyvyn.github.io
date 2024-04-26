@@ -106,6 +106,10 @@ ul {
     margin-bottom: 0;
 }
 
+#post-list li:nth-child(n+2) {
+    margin-top: 2rem;
+}
+
 @media (min-width: 960px) {
     #reading-feed .uk-article p {
         color: #767676;

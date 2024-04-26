@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About
+permalink: /about.html
 ---
 
 I’m the CTO at Structural (though my opinions and writing on this site are all my own). And while I'm passionate about
