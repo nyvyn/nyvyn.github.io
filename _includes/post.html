@@ -10,7 +10,7 @@
     <aside class="uk-article-meta uk-margin-small-bottom">
         {{ include.date | date_to_string }}
         {% unless include.full %}
-        - {% include read_time.html content=include.content %}
+        - {%- include read_time.html content=include.content -%}
         {% endunless %}
     </aside>
 
