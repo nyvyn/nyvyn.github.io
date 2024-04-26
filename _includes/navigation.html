@@ -10,19 +10,18 @@
     <div class="uk-navbar-right uk-hidden@s">
         <ul class="uk-navbar-nav">
             <li><a aria-label="toggle menu" data-uk-navbar-toggle-icon data-uk-toggle href="#sidebar"></a></li>
-
-            <div data-uk-offcanvas="flip: true" id="sidebar">
-                <div class="uk-offcanvas-bar">
-                    <button class="uk-offcanvas-close" data-uk-close type="button"></button>
-
-                    <div class="uk-margin-large"></div>
-
-                    <ul class="uk-nav uk-nav-default">
-                        {% include menu.html %}
-                    </ul>
-                </div>
-            </div>
         </ul>
+        <div data-uk-offcanvas="flip: true" id="sidebar">
+            <div class="uk-offcanvas-bar">
+                <button class="uk-offcanvas-close" data-uk-close type="button"></button>
+
+                <div class="uk-margin-large"></div>
+
+                <ul class="uk-nav uk-nav-default">
+                    {% include menu.html %}
+                </ul>
+            </div>
+        </div>
     </div>
 
     <div class="uk-navbar-right uk-visible@s">

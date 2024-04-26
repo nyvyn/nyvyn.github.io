@@ -2,6 +2,9 @@
 layout: default
 ---
 
-<p>{{ page.date }} - Written by {{ site.author }}</p>
-
-{% include post.html %}
+{% include post.html
+content=page.content
+date=page.date
+title=page.title
+url=page.url
+%}

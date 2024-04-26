@@ -1,0 +1,21 @@
+<nav class="uk-nav">
+    {% if paginator.previous_page or paginator.next_page %}
+    <div class="uk-flex uk-margin-medium-top">
+
+        {% if paginator.next_page %}
+        <div><a class="uk-button uk-button-text" href="{{.Paginator.Next.URL}}">
+            <span data-uk-icon="arrow-left"></span> {{ paginator.next_page_path }}
+        </a></div>
+        {% endif %}
+
+        {% if paginator.previous_page %}
+        <div class="uk-flex-1"></div>
+
+        <div><a class="uk-button uk-button-text" href="{{.Paginator.Prev.URL}}">
+            {{ paginator.previous_page_path }} <span data-uk-icon="arrow-right"></span>
+        </a></div>
+        {% endif %}
+
+    </div>
+    {% endif %}
+</nav>

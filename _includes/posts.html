@@ -1,8 +1,20 @@
 <ul class="uk-list" id="post-list">
-    {% for post in site.posts %}
+    {% for post in site.posts limit:include.limit %}
+    {% capture markdown %}
+    {% if include.full %}
+    {{ post.content | markdownify }}
+    {% else %}
+    {{ post.excerpt }}
+    {% endif %}
+    {% endcapture %}
     <li>
         <div class="uk-width-xlarge uk-margin-auto">
-            {% include post.html %}
+            {% include post.html
+            content=markdown
+            date=post.date
+            title=post.title
+            url=post.url
+            %}
         </div>
     </li>
     {% endfor %}
