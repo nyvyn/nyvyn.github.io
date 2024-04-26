@@ -1,10 +1,10 @@
 author: Ron Lancaster
+baseurl: "https://www.ronlancaster.com"
 copyright: 2024
-description: >- # this means to ignore newlines until "baseurl:" 
+description: >-
   Thoughts on tech and leadership
 email: me@ronlancaster.com
 title: Ron Lancaster
-url: "https://www.ronlancaster.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Output options
 markdown: kramdown

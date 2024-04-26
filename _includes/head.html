@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1" name="viewport">
 
-    <base href="{{ site.url }}">
+    <base href="{{ site.baseurl }}">
 
     <link href="/assets/favicon/favicon.ico" rel="shortcut icon" type="image/x-icon">
     <link href="/assets/favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
@@ -16,15 +16,15 @@
 
     <!-- UIkit CSS -->
     <link href="{{ "
-    /assets/css/uikit.min.css" | prepend: site.baseurl }}?{{ site.time | date: '%s%N' }}" rel="stylesheet">
+    /assets/css/uikit.min.css" }}?{{ site.time | date: '%s%N' }}" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="{{ "
-    /assets/css/overrides.css" | prepend: site.baseurl }}?{{ site.time | date: '%s%N' }}" rel="stylesheet">
+    /assets/css/overrides.css" }}?{{ site.time | date: '%s%N' }}" rel="stylesheet">
 
     <!-- UIkit JS -->
     <script src="{{ "
-    /assets/js/uikit.min.js" | prepend: site.baseurl }}?{{ site.time | date: '%s%N' }}"></script
+    /assets/js/uikit.min.js" }}?{{ site.time | date: '%s%N' }}"></script
     <script src="{{ "
-    /assets/js/uikit-icons.js" | prepend: site.baseurl }}?{{ site.time | date: '%s%N' }}"></script
+    /assets/js/uikit-icons.js" }}?{{ site.time | date: '%s%N' }}"></script
 </head>
