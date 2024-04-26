@@ -1,5 +1,6 @@
 ---
 layout: post
+tags: [ "artificial intelligence" ]
 ---
 
 I'm happy to share my first open-source library:

@@ -8,10 +8,17 @@
     {% endif %}
 
     <aside class="uk-article-meta uk-margin-small-bottom">
-        <a class="uk-link-reset" href="{{ include.url }}">
-            {{ include.date | date_to_string }}
-        </a>
+        {{ include.date | date_to_string }}
+        {% unless include.full %}
+        - {% include read_time.html content=include.content %}
+        {% endunless %}
     </aside>
 
     <div class="uk-link-text">{{ include.content }}</div>
+
+    {% unless include.full %}
+    <a class="uk-button uk-button-text uk-margin-top" href="{{ include.url }}">
+        Go deeper <span data-uk-icon="arrow-right"></span>
+    </a>
+    {% endunless %}
 </article>
