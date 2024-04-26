@@ -1,10 +1,10 @@
 author: Ron Lancaster
-baseurl: "https://www.ronlancaster.com"
 copyright: 2024
 description: >-
   Thoughts on tech and leadership
 email: me@ronlancaster.com
 title: Ron Lancaster
+url: "https://www.ronlancaster.com"
 
 # Output options
 markdown: kramdown
