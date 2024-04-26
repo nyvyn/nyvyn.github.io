@@ -1,6 +1,6 @@
 docs_list_title: Navigation Menu Links
 docs:
   - title: Writing
-    url: writing/
+    url: writing
   - title: About
-    url: about/
+    url: about

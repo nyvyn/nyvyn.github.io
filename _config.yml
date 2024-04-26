@@ -8,7 +8,7 @@ url: "https://www.ronlancaster.com"
 
 # Output options
 markdown: kramdown
-permalink: /writing/:title:output_ext
+permalink: /writing/:title
 timezone: US/Central
 
 include:
