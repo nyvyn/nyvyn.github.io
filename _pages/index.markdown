@@ -7,7 +7,7 @@ permalink: /
 <div class="uk-grid-large uk-child-width-expand@s" data-uk-grid>
     <div class="uk-width-3-5@m">
         <h4 class="uk-text-large uk-text-light uk-margin-remove-bottom">
-            Recent writing
+            Writing
         </h4>
         <h4 class="uk-text-lighter uk-margin-remove-top">
             Thoughts and ideas; rarely rants
