@@ -4,7 +4,7 @@ title: About
 permalink: /about.html
 ---
 
-I'm passionate about technology and the practical applicatioon of AI.
+I'm passionate about technology and the practical application of AI.
 I also love spending time with my family,
 snowboarding in the winters, martial arts, writing, and cycling all year round.
 
@@ -14,14 +14,20 @@ snowboarding in the winters, martial arts, writing, and cycling all year round.
 
 ### Experience
 
+**Advisor**  
+Personify  
+February 2024 - Present
+
+Advisory role on efficacy, guardrails, security, and ethical use of generative AI.
+
 **Chief Product Officer**  
-Augeo
+Augeo  
 February 2023 - February 2024
 
 Leading product for workplace engagement and consumer loyalty offerings.
 
 **Chief Technology Officer**  
-Structural
+Structural  
 June 2018 - February 2023
 
 Structural connects people and teams with data-rich profiles, intelligent search, and real-time insight.

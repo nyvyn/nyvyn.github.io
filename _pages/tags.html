@@ -14,6 +14,7 @@ permalink: /tags/
 {%- assign tags_list = site_tags | split:',' | sort -%}
 
 {%- for tag in tags_list -%}
-<a class="uk-link" href="#{{- tag -}}"><i aria-hidden="true" class="uk-icon"></i>&nbsp;{{- tag
-    -}}&nbsp;({{site.tags[tag].size}})</a>
+<a class="uk-link" href="#{{- tag -}}">
+    <i aria-hidden="true" class="uk-icon"></i>&nbsp;{{- tag -}}&nbsp;({{site.tags[tag].size}})
+</a>
 {%- endfor -%}

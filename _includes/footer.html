@@ -1,4 +1,4 @@
-<footer class="uk-margin-large-top">
+<footer class="uk-margin-large-top uk-position-relative">
     <div class="uk-section uk-section-muted uk-margin-remove">
         <div class="uk-container uk-container-small">
             <div class="uk-flex uk-flex-center uk-grid-small" data-uk-grid>
@@ -14,7 +14,7 @@
 
             <div class="uk-text-meta uk-margin">
                 <div class="uk-flex uk-flex-center uk-grid-small" data-uk-grid>
-                    <div class="uk-display-inline">© Copyright {{ site.copyright }}</div>
+                    <div class="uk-display-inline">© {{ site.copyright }}</div>
                     <div class="uk-display-inline">{{ site.author }}</div>
                 </div>
             </div>
@@ -23,5 +23,16 @@
                 <a href="/feed.xml">RSS</a>
             </div>
         </div>
+    </div>
+
+    <div class="uk-position-absolute uk-position-bottom-left uk-padding-small"
+         data-uk-scrollspy="cls:uk-animation-fade"
+    >
+        <a class="uk-button uk-button-large uk-box-shadow-small"
+           data-uk-scroll
+           href="{{- page.url -}}#topnav"
+        >
+            Back to top<span data-uk-icon="icon: chevron-up; ratio: 1.4"></span>
+        </a>
     </div>
 </footer>
