@@ -18,7 +18,7 @@
 
     <div class="uk-link-text">{{ include.content }}</div>
 
-    {% unless include.full %}
+    {% unless include.full and post.content contains site.excerpt_separator %}
     <a class="uk-button uk-button-text uk-margin-top" href="{{ include.url }}">
         Go deeper <span data-uk-icon="arrow-right"></span>
     </a>
