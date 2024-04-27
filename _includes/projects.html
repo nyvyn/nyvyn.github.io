@@ -1,11 +1,13 @@
 <ul class="uk-list uk-list-large uk-margin-medium-top">
     {% for item in site.data.projects.docs %}
     <li>
-        <div class="uk-flex uk-flex-middle">
-            <span class="uk-margin-small-right" data-uk-icon="icon: {{- item.icon -}}; ratio: 0.9"></span>
-            <a class="uk-link" href="{{- item.url -}}">{{ item.name }}</a>
-        </div>
-        <span class="uk-display-block uk-text-light">{{ item.description }}</span>
+        <a class="uk-link uk-link-text" href="{{- item.url -}}">
+            <div class="uk-flex uk-flex-middle">
+                <span class="uk-margin-small-right" data-uk-icon="icon: {{- item.icon -}}; ratio: 0.9"></span>
+                {{ item.name }}
+            </div>
+            <span class="uk-display-block uk-text-light">{{ item.description }}</span>
+        </a>
     </li>
     {% endfor %}
 </ul>

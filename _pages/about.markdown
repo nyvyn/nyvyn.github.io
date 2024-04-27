@@ -17,8 +17,14 @@ I'm passionate about technology and the practical application of AI.
 I also love spending time with my family,
 snowboarding in the winters, martial arts, writing, and cycling all year round.
 
-<hr class="uk-divider-small">
 <div class="uk-margin-medium-top"></div>
+
+<h3 class="uk-heading-divider">Projects</h3>
+{% include projects.html %}
+
+<div class="uk-margin-medium-top"></div>
+
+<h3 class="uk-heading-divider">Experience</h3>
 
 **Advisor**  
 Personify  
