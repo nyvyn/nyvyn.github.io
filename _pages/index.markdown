@@ -15,7 +15,7 @@ permalink: /
             Thoughts and ideas; rarely rants
         </h4>
         <hr class="uk-divider-small">
-        <div class="uk-margin-medium-top">
+        <div class="uk-margin-medium-top uk-text-left">
         {% include posts.html limit=1 full=true %}
         </div>
     </div>
@@ -29,7 +29,7 @@ permalink: /
             Software for sophisticates
         </h4>
         <hr class="uk-divider-small">
-        <ul class="uk-list uk-list-large uk-margin-medium-top">
+        <ul class="uk-list uk-list-large uk-margin-medium-top uk-text-left">
             {% for item in site.data.projects.docs %}
                 <li>
                     <div class="uk-flex uk-flex-middle">
