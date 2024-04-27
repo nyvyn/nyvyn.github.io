@@ -1,15 +1,15 @@
 ---
 layout: page
-title: Projects
-permalink: /projects
+title: Library
+permalink: /library
 ---
 
 <h4 class="uk-text-large uk-text-light uk-margin-remove-bottom">
-    Projects
+    Library
 </h4>
 <h4 class="uk-text-lighter uk-margin-remove-top">
-    Software for sophisticates
+    Books I've read... or would like to
 </h4>
 <hr class="uk-divider-small">
 
-{% include projects.html %}
+{% include books.html limit=100 %}

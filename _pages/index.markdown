@@ -15,10 +15,29 @@ permalink: /
             Thoughts and ideas; rarely rants
         </h4>
         <hr class="uk-divider-small">
-        <div class="uk-margin-medium-top uk-text-left">
+
+        <div class="uk-margin-medium-top">
         {% include posts.html limit=1 full=true %}
         </div>
     </div>
+
+    <div>
+        <a class="uk-link" href="/garden">
+            <h4 class="uk-text-large uk-text-light uk-margin-remove-bottom">
+                Digital Garden <span data-uk-icon="arrow-right"></span>
+            </h4>
+        </a>
+        <h4 class="uk-text-lighter uk-margin-remove-top">
+            A place for ideas to sprout and grow
+        </h4>
+        <hr class="uk-divider-small">
+        
+        {% include topics.html %}
+    </div>
+
+</div>
+
+<div class="uk-grid-large uk-child-width-expand@s" data-uk-grid>
     <div>
         <a class="uk-link" href="/projects">
             <h4 class="uk-text-large uk-text-light uk-margin-remove-bottom">
@@ -29,16 +48,21 @@ permalink: /
             Software for sophisticates
         </h4>
         <hr class="uk-divider-small">
-        <ul class="uk-list uk-list-large uk-margin-medium-top uk-text-left">
-            {% for item in site.data.projects.docs %}
-                <li>
-                    <div class="uk-flex uk-flex-middle">
-                        <span data-uk-icon="icon: {{- item.icon -}}; ratio: 0.9"></span>
-                        <a class="uk-link uk-margin-small-left" href="{{- item.url -}}">{{ item.name }}</a>
-                    </div>
-                    <span class="uk-display-block uk-text-light">{{ item.description }}</span>
-                </li>
-            {% endfor %}
-        </ul>
+
+        {% include projects.html %}
+    </div>
+
+    <div class="uk-width-2-3@m">
+        <a class="uk-link" href="/library">
+            <h4 class="uk-text-large uk-text-light uk-margin-remove-bottom">
+                Library <span data-uk-icon="arrow-right"></span>
+            </h4>
+        </a>
+        <h4 class="uk-text-lighter uk-margin-remove-top">
+            Books I've read... or would like to
+        </h4>
+        <hr class="uk-divider-small">
+        
+        {% include books.html %}
     </div>
 </div>

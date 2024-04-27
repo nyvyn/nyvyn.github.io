@@ -1,5 +1,7 @@
 docs:
   - title: Writing
     url: writing
+  - title: Library
+    url: library
   - title: About
     url: about

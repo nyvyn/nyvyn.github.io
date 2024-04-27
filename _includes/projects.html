@@ -1,0 +1,11 @@
+<ul class="uk-list uk-list-large uk-margin-medium-top">
+    {% for item in site.data.projects.docs %}
+    <li>
+        <div class="uk-flex uk-flex-middle">
+            <span data-uk-icon="icon: {{- item.icon -}}; ratio: 0.9"></span>
+            <a class="uk-link uk-margin-small-left" href="{{- item.url -}}">{{ item.name }}</a>
+        </div>
+        <span class="uk-display-block uk-text-light">{{ item.description }}</span>
+    </li>
+    {% endfor %}
+</ul>

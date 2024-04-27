@@ -12,6 +12,13 @@ markdown: kramdown
 permalink: /writing/:title
 timezone: US/Central
 
+# Define additional collections
+collections:
+  topics:
+    output: true
+    permalink: /garden/:name
+
+# Add these pages to the default list of inclusions.
 include:
   - _pages
 

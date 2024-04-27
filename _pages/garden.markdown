@@ -1,15 +1,15 @@
 ---
 layout: page
-title: Projects
-permalink: /projects
+title: Garden
+permalink: /garden
 ---
 
 <h4 class="uk-text-large uk-text-light uk-margin-remove-bottom">
-    Projects
+    Garden
 </h4>
 <h4 class="uk-text-lighter uk-margin-remove-top">
-    Software for sophisticates
+    A place for ideas to sprout and grow
 </h4>
 <hr class="uk-divider-small">
 
-{% include projects.html %}
+{% include topics.html %}
