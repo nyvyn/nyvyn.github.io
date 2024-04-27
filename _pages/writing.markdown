@@ -12,6 +12,7 @@ permalink: /writing.html
     Thoughts and ideas; rarely rants
 </h4>
 <hr class="uk-divider-small">
-<div class="uk-margin-medium-top">
+
+<div>
     {% include posts.html full=false limit=20 %}
 </div>

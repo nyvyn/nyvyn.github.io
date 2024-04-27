@@ -9,16 +9,14 @@
     </a>
     {% endif %}
 
-    <aside class="uk-article-meta uk-margin-small-bottom">
+    <aside class="uk-article-meta">
         {{ include.date | date_to_string }}
-        {% unless include.full %}
         - {%- include read_time.html content=include.content -%}
-        {% endunless %}
     </aside>
 
-    <div class="uk-link-text">{{ include.content }}</div>
+    <div class="uk-margin-small-top">{{ include.markdown }}</div>
 
-    {% if include.full == false and post.content contains site.excerpt_separator %}
+    {% if include.full == false and include.content contains site.excerpt_separator %}
     <a class="uk-button uk-button-text uk-margin-top" href="{{ include.url }}">
         Keep reading <span data-uk-icon="arrow-right"></span>
     </a>

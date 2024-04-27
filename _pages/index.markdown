@@ -16,7 +16,7 @@ permalink: /
         </h4>
         <hr class="uk-divider-small">
 
-        <div class="uk-margin-medium-top">
+        <div class="uk-visible@s">
         {% include posts.html limit=1 full=true %}
         </div>
     </div>
@@ -31,8 +31,10 @@ permalink: /
             A place for ideas to sprout and grow
         </h4>
         <hr class="uk-divider-small">
-        
+
+        <div class="uk-visible@s">
         {% include topics.html %}
+        </div>
     </div>
 
 </div>
@@ -45,14 +47,16 @@ permalink: /
             </h4>
         </a>
         <h4 class="uk-text-lighter uk-margin-remove-top">
-            Software for sophisticates
+            Tools, ideas, and experiments
         </h4>
         <hr class="uk-divider-small">
 
+        <div class="uk-visible@s">
         {% include projects.html %}
+        </div>
     </div>
 
-    <div class="uk-width-2-3@m">
+    <div class="uk-width-2-3@s">
         <a class="uk-link" href="/library">
             <h4 class="uk-text-large uk-text-light uk-margin-remove-bottom">
                 Library <span data-uk-icon="arrow-right"></span>
@@ -62,7 +66,9 @@ permalink: /
             Books I've read... or would like to
         </h4>
         <hr class="uk-divider-small">
-        
+
+        <div class="uk-visible@s">
         {% include books.html %}
+        </div>
     </div>
 </div>

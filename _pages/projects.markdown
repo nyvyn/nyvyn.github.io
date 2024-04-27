@@ -8,7 +8,7 @@ permalink: /projects
     Projects
 </h4>
 <h4 class="uk-text-lighter uk-margin-remove-top">
-    Software for sophisticates
+    Tools, ideas, and experiments
 </h4>
 <hr class="uk-divider-small">
 

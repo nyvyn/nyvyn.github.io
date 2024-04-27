@@ -1,12 +1,15 @@
-<div data-uk-grid="masonry: pack">
+<div class="uk-margin-medium-top" data-uk-grid>
     {% for book in site.data.books.docs limit:include.limit %}
     <a class="uk-link uk-link-reset" href="https://openlibrary.org/isbn/{{- book.isbn -}}">
-        <div class="uk-card uk-card-small" style="width: 200px">
-            <div class="uk-card-media-top uk-cover-container uk-height-medium">
-                <img alt="{{- book.title -}} book cover"
-                     data-uk-cover
-                     src="https://covers.openlibrary.org/b/isbn/{{- book.isbn -}}-M.jpg"
-                >
+        <div class="uk-card uk-card-small">
+            <div class="uk-card-media-top uk-flex uk-flex-center uk-flex-middle">
+                <div class="uk-cover-container" style="height: 160px; width: 100px">
+                    <img alt="{{- book.title -}} book cover"
+                         data-uk-cover
+                         src="https://covers.openlibrary.org/b/isbn/{{- book.isbn -}}-M.jpg"
+                         style="object-position: top"
+                    >
+                </div>
             </div>
             <div class="uk-card-footer uk-text-center">
                 <div class="uk-text-lighter uk-text-large">{{ book.title }}</div>
