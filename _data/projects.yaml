@@ -1,0 +1,9 @@
+docs:
+  - name: Autonomais
+    description: Effortless agent-based workflows
+    icon: github
+    url: https://github.com/nyvyn/autonomais
+  - name: Oner Chat
+    description: AI-first notebook editor
+    icon: star
+    url: https://www.oner.chat
