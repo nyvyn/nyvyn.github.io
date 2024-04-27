@@ -13,5 +13,5 @@ permalink: /writing.html
 </h4>
 <hr class="uk-divider-small">
 <div class="uk-margin-medium-top">
-    {% include posts.html limit=20 %}
+    {% include posts.html full=false limit=20 %}
 </div>
