@@ -4,15 +4,21 @@ title: About
 permalink: /about.html
 ---
 
+<h4 class="uk-text-large uk-text-light uk-margin-remove-bottom">
+    About Me
+</h4>
+<h4 class="uk-text-lighter uk-margin-remove-top">
+    Fractional CTO helping businesses grow with AI
+</h4>
+<hr class="uk-divider-small">
+<div class="uk-margin-medium-top"></div>
+
 I'm passionate about technology and the practical application of AI.
 I also love spending time with my family,
 snowboarding in the winters, martial arts, writing, and cycling all year round.
 
-(All opinions and writing on this site are my own.)
-
-***
-
-### Experience
+<hr class="uk-divider-small">
+<div class="uk-margin-medium-top"></div>
 
 **Advisor**  
 Personify  

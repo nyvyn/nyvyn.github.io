@@ -7,6 +7,7 @@ title: Ron Lancaster
 url: "https://www.ronlancaster.com"
 
 # Output options
+excerpt_separator: <!--more-->
 markdown: kramdown
 permalink: /writing/:title
 timezone: US/Central

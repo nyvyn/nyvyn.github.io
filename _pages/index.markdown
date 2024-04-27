@@ -5,10 +5,12 @@ permalink: /
 ---
 
 <div class="uk-grid-large uk-child-width-expand@s" data-uk-grid>
-    <div class="uk-width-3-5@m">
-        <h4 class="uk-text-large uk-text-light uk-margin-remove-bottom">
-            Writing
-        </h4>
+    <div class="uk-width-3-5@s">
+        <a class="uk-link" href="/writing">
+            <h4 class="uk-text-large uk-text-light uk-margin-remove-bottom">
+                Writing <span data-uk-icon="arrow-right"></span>
+            </h4>
+        </a>
         <h4 class="uk-text-lighter uk-margin-remove-top">
             Thoughts and ideas; rarely rants
         </h4>
@@ -18,9 +20,11 @@ permalink: /
         </div>
     </div>
     <div>
-        <h4 class="uk-text-large uk-text-light uk-margin-remove-bottom">
-            Projects
-        </h4>
+        <a class="uk-link" href="/projects">
+            <h4 class="uk-text-large uk-text-light uk-margin-remove-bottom">
+                Projects <span data-uk-icon="arrow-right"></span>
+            </h4>
+        </a>
         <h4 class="uk-text-lighter uk-margin-remove-top">
             Software for sophisticates
         </h4>
@@ -30,7 +34,7 @@ permalink: /
                 <li>
                     <div class="uk-flex uk-flex-middle">
                         <span data-uk-icon="icon: {{- item.icon -}}; ratio: 0.9"></span>
-                        <a class="uk-margin-small-left" href="{{- item.url -}}">{{ item.name }}</a>
+                        <a class="uk-link uk-margin-small-left" href="{{- item.url -}}">{{ item.name }}</a>
                     </div>
                     <span class="uk-display-block uk-text-light">{{ item.description }}</span>
                 </li>
