@@ -1,18 +1,17 @@
-<div class="uk-margin-medium-top" data-uk-grid>
+<div class="uk-margin-medium-top uk-flex uk-flex-center" data-uk-grid>
     {% for book in site.data.books.docs limit:include.limit %}
     <a class="uk-link uk-link-reset" href="https://openlibrary.org/isbn/{{- book.isbn -}}">
-        <div class="uk-card uk-card-small">
+        <div class="uk-card uk-card-small" style="width: 165px">
             <div class="uk-card-media-top uk-flex uk-flex-center uk-flex-middle">
-                <div class="uk-cover-container" style="height: 192px; width: 120px">
+                <div class="uk-cover-container" style="height: 225px; width: 165px">
                     <img alt="{{- book.title -}} book cover"
                          data-uk-cover
                          src="https://covers.openlibrary.org/b/isbn/{{- book.isbn -}}-M.jpg"
-                         style="object-position: top"
                     >
                 </div>
             </div>
             <div class="uk-card-footer uk-text-center">
-                <div class="uk-text-lighter uk-text-large">{{ book.title }}</div>
+                <div class="uk-text-lighter uk-text">{{ book.title }}</div>
                 <div class="uk-text-meta">{{ book.author }}</div>
             </div>
         </div>

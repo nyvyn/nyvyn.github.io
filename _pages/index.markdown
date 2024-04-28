@@ -68,7 +68,7 @@ permalink: /
         <hr class="uk-divider-small">
 
         <div class="uk-visible@s">
-        {% include books.html %}
+        {% include books.html limit=6 %}
         </div>
     </div>
 </div>

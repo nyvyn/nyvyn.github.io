@@ -19,12 +19,12 @@ snowboarding in the winters, martial arts, writing, and cycling all year round.
 
 <div class="uk-margin-medium-top"></div>
 
-<h3 class="uk-heading-divider">Projects</h3>
+<h3 class="uk-heading-divider uk-text-light ">Projects</h3>
 {% include projects.html %}
 
 <div class="uk-margin-medium-top"></div>
 
-<h3 class="uk-heading-divider">Experience</h3>
+<h3 class="uk-heading-divider uk-text-light ">Experience</h3>
 
 **Advisor**  
 Personify  
