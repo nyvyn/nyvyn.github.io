@@ -1,5 +1,6 @@
 ---
 layout: post
+title: "Theory of mind"
 tags: [ "artificial intelligence" ]
 ---
 

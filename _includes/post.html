@@ -1,9 +1,20 @@
+{% capture link %}
+{% if include.link %}
+{{ include.link }}
+{% else %}
+{{ include.url }}
+{% endif %}
+{% endcapture %}
+
 <article class="uk-article">
     {% if include.title %}
-    <a class="uk-link-toggle uk-display-block" href="{{ include.url }}">
+    <a class="uk-link-toggle uk-display-block" href="{{ link }}">
         <header class="uk-article-title">
             <h4 class="uk-link-heading uk-margin-remove-bottom uk-text-light">
                 {{ include.title }}
+                {% if include.link %}
+                <span data-uk-icon="icon: link-external; ratio: 0.7"></span>
+                {% endif %}
             </h4>
         </header>
     </a>
