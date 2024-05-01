@@ -50,8 +50,6 @@ nearly everything will be changed and disrupted by AI.
 > have
 > what they need, if we as a society manage it responsibly.
 
-Link here: .
-
 As noted, to get to the point of near total disruption, where “AI eats the world”, we will need AI that can create,
 understand, reason, and think. Sam Altman’s position seems to be that this is a matter of “when”, not “if”.
 
