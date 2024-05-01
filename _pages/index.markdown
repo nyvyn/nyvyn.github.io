@@ -12,7 +12,7 @@ permalink: /
             </h4>
         </a>
         <h4 class="uk-text-lighter uk-margin-remove-top">
-            Thoughts and ideas; rarely rants
+            Quick posts and announcements
         </h4>
         <hr class="uk-divider-small">
 
@@ -46,7 +46,7 @@ permalink: /
             </h4>
         </a>
         <h4 class="uk-text-lighter uk-margin-remove-top">
-            Tools, ideas, and experiments
+            Tools and experiments
         </h4>
         <hr class="uk-divider-small">
 
