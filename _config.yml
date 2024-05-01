@@ -13,7 +13,7 @@ timezone: US/Central
 
 # Define additional collections
 collections:
-  topics:
+  notes:
     output: true
     permalink: /notes/:name
 
