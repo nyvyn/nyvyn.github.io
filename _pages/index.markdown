@@ -36,7 +36,6 @@ permalink: /
         {% include notes.html %}
         </div>
     </div>
-
 </div>
 
 <div class="uk-grid-large uk-child-width-expand@s" data-uk-grid>

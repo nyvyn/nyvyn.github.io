@@ -1,4 +1,4 @@
-<ul class="uk-list uk-list-large uk-list-divider uk-margin-medium-top">
+<ul class="uk-list uk-list-large uk-list-divider uk-margin-medium-top" id="note-list">
     {% for note in site.notes %}
     <li>
         <a class="uk-link uk-link-text" href="{{- note.url -}}">
@@ -6,6 +6,10 @@
                 <span class="uk-margin-small-right" data-uk-icon="icon: bookmark; ratio: 0.9"></span>
                 {{ note.title }}
             </div>
+            <aside class="uk-article-meta">
+                {{ note.date | date_to_string }}
+                - {%- include read_time.html content=note.content -%}
+            </aside>
             <span class="uk-display-block uk-text-light">{{ note.description }}</span>
         </a>
     </li>
