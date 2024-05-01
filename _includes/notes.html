@@ -1,12 +1,12 @@
 <ul class="uk-list uk-list-large uk-list-divider uk-margin-medium-top">
-    {% for topic in site.topics %}
+    {% for note in site.notes %}
     <li>
-        <a class="uk-link uk-link-text" href="{{- topic.url -}}">
+        <a class="uk-link uk-link-text" href="{{- note.url -}}">
             <div class="uk-flex uk-flex-middle">
                 <span class="uk-margin-small-right" data-uk-icon="icon: bookmark; ratio: 0.9"></span>
-                {{ topic.name }}
+                {{ note.name }}
             </div>
-            <span class="uk-display-block uk-text-light">{{ topic.description }}</span>
+            <span class="uk-display-block uk-text-light">{{ note.description }}</span>
         </a>
     </li>
     {% endfor %}

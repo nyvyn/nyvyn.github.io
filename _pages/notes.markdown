@@ -26,4 +26,4 @@ Below, are a few of these topical notes. More in the future.
 
 <hr class="uk-divider-icon">
 
-{% include topics.html %}
+{% include notes.html %}
