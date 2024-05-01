@@ -33,7 +33,7 @@ permalink: /
         <hr class="uk-divider-small">
 
         <div class="uk-visible@s">
-        {% include topics.html %}
+        {% include notes.html %}
         </div>
     </div>
 
