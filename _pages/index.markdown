@@ -6,7 +6,7 @@ permalink: /
 
 <div class="uk-grid-large uk-child-width-expand@s" data-uk-grid>
     <div class="uk-width-3-5@s">
-        <a class="uk-link" href="/writing">
+        <a class="uk-link" href="/posts">
             <h4 class="uk-text-large uk-text-light uk-margin-remove-bottom">
                 Writing <span data-uk-icon="arrow-right"></span>
             </h4>
@@ -22,7 +22,7 @@ permalink: /
     </div>
 
     <div>
-        <a class="uk-link" href="/garden">
+        <a class="uk-link" href="/notes">
             <h4 class="uk-text-large uk-text-light uk-margin-remove-bottom">
                 Digital Garden <span data-uk-icon="arrow-right"></span>
             </h4>
@@ -57,7 +57,7 @@ permalink: /
     </div>
 
     <div class="uk-width-2-3@s">
-        <a class="uk-link" href="/library">
+        <a class="uk-link" href="/books">
             <h4 class="uk-text-large uk-text-light uk-margin-remove-bottom">
                 Library <span data-uk-icon="arrow-right"></span>
             </h4>

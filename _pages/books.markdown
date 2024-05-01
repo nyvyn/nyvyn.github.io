@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Library
-permalink: /library
+permalink: /books
 ---
 
 <h4 class="uk-text-large uk-text-light uk-margin-remove-bottom">

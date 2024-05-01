@@ -8,14 +8,14 @@ url: "https://www.ronlancaster.com"
 # Output options
 excerpt_separator: <!--more-->
 markdown: kramdown
-permalink: /writing/:title
+permalink: /posts/:title
 timezone: US/Central
 
 # Define additional collections
 collections:
   topics:
     output: true
-    permalink: /garden/:name
+    permalink: /notes/:name
 
 # Add these pages to the default list of inclusions.
 include:
