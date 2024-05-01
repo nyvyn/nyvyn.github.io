@@ -1,0 +1,16 @@
+<article class="uk-article">
+    <a class="uk-link-toggle uk-display-block" href="{{ include.url }}">
+        <header class="uk-article-title">
+            <h4 class="uk-link-heading uk-margin-remove-bottom uk-text-light">
+                {{ include.title }}
+            </h4>
+        </header>
+    </a>
+
+    <aside class="uk-article-meta">
+        {{ include.date | date_to_string }}
+        - {%- include read_time.html content=include.content -%}
+    </aside>
+
+    <div class="uk-margin-small-top">{{ include.markdown }}</div>
+</article>

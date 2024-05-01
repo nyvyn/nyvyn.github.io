@@ -1,6 +1,6 @@
 ---
-layout: page
-name: Artificial Intelligence
+layout: note
+title: Artificial Intelligence
 description: >-
   Thoughts on generative AI and the future of software
 ---
@@ -15,9 +15,9 @@ In 2007, the introduction of the iPhone started what later became known as the M
 most people in the world would access the internet via a smartphone - and companies that wanted to reach those people
 would need to offer a mobile solution.
 
-A few years [https://a16z.com/2011/08/20/why-software-is-eating-the-world/][later], in 2011, Marc Andreesen wrote a
-significant thought-piece titled “Software is eating the world”. In
-that essay, he made a point that’s now taken for granted:
+A few years later, in 2011, Marc Andreesen wrote a significant thought-piece titled
+[“Software is eating the world”](https://a16z.com/2011/08/20/why-software-is-eating-the-world/).
+In that essay, he made a point that’s now taken for granted:
 
 > But too much of the debate is still around financial valuation, as opposed to the underlying intrinsic value of the
 > best of Silicon Valley’s new companies. My own theory is that we are in the middle of a dramatic and broad

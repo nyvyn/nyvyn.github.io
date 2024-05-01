@@ -15,7 +15,7 @@ timezone: US/Central
 collections:
   notes:
     output: true
-    permalink: /notes/:name
+    permalink: /notes/:title
 
 # Add these pages to the default list of inclusions.
 include:
