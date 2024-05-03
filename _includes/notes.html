@@ -1,9 +1,9 @@
 <ul class="uk-list uk-list-large uk-list-divider uk-margin-medium-top" id="note-list">
     {% for note in site.notes reversed %}
-    {% if note.status == "revising" %}
+    {% if note.status == "Revising" %}
     {% assign icon = "question" %}
     {% else %}
-    {% assign icon = "star" %}
+    {% assign icon = "bookmark" %}
     {% endif %}
     <li>
         <a class="uk-link-toggle" href="{{- note.url -}}">
