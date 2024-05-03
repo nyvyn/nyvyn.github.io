@@ -3,6 +3,7 @@ layout: note
 title: Artificial Intelligence
 description: >-
   Thoughts on generative AI and the future of software
+status: Stable
 ---
 
 Something exciting and perhaps incredible is happening in AI right now. In short, we’re seeing massive leaps in AI where

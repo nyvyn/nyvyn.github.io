@@ -1,10 +1,15 @@
 <ul class="uk-list uk-list-large uk-list-divider uk-margin-medium-top" id="note-list">
-    {% for note in site.notes %}
+    {% for note in site.notes reversed %}
+    {% if note.status == "revising" %}
+    {% assign icon = "question" %}
+    {% else %}
+    {% assign icon = "star" %}
+    {% endif %}
     <li>
-        <a class="uk-link uk-link-text" href="{{- note.url -}}">
-            <div class="uk-flex uk-flex-middle">
-                <span class="uk-margin-small-right" data-uk-icon="icon: bookmark; ratio: 0.9"></span>
-                {{ note.title }}
+        <a class="uk-link-toggle" href="{{- note.url -}}">
+            <div class="uk-flex uk-flex-middle uk-text-light uk-link-heading">
+                <span class="uk-margin-small-right" data-uk-icon="icon: {{- icon -}}; ratio: 0.8"></span>
+                {{ note.title }} <span class="uk-text-meta" style="margin-left: 4px">({{ note.status }})</span>
             </div>
             <aside class="uk-article-meta">
                 {{ note.date | date_to_string }}

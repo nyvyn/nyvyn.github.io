@@ -1,8 +1,8 @@
 <ul class="uk-list uk-list-large uk-margin-medium-top">
     {% for item in site.data.projects.docs %}
     <li>
-        <a class="uk-link uk-link-text" href="{{- item.url -}}">
-            <div class="uk-flex uk-flex-middle">
+        <a class="uk-link-toggle" href="{{- item.url -}}">
+            <div class="uk-flex uk-flex-middle uk-link-heading">
                 <span class="uk-margin-small-right" data-uk-icon="icon: {{- item.icon -}}; ratio: 0.9"></span>
                 {{ item.name }}
             </div>
