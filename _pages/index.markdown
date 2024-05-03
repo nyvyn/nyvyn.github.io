@@ -46,7 +46,7 @@ permalink: /
             </h4>
         </a>
         <h4 class="uk-text-lighter uk-margin-remove-top">
-            Tools and experiments
+            Software and experiments
         </h4>
         <hr class="uk-divider-small">
 
