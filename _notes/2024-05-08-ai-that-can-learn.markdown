@@ -8,17 +8,15 @@ status: Revising
 
 Today's LLMs are trained and then frozen in time. What changes when they can continuously learn?
 
-While there is a trend in decreasing size of LLMs with capabilities matching their larger siblings, the reality is that the weights for a useful LLM are many gigabytes large.
+In the rapidly evolving field of artificial intelligence, Large Language Models (LLMs) stand out with their immense capabilities and advanced functionalities; however, they're traditionally trained once and then remain static, effectively frozen in time. Despite the trend towards smaller models that pack a punch similar to their more substantial counterparts, the reality is that the datasets and weight parameters for useful LLMs often span many gigabytes.
 
-In turn, training these larger and more capable LLMs requires the coordination of many GPUs. The result is costly, energy intensive, and lengthy.
+The process of training these colossal and increasingly capable LLMs typically involves orchestrating numerous GPUs in concert. This requirement translates into high costs, substantial energy consumption, and lengthy training periods.
 
 ## In-Context Learning
 
-Without the ability to modify the weights of the LLM, we're left with manipulating the data sent at runtime to the LLM in advance of the question or task posed to the language model.
+Given the constraints of static model weights, we resort to manipulations of the data fed to the LLM during runtime, ahead of any questions or tasks posed to the model. This pre-processing forms what is known as the context window, which could range widely from just 4,000 tokens to upwards of a million tokens.
 
-This is the context window—which ranges from 4k tokens to a million tokens in length.
-
-This "learning" is termed "in-context learning". And due to the transient nature, it introduces a tremendous cost over time as the context is sent each time turn of a conversation.
+This method of "in-context learning" allows ephemeral adjustments based on the provided context, but comes with a significant long-term cost. Each interaction or turn in a conversation necessitates the retransmission of this context—this not only increases operational demands but also exacerbates cost inefficiencies over time.
 
 ## Low-Rank Adaptation
 
