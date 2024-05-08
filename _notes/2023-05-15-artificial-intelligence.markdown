@@ -1,8 +1,7 @@
 ---
 layout: note
 title: Artificial Intelligence
-description: >-
-  Thoughts on generative AI and the future of software
+description: Thoughts on generative AI and the future of software
 status: Stable
 ---
 
@@ -24,7 +23,7 @@ In that essay, he made a point that’s now taken for granted:
 > best of Silicon Valley’s new companies. My own theory is that we are in the middle of a dramatic and broad
 > technological
 > and economic shift in which software companies are poised to take over large swathes of the economy.
->
+> 
 > More and more major businesses and industries are being run on software and delivered as online services — from movies
 > to agriculture to national defense. Many of the winners are Silicon Valley-style entrepreneurial technology companies
 > that are invading and overturning established industry structures. Over the next 10 years, I expect many more

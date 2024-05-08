@@ -1,8 +1,7 @@
 ---
 layout: note
 title: AI that can learn
-description: \>-
-  A review of ways to move beyond frozen LLMs
+description: A review of ways to move beyond frozen LLMs
 status: Revising
 ---
 
