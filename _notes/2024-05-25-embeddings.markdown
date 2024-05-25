@@ -5,17 +5,6 @@ description: What and why of embeddings
 status: Revising
 ---
 
-# Tokenization
-Tokenization is the process of converting data (such as text, audio, video, or images) into smaller units called tokens. These tokens are then represented as numbers which can be used by mathematical algorithms.
-
-* Text Tokenization: Breaks down text into words or parts of words (subwords), each of which is assigned a unique numerical identifier.
-* Audio Tokenization: Segments audio into parts, such as phonemes or short clips, and converts these segments into numerical representations.
-* Video Tokenization: Divides video into frames or sequences of frames, converting them into numerical representations.
-* Image Tokenization: Splits images into patches or regions, each represented by numbers.
-
-These numerical tokens are then processed using algorithms to analyze, compress, and make predictions, enabling machines to handle complex tasks efficiently.
-
-# Embeddings
 Embeddings are high-dimensional numerical vectors that represent broader concepts rather than just individual tokens.
 
 * Text Embeddings: Capture semantic information from large corpora of text, understanding context and relationships between words and phrases.
