@@ -27,14 +27,12 @@ Embeddings can vary in size (the number of dimensions that are encoded by the re
 **Advantages:**
 
 - **Rich Information**: Larger embeddings (with more dimensions, e.g., 300 or 1000) capture more detailed nuances about the meanings and relationships among words. This can lead to more accurate and context-aware results, particularly in complex applications.
-- **Better Context Understanding**: With higher dimensions, embeddings can better understand subtle differences between words and phrases, improving search relevance in tasks requiring a deep contextual understanding.
+- **Better Context Understanding**: With higher dimensions, embeddings can better encode subtle differences between words and phrases, improving search relevance in tasks requiring a deep contextual understanding.
 
 **Disadvantages:**
 
 - **High Computational Cost**: Larger embeddings require more memory and processing power. This can slow down performance, particularly with large datasets or in real-time applications.
 - **Storage and Bandwidth**: Storing and transmitting larger embeddings demands more storage space and bandwidth, which can be costly and inefficient.
-
-**Example**: Imagine a search engine that needs to understand complex queries like medical diagnosis or legal advice. Using larger embeddings helps it differentiate subtle contexts but at the cost of increased computational requirements.
 
 ## Smaller Embeddings
 
@@ -48,14 +46,7 @@ Embeddings can vary in size (the number of dimensions that are encoded by the re
 - **Less Detail**: Smaller embeddings capture less information, leading to a potential loss of nuanced understanding. This can result in less accurate or relevant search results, particularly in complex or ambiguous queries.
 - **Limited Context**: With fewer dimensions, embeddings might struggle to differentiate between words and phrases that are contextually similar but have different meanings.
 
-**Example**: Consider a chatbot that needs to respond quickly to user queries. Using smaller embeddings allows for fast responses, though the accuracy might suffer, particularly for complex questions.
-
 ## Summary
-
-The choice between larger and smaller embeddings involves a tradeoff:
-
-- **Larger Embeddings**: Offer more detailed and accurate understanding but at a higher computational and storage cost. They are suitable for applications where precision is critical and resources are available.
-- **Smaller Embeddings**: Provide faster and more efficient processing but can miss nuances in the data. They are ideal for applications requiring speed and efficiency over absolute accuracy.
 
 In essence, selecting the right embedding size depends on balancing the need for detailed understanding against the constraints of computational resources and speed requirements.
 
@@ -77,16 +68,6 @@ A defining characteristic of Matroyshka embeddings is that the most relevant inf
 2. **Improved Contextual Understanding**: The hierarchical nature of these embeddings allows for a better grasp of context. This makes it easier to differentiate between similar words and phrases based on their usage in different contexts, leading to more accurate and context-aware results.
 3. **Scalability**: The dynamic adjustment of layers makes Matroyska embeddings scalable. They can handle varying levels of complexity without significant performance degradation, making them suitable for a wide range of applications from simple queries to complex language understanding tasks.
 4. **Enhanced Flexibility**: The ability to capture different levels of detail allows Matroyska embeddings to be more flexible in various applications. This is particularly useful in scenarios where the granularity of detail needs to be adjusted based on specific requirements.
-
-## Practical Example
-
-Consider a search engine designed for legal advice:
-
-- **Layer 1**: Captures general legal terminology and context.
-- **Layer 2**: Focuses on specific types of law (e.g., criminal, civil).
-- **Layer 3**: Delves into particular cases and precedents relevant to the query.
-
-By having these layers, the search engine can provide more precise and contextually relevant results, understanding the broader legal context as well as the specific details of the query.
 
 ## Summary
 
