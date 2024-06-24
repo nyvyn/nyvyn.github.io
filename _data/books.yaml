@@ -1,10 +1,13 @@
 docs:
-  - title: The Coming Wave
-    author: Mustafa Suleyman
-    isbn: 9780593593967
   - title: Accelerate
     author: Nicole Forsgren, PhD
     isbn: 9781942788331
+  - title: Product Roadmaps Relaunched
+    author: Todd Lombbardo
+    isbn: 9781491971727
+  - title: The Coming Wave
+    author: Mustafa Suleyman
+    isbn: 9780593593967
   - title: Visual Explanations
     author: Edward Tufte
     isbn: 0961392126
