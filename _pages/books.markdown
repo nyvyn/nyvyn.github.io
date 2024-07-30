@@ -8,7 +8,7 @@ permalink: /books
     Library
 </h4>
 <h4 class="uk-text-lighter uk-margin-remove-top">
-    Books I've read... or would like to
+    Books I've read... or would like to.
 </h4>
 <hr class="uk-divider-small">
 
