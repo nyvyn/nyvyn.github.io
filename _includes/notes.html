@@ -9,7 +9,8 @@
         <a class="uk-link-toggle" href="{{- note.url -}}">
             <div class="uk-flex uk-flex-middle uk-text-light uk-link-heading">
                 <span class="uk-margin-small-right" data-uk-icon="icon: {{- icon -}}; ratio: 0.8"></span>
-                {{ note.title }} <span class="uk-text-meta" style="margin-left: 4px">({{ note.status }})</span>
+                <span class="uk-margin-small-right">{{ note.title }}</span>
+                <span class="uk-text-meta" style="margin-left: 4px">({{ note.status }})</span>
             </div>
             <aside class="uk-article-meta">
                 {{ note.date | date_to_string }}
