@@ -10,8 +10,8 @@ Imagine you have two complex, forward-looking concepts, each represented as an e
 * Concept A: “Quantum computing for accelerating drug discovery”
 * Concept B: “Personalized medicine tailored to individual genetic profiles”
 
-* In a traditional Retrieval-Augmented Generation (RAG) system, to combine these into a new vision—say, a concept of
-  “quantum-accelerated, genetically-tailored drug design”—you’d typically have to:
+In a traditional Retrieval-Augmented Generation (RAG) system, to combine these into a new vision—say, a concept of
+“quantum-accelerated, genetically-tailored drug design”—you’d typically have to:
 
 1. Retrieve text describing each concept.
 2. Use a language model (LLM) to merge and summarize the texts into a coherent narrative.
@@ -21,7 +21,8 @@ However, because of the research work by Jack Morris with [vec2text](https://git
 train a small model to invert embeddings back to text. This results in a close, but not exact match to the original
 text.
 
-The primary advantage is that this approach enables directly manipulating embeddings, vs round-tripping via an LLM.
+The primary advantage is that this approach is that it enables direct manipulation embeddings, vs round-tripping
+via an LLM.
 
 Building on this approach, consider how we can now handle the initial example differently. Instead of pulling in
 original texts, asking an LLM to read them, and producing a new blended text to embed again, we can stay entirely within
