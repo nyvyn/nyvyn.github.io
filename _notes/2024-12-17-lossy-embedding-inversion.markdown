@@ -35,16 +35,57 @@ text) versus the lossy inversion-based approach (reconstructing text from embedd
 
 ## Comparison Table
 
-| Aspect                     | Lossless RAG (Embedding + Text)                                          | Lossy RAG (Embedding Inversion)                                                                                   |
-|----------------------------|--------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
-| Data Storage               | Stores embeddings & original text directly in the vector DB              | Stores embeddings only; no direct original text retention                                                         |
-| Fidelity of Retrieved Text | High: retrieved text matches the original source                         | Lower: reconstructed text is approximate and not guaranteed to be verbatim                                        |
-| Complexity of Workflow     | Straightforward: retrieve text as stored                                 | Requires an additional inversion model to reconstruct text from embeddings                                        |
-| Latency & Performance      | Typically faster: direct lookup of text                                  | Additional decoding step after retrieval may increase latency                                                     |
-| Use Cases                  | Ideal when exact source text is important (e.g., precise fact retrieval) | Useful when storage space is limited, text access is restricted, or you want to experiment with text-free storage |
-| Tooling & Ecosystem        | Well-established tools for RAG and vector DBs                            | Less mature tooling; inversion methods are still emerging                                                         |
-| Privacy & Security         | Original text always available once retrieved                            | Potentially more privacy; only embeddings are stored, but inversion may still reveal some information             |
-| Customization              | Easier to swap embedding models or vector DB implementations             | Inversion model must be carefully trained and tuned to produce coherent text                                      |
+<table class="uk-table uk-table-divider">
+    <thead>
+        <tr>
+            <th>Aspect</th>
+            <th>Lossless RAG (Embedding + Text)</th>
+            <th>Lossy RAG (Embedding Inversion)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Data Storage</td>
+            <td>Stores embeddings & original text directly in the vector DB</td>
+            <td>Stores embeddings only; no direct original text retention</td>
+        </tr>
+        <tr>
+            <td>Fidelity of Retrieved Text</td>
+            <td>High: retrieved text matches the original source</td>
+            <td>Lower: reconstructed text is approximate and not guaranteed to be verbatim</td>
+        </tr>
+        <tr>
+            <td>Complexity of Workflow</td>
+            <td>Straightforward: retrieve text as stored</td>
+            <td>Requires an additional inversion model to reconstruct text from embeddings</td>
+        </tr>
+        <tr>
+            <td>Latency & Performance</td>
+            <td>Typically faster: direct lookup of text</td>
+            <td>Additional decoding step after retrieval may increase latency</td>
+        </tr>
+        <tr>
+            <td>Use Cases</td>
+            <td>Ideal when exact source text is important (e.g., precise fact retrieval)</td>
+            <td>Useful when storage space is limited, text access is restricted, or you want to experiment with text-free storage</td>
+        </tr>
+        <tr>
+            <td>Tooling & Ecosystem</td>
+            <td>Well-established tools for RAG and vector DBs</td>
+            <td>Less mature tooling; inversion methods are still emerging</td>
+        </tr>
+        <tr>
+            <td>Privacy & Security</td>
+            <td>Original text always available once retrieved</td>
+            <td>Potentially more privacy; only embeddings are stored, but inversion may still reveal some information</td>
+        </tr>
+        <tr>
+            <td>Customization</td>
+            <td>Easier to swap embedding models or vector DB implementations</td>
+            <td>Inversion model must be carefully trained and tuned to produce coherent text</td>
+        </tr>
+    </tbody>
+</table>
 
 ## When to Consider the Lossy Approach
 
