@@ -66,20 +66,15 @@ its understanding grows and matures.
 
 ## Lossless vs Lossy
 
-Below, we’ll compare and contrast these two ways of implementing RAG: the traditional lossless version (storing original
+Below, we’ll compare and contrast these two ways: the traditional lossless version (storing original
 text) versus the lossy inversion-based approach (reconstructing text from embeddings).
 
 <table class="uk-table uk-table-divider uk-table-justify">
     <thead>
         <tr>
-            <th></th>
-            <th class="uk-width-2-5">Lossless RAG<br>(Embedding + Text)</th>
-            <th class="uk-width-2-5">Lossy RAG<br>(Embedding Inversion)</th>
-        </tr>
-        <tr>
             <th>Aspect</th>
-            <th>Traditional Approach</th>
-            <th>Direct Embedding Manipulation + vec2text</th>
+            <th class="uk-width-2-5">Lossless<br>(Embedding + Text)</th>
+            <th class="uk-width-2-5">Lossy<br>(Embedding Inversion)</th>
         </tr>
     </thead>
     <tbody>
