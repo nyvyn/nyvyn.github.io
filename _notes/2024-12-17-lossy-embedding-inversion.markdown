@@ -35,12 +35,12 @@ text) versus the lossy inversion-based approach (reconstructing text from embedd
 
 ## Lossless vs Lossy
 
-<table class="uk-table uk-table-divider">
+<table class="uk-table uk-table-divider uk-table-justify">
     <thead>
         <tr>
             <th></th>
-            <th>Lossless RAG</th>
-            <th>Lossy RAG</th>
+            <th class="uk-width-2-5">Lossless RAG</th>
+            <th class="uk-width-2-5">Lossy RAG</th>
         </tr>
         <tr>
             <th>Aspect</th>
