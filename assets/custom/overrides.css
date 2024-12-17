@@ -30,8 +30,13 @@ strong em {
     color: #767676;
 }
 
-ul {
-    margin-bottom: 20px;
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
 }
 
 .adornment {
