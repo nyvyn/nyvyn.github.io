@@ -99,7 +99,7 @@ text) versus the lossy inversion-based approach (reconstructing text from embedd
 - **Efficiency:**  
   Direct manipulation of embeddings is faster than invoking an LLM to merge texts, because vector arithmetic is computationally simple. By limiting LLM usage to when human-readable output is required, you can reduce latency and computational overhead.
 
-- **Semantic Flexibility:**  
+- **Semantic flexibility:**  
   Instead of being constrained by specific source texts at the time of merging, you can explore and experiment with new conceptual territories quickly. You might weight one concept more heavily than another or combine multiple embeddings to form complex, nuanced ideas without ever needing to regenerate intermediate texts.
 
 - **Reduced dependence on exact source text:**  
@@ -107,7 +107,7 @@ text) versus the lossy inversion-based approach (reconstructing text from embedd
 
 ## Trade-offs and considerations:
 
-- **Fidelity to Original Sources:**
+- **Fidelity to original sources:**
   If your application requires exact sourcing or word-for-word accuracy, then relying on embedding inversion will be
   less
   suitable. Traditional RAG, which references exact stored text, will remain the gold standard in those domains.
@@ -117,7 +117,7 @@ text) versus the lossy inversion-based approach (reconstructing text from embedd
   text that closely reflects the meaning embedded in the vectors. A less capable model could produce text that’s too
   vague
   or misses key details.
-- **Evolving Tooling:**
+- **Evolving tooling:**
   While vector databases and LLM-based pipelines for RAG are well established, the ecosystem for embedding inversion and
   manipulation is still completely novel. This approach will benefit from ongoing research and improved tools, models,
   and best practices.
