@@ -1,7 +1,7 @@
 ---
 layout: note
-title: Exploring a Lossy Form of RAG
-description: Analyzing the trade-offs between traditional and lossy RAG approaches
+title: Toward a more human-Like memory model
+description: Exploring a concept-driven approach trading text-fidelity for flexibility
 status: Sprouting
 ---
 
