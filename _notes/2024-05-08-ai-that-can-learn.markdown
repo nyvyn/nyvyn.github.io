@@ -15,7 +15,7 @@ counterparts, the reality is that the datasets and weight parameters for useful 
 The process of training these colossal and increasingly capable LLMs typically involves orchestrating numerous GPUs in
 concert. This requirement translates into high costs, substantial energy consumption, and lengthy training periods.
 
-## In-Context Learning
+## In-context learning
 
 Given the constraints of static model weights, we resort to manipulations of the data fed to the LLM during runtime,
 ahead of any questions or tasks posed to the model. This pre-processing forms what is known as the context window, which
@@ -25,7 +25,7 @@ This method of "in-context learning" allows ephemeral adjustments based on the p
 significant long-term cost. Each interaction or turn in a conversation necessitates the retransmission of this
 context—this not only increases operational demands but also exacerbates cost inefficiencies over time.
 
-## Low-Rank Adaptation
+## Low-rank adaptation
 
 Low-rank adaptation is a technique used to address some of the challenges presented by traditional large language
 models. Instead of retraining the entire model—a costly and compute-intensive process—low-rank adaptation focuses on
@@ -38,7 +38,7 @@ overhaul the entire model architecture. This approach is particularly useful for
 allows for rapid adjustments in response to new information while maintaining the integrity and stability of the core
 model.
 
-## Lifelong and Continual Learning
+## Lifelong and continual learning
 
 When LLMs can continually learn, they transition from being static entities to dynamic systems that evolve over time.
 Lifelong and continual learning paradigms are designed to enable LLMs to accumulate knowledge continuously, adjust to
@@ -50,7 +50,7 @@ Secondly, it positions LLMs to become more personalized and responsive, as they 
 specific users or environments. For industries like customer service or healthcare, where user-specific data can vastly
 improve the utility of automated systems, this capability can transform service delivery.
 
-## The Challenge of Scale
+## The challenge of scale
 
 Adapting these models to continuous learning, however, introduces challenges, particularly regarding scale. The
 mechanisms that allow for continuous updates—like low-rank adaptation or more sophisticated approaches like
@@ -61,7 +61,7 @@ Moreover, these learning updates need to be managed in a way that balances new l
 previously learned valuable information. This requires sophisticated algorithms capable of determining what to retain
 and what to overwrite, which can become quite complex as the scale of data and frequency of updates increase.
 
-## Moving Forward
+## Moving forward
 
 As we look towards the future where LLMs can continuously learn, the focus will inevitably shift towards more efficient,
 scalable, and adaptive models. The evolution from static to dynamic learning models not only enhances their practicality
