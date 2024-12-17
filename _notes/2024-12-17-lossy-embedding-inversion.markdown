@@ -17,12 +17,11 @@ In a traditional Retrieval-Augmented Generation (RAG) system, to combine these i
 2. Use a language model (LLM) to merge and summarize the texts into a coherent narrative.
 3. Re-embed the merged text to produce a final vector representation.
 
-However, because of the research work by Jack Morris with [vec2text](https://github.com/vec2text/vec2text), we can
-train a small model to invert embeddings back to text. This results in a close, but not exact match to the original
-text.
-
-The primary advantage is that this approach is that it enables direct manipulation embeddings, vs round-tripping
-via an LLM.
+However, thanks to the work of Jack Morris on [vec2text](https://github.com/vec2text/vec2text),
+we can instead train a lightweight model to invert embeddings back into text.
+While the reconstructed text won’t be an exact replica, it closely preserves the original meaning. The key
+advantage is that we can directly manipulate embeddings without repeatedly relying on an LLM to combine and
+re-embed text.
 
 Building on this approach, consider how we can now handle the initial example differently. Instead of pulling in
 original texts, asking an LLM to read them, and producing a new blended text to embed again, we can stay entirely within
