@@ -29,13 +29,13 @@ the embedding space until we need a human-readable output.
 
 Here’s how the new workflow might look:
 
-1. **Start with Embeddings:**  
+1. **Start with embeddings:**  
    We already have embeddings that represent “Quantum computing for accelerating drug discovery” and “Personalized medicine tailored to individual genetic profiles.” Instead of retrieving original texts, we simply operate directly on these vectors.
 
-2. **Merge Embeddings Directly:**  
+2. **Merge embeddings directly:**  
    To form the new concept “quantum-accelerated, genetically-tailored drug design,” we can blend the two original vectors mathematically—say, by averaging or taking a weighted combination. This vector arithmetic is both efficient and straightforward, requiring no LLM calls at this step.
 
-3. **Invert the Combined Embedding:**  
+3. **Invert the combined embedding:**  
    Now that we have a single embedding representing our merged concept, we use `vec2text` to invert the embedding back into text. The resulting text won’t be identical to any original document, but it will be semantically close enough to convey the intended idea: a fusion of quantum-accelerated drug discovery with personalized genetic medicine.
 
 This direct embedding manipulation approach breaks the dependency on repeatedly round-tripping through an LLM. Instead
