@@ -1,7 +1,7 @@
 ---
 layout: note
 title: An overview of embeddings
-description: An overview of embeddings
+description: A comprehensive guide to embeddings in machine learning, covering types, trade-offs, and applications.
 status: Growing
 ---
 
