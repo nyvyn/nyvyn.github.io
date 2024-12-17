@@ -5,10 +5,6 @@ description: Analyzing the trade-offs between traditional and lossy RAG approach
 status: Sprouting
 ---
 
-# Exploring a Lossy Form of RAG: Embracing Embedding Inversion
-
-## Introduction
-
 Retrieval-Augmented Generation (RAG) typically involves converting documents into embeddings, storing both the
 embeddings and their corresponding original text in a vector database, and then retrieving exact text for grounding your
 language model’s responses. The end result is a high-fidelity way to incorporate external information into model
