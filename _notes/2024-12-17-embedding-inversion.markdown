@@ -102,7 +102,7 @@ text) versus the lossy inversion-based approach (reconstructing text from embedd
 - **Semantic Flexibility:**  
   Instead of being constrained by specific source texts at the time of merging, you can explore and experiment with new conceptual territories quickly. You might weight one concept more heavily than another or combine multiple embeddings to form complex, nuanced ideas without ever needing to regenerate intermediate texts.
 
-- **Reduced Dependence on Exact Source Text:**  
+- **Reduced dependence on exact source text:**  
   While the inversion from embedding to text is not perfectly faithful, in many scenarios—particularly those focused on brainstorming, conceptual exploration, or generating new ideas—highly accurate replication of the original text isn’t necessary. The approximate text reconstructed from the combined embedding can be good enough to communicate novel insights.
 
 ## Trade-offs and considerations:
