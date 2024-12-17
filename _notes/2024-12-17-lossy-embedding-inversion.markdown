@@ -96,7 +96,7 @@ text) versus the lossy inversion-based approach (reconstructing text from embedd
         <tr>
             <td>Latency & Performance</td>
             <td>Fast retrieval of text, but merging concepts often involves LLM calls</td>
-            <td>Vector arithmetic for merging is fast; inversion step adds overhead only when text is needed</td>
+            <td>Vector arithmetic for merging is fast; inversion step adds overhead when text is needed</td>
         </tr>
     </tbody>
 </table>
