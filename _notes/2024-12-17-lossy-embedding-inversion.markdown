@@ -1,6 +1,6 @@
 ---
 layout: note
-title: Artificial Intelligence
+title: Exploring a Lossy Form of RAG
 description: Exploring a Lossy Form of RAG
 status: Sprouting
 ---
