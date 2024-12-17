@@ -132,13 +132,13 @@ text) versus the lossy inversion-based approach (reconstructing text from embedd
   or misses key details.
 - **Evolving Tooling:**
   While vector databases and LLM-based pipelines for RAG are well established, the ecosystem for embedding inversion and
-  manipulation is still maturing. This approach will benefit from ongoing research and improved tools, models, and best
-  practices.
+  manipulation is still completely novel. This approach will benefit from ongoing research and improved tools, models,
+  and best practices.
 
 ## Conclusion
 
-Work such as vec2text is opening up exciting possibilities in how we handle
-knowledge representation. By training a small model to invert embeddings back into text, we gain the freedom to
-manipulate embeddings directly as semantic building blocks. This allows for a more flexible, efficient, and experimental
-approach to concept generation and combination—one that relies less on repeated LLM-mediated transformations and more on
+Work such as vec2text is opening up new possibilities in how we handle knowledge representation. By training a small
+model to invert embeddings back into text, we gain the freedom to manipulate embeddings directly as semantic
+building blocks. This allows for a more flexible, efficient, and experimental approach to concept generation and
+combination—one that relies less on repeated LLM-mediated transformations and more on
 the inherent structure of the embedding space itself.
