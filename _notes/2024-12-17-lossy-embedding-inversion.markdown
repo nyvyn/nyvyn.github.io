@@ -7,15 +7,15 @@ status: Sprouting
 
 Imagine you have two complex, forward-looking concepts, each represented as an embedding vector:
 
-* Concept A: “Quantum computing for accelerating drug discovery”
-* Concept B: “Personalized medicine tailored to individual genetic profiles”
+- **Concept A**: “Quantum computing for accelerating drug discovery”
+- **Concept B**: “Personalized medicine tailored to individual genetic profiles”
 
 In a traditional Retrieval-Augmented Generation (RAG) system, to combine these into a new vision—say, a concept of
 “quantum-accelerated, genetically-tailored drug design”—you’d typically have to:
 
-1. Retrieve text describing each concept.
-2. Use a language model (LLM) to merge and summarize the texts into a coherent narrative.
-3. Re-embed the merged text to produce a final vector representation.
+1. **Retrieve text** describing each concept.
+2. **Use a language model (LLM)** to merge and summarize the texts into a coherent narrative.
+3. **Re-embed the merged text** to produce a final vector representation.
 
 However, thanks to the work of Jack Morris on [vec2text](https://github.com/vec2text/vec2text),
 we can instead train a lightweight model to invert embeddings back into text.
@@ -29,21 +29,14 @@ the embedding space until we need a human-readable output.
 
 Here’s how the new workflow might look:
 
-1. **Start with Embeddings:**
-   We already have embeddings that represent “Quantum computing for accelerating drug discovery” and “Personalized
-   medicine
-   tailored to individual genetic profiles.” Instead of retrieving original texts, we simply operate directly on these
-   vectors.
-2. **Merge Embeddings Directly:**
-   To form the new concept “quantum-accelerated, genetically-tailored drug design,” we can blend the two original
-   vectors
-   mathematically—say, by averaging or taking a weighted combination. This vector arithmetic is both efficient and
-   straightforward, requiring no LLM calls at this step.
-3. **Invert the Combined Embedding:**
-   Now that we have a single embedding representing our merged concept, we use vec2text to invert the embedding back
-   into text. The resulting text won’t be identical to any original document, but it
-   will be semantically close enough to convey the intended idea: a fusion of quantum-accelerated drug discovery with
-   personalized genetic medicine.
+1. **Start with Embeddings:**  
+   We already have embeddings that represent “Quantum computing for accelerating drug discovery” and “Personalized medicine tailored to individual genetic profiles.” Instead of retrieving original texts, we simply operate directly on these vectors.
+
+2. **Merge Embeddings Directly:**  
+   To form the new concept “quantum-accelerated, genetically-tailored drug design,” we can blend the two original vectors mathematically—say, by averaging or taking a weighted combination. This vector arithmetic is both efficient and straightforward, requiring no LLM calls at this step.
+
+3. **Invert the Combined Embedding:**  
+   Now that we have a single embedding representing our merged concept, we use `vec2text` to invert the embedding back into text. The resulting text won’t be identical to any original document, but it will be semantically close enough to convey the intended idea: a fusion of quantum-accelerated drug discovery with personalized genetic medicine.
 
 This direct embedding manipulation approach breaks the dependency on repeatedly round-tripping through an LLM. Instead
 of always needing to fetch texts and re-embed them after an LLM-based summary, we treat embeddings as first-class
@@ -103,20 +96,14 @@ text) versus the lossy inversion-based approach (reconstructing text from embedd
 
 ## Benefits of Embedding-Level Operations:
 
-- **Efficiency:**
-  Direct manipulation of embeddings is faster than invoking an LLM to merge texts, because vector arithmetic is
-  computationally simple. By limiting LLM usage to when human-readable output is required, you can reduce latency and
-  computational overhead.
-- **Semantic Flexibility:**
-  Instead of being constrained by specific source texts at the time of merging, you can explore and experiment with new
-  conceptual territories quickly. You might weight one concept more heavily than another or combine multiple embeddings
-  to
-  form complex, nuanced ideas without ever needing to regenerate intermediate texts.
-- **Reduced Dependence on Exact Source Text:**
-  While the inversion from embedding to text is not perfectly faithful, in many scenarios—particularly those focused on
-  brainstorming, conceptual exploration, or generating new ideas—highly accurate replication of the original text isn’t
-  necessary. The approximate text reconstructed from the combined embedding can be good enough to communicate novel
-  insights.
+- **Efficiency:**  
+  Direct manipulation of embeddings is faster than invoking an LLM to merge texts, because vector arithmetic is computationally simple. By limiting LLM usage to when human-readable output is required, you can reduce latency and computational overhead.
+
+- **Semantic Flexibility:**  
+  Instead of being constrained by specific source texts at the time of merging, you can explore and experiment with new conceptual territories quickly. You might weight one concept more heavily than another or combine multiple embeddings to form complex, nuanced ideas without ever needing to regenerate intermediate texts.
+
+- **Reduced Dependence on Exact Source Text:**  
+  While the inversion from embedding to text is not perfectly faithful, in many scenarios—particularly those focused on brainstorming, conceptual exploration, or generating new ideas—highly accurate replication of the original text isn’t necessary. The approximate text reconstructed from the combined embedding can be good enough to communicate novel insights.
 
 ## Trade-offs and Considerations:
 
