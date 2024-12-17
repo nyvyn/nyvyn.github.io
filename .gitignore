@@ -9,3 +9,4 @@ vendor/
 # Additions
 *.Ulysses*
 .aider*
+.env
