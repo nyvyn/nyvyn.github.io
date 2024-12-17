@@ -42,7 +42,7 @@ This direct embedding manipulation approach breaks the dependency on repeatedly 
 of always needing to fetch texts and re-embed them after an LLM-based summary, we treat embeddings as first-class
 semantic concepts that can be merged, evolved, and refined at will.
 
-## A More Human-Like Model of Memory Formation
+## A more human-like model of memory formation
 
 Unlike a database of perfectly preserved documents, the human brain doesn’t maintain an exact, word-for-word record of
 every conversation, book, or article it’s ever encountered. Instead, we store and blend meanings, impressions, and
@@ -57,7 +57,7 @@ rapid blending of ideas without requiring perfectly preserved textual data. It�
 and more about capturing the essential meaning, enabling the system to adapt, recombine, and reinterpret knowledge as
 its understanding grows and matures.
 
-## Lossless vs Lossy
+## Lossless vs lossy
 
 Below, we’ll compare and contrast these two ways: the traditional lossless version (storing original
 text) versus the lossy inversion-based approach (reconstructing text from embeddings).
@@ -94,7 +94,7 @@ text) versus the lossy inversion-based approach (reconstructing text from embedd
     </tbody>
 </table>
 
-## Benefits of Embedding-Level Operations:
+## Benefits of embedding-level operations:
 
 - **Efficiency:**  
   Direct manipulation of embeddings is faster than invoking an LLM to merge texts, because vector arithmetic is computationally simple. By limiting LLM usage to when human-readable output is required, you can reduce latency and computational overhead.
@@ -105,7 +105,7 @@ text) versus the lossy inversion-based approach (reconstructing text from embedd
 - **Reduced Dependence on Exact Source Text:**  
   While the inversion from embedding to text is not perfectly faithful, in many scenarios—particularly those focused on brainstorming, conceptual exploration, or generating new ideas—highly accurate replication of the original text isn’t necessary. The approximate text reconstructed from the combined embedding can be good enough to communicate novel insights.
 
-## Trade-offs and Considerations:
+## Trade-offs and considerations:
 
 - **Fidelity to Original Sources:**
   If your application requires exact sourcing or word-for-word accuracy, then relying on embedding inversion will be

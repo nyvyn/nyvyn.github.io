@@ -10,7 +10,7 @@ floating-point numbers that encode contextual and semantic meaning. These repres
 complex information efficiently, making them essential for tasks like natural language understanding, image recognition,
 and recommendation systems.
 
-## What Are Embeddings?
+## What are embeddings?
 
 Embeddings are often described as **high-dimensional vectors** because they represent data in a space with many
 dimensions. Each dimension captures a specific aspect of the data’s meaning. For example:
@@ -22,7 +22,7 @@ dimensions. Each dimension captures a specific aspect of the data’s meaning. F
 These high-dimensional spaces allow embeddings to encode intricate relationships and nuances, providing a rich
 representation of the original content.
 
-## Types of Embeddings
+## Types of embeddings
 
 Embeddings can be used across various domains:
 
@@ -37,12 +37,12 @@ relevance, speech recognition, and image analysis.
 
 ---
 
-## Tradeoffs Between Embedding Size and Performance
+## Tradeoffs between embedding size and performance
 
 The size of an embedding—defined by the number of dimensions—affects its performance, resource usage, and the level of
 detail it captures. Below are the tradeoffs associated with larger versus smaller embeddings:
 
-### Larger Embeddings
+### Larger embeddings
 
 **Advantages**:
 
@@ -57,7 +57,7 @@ detail it captures. Below are the tradeoffs associated with larger versus smalle
   performance.
 - **Storage and Bandwidth Demands**: They consume significant storage space and bandwidth for transmission.
 
-### Smaller Embeddings
+### Smaller embeddings
 
 **Advantages**:
 
@@ -73,14 +73,14 @@ detail it captures. Below are the tradeoffs associated with larger versus smalle
 
 ---
 
-## Introduction to Matroyska Embeddings
+## Introduction to matroyska embeddings
 
 Matroyska embeddings are an advanced technique inspired by Russian Matryoshka dolls. They organize information
 hierarchically within a single embedding structure. The most relevant information is encoded first, with less relevant
 details trailing behind. This allows for truncation of the embedding at arbitrary sizes while retaining critical
 meaning.
 
-### Key Benefits
+### Key benefits
 
 - **Rich semantic representation** for detailed understanding.
 - **Improved contextual awareness** for accurate results.
@@ -92,12 +92,12 @@ computational complexity. Their adoption depends on the specific requirements of
 
 ---
 
-## Finding Similarity Using Embeddings
+## Finding similarity using embeddings
 
 To measure similarity between two elements (e.g., words, images), their embeddings can be compared using mathematical
 techniques:
 
-### Methods to Measure Similarity
+### Methods to measure similarity
 
 - **Cosine Similarity**: Measures the cosine of the angle between two vectors.
 - **Euclidean Distance**: Calculates the straight-line distance between two vectors. Smaller distances indicate higher
