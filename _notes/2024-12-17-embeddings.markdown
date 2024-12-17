@@ -1,6 +1,6 @@
 ---
 layout: note
-title: Artificial Intelligence
+title: An overview of embeddings
 description: An overview of embeddings
 status: Growing
 ---
