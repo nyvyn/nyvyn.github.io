@@ -17,11 +17,11 @@ concert. This requirement translates into high costs, substantial energy consump
 
 ## In-context learning
 
-Given the constraints of static model weights, we resort to manipulations of the data fed to the LLM during runtime,
+Given the constraints of static model weights, manipulations of the data fed to the LLM during runtime are employed,
 ahead of any questions or tasks posed to the model. This pre-processing forms what is known as the context window, which
 could range widely from just 4,000 tokens to upwards of a million tokens.
 
-This method of "in-context learning" allows ephemeral adjustments based on the provided context, but comes with a
+This method of "in-context learning" enables ephemeral adjustments based on the provided context, but it comes with a
 significant long-term cost. Each interaction or turn in a conversation necessitates the retransmission of this
 context—this not only increases operational demands but also exacerbates cost inefficiencies over time.
 
@@ -45,8 +45,8 @@ Lifelong and continual learning paradigms are designed to enable LLMs to accumul
 new trends, and forget outdated information in a controlled manner. These paradigms provide the framework for models to
 learn from ongoing streams of data rather than from a fixed training dataset.
 
-This shift has profound implications. For one, it mitigates the need for frequent, resource-intense retraining cycles.
-Secondly, it positions LLMs to become more personalized and responsive, as they can learn from interactions with
+This shift has profound implications. It mitigates the need for frequent, resource-intense retraining cycles and
+positions LLMs to become more personalized and responsive, as they can learn from interactions with
 specific users or environments. For industries like customer service or healthcare, where user-specific data can vastly
 improve the utility of automated systems, this capability can transform service delivery.
 
@@ -63,7 +63,7 @@ and what to overwrite, which can become quite complex as the scale of data and f
 
 ## Moving forward
 
-As we look towards the future where LLMs can continuously learn, the focus will inevitably shift towards more efficient,
+Looking towards the future where LLMs can continuously learn, the focus will inevitably shift towards more efficient,
 scalable, and adaptive models. The evolution from static to dynamic learning models not only enhances their practicality
 but also opens up new avenues for personalized and contextually aware AI systems. However, achieving this requires
 overcoming significant technical hurdles, particularly around managing the balance between adaptation and stability, and
