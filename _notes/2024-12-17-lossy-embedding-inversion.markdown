@@ -1,7 +1,7 @@
 ---
 layout: note
 title: Exploring a Lossy Form of RAG
-description: Analyzing the trade-offs between traditional and lossy RAG approaches, focusing on embedding inversion for flexible text reconstruction.
+description: Analyzing the trade-offs between traditional and lossy RAG approaches
 status: Sprouting
 ---
 
