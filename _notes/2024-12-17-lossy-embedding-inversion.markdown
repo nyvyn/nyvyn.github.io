@@ -20,20 +20,20 @@ text) versus the lossy inversion-based approach (reconstructing text from embedd
 
 ## Key Concepts
 
-- **Lossless RAG (Embedding + Text) :**
+**Lossless RAG (Embedding + Text) :**
     1. Convert documents into embeddings.
     2. Store both embeddings and original text in a vector database.
     3. Retrieve embeddings and corresponding exact text during query time.
     4. Provide the retrieved text to the language model to produce a grounded response.
 
-- **Lossy RAG (Embedding Inversion):**
+**Lossy RAG (Embedding Inversion):**
     1. Convert documents into embeddings.
     2. Store only the embeddings (and minimal metadata).
     3. Retrieve relevant embeddings at query time.
     4. Use an inversion model to convert retrieved embeddings back into approximate text.
     5. Feed this approximated text to the language model for the final response.
 
-## Comparison Table
+## Lossless vs Lossy
 
 <table class="uk-table uk-table-divider">
     <thead>
