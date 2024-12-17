@@ -111,7 +111,7 @@ text) versus the lossy inversion-based approach (reconstructing text from embedd
   If your application requires exact sourcing or word-for-word accuracy, then relying on embedding inversion will be
   less
   suitable. Traditional RAG, which references exact stored text, will remain the gold standard in those domains.
-- **Model Quality:**
+- **Model quality:**
   The quality of the vec2text model matters. A well-trained inversion model can produce coherent and contextually
   relevant
   text that closely reflects the meaning embedded in the vectors. A less capable model could produce text that’s too
