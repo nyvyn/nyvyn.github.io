@@ -1,3 +1,10 @@
+---
+layout: note
+title: Artificial Intelligence
+description: An overview of embeddings
+status: Growing
+---
+
 # Embeddings in Machine Learning
 
 Embeddings are a foundational concept in machine learning and artificial intelligence, representing data as arrays of floating-point numbers that encode contextual and semantic meaning. These representations enable machines to process complex information efficiently, making them essential for tasks like natural language understanding, image recognition, and recommendation systems.

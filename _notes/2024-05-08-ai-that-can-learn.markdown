@@ -2,7 +2,7 @@
 layout: note
 title: AI that can learn
 description: A review of ways to move beyond frozen LLMs
-status: Revising
+status: Growing
 ---
 
 Today's LLMs are trained and then frozen in time. What changes when they can continuously learn?

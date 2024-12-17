@@ -1,3 +1,10 @@
+---
+layout: note
+title: Artificial Intelligence
+description: Exploring a Lossy Form of RAG
+status: Sprouting
+---
+
 # Exploring a Lossy Form of RAG: Embracing Embedding Inversion
 
 ## Introduction
