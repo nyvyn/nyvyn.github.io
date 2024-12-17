@@ -20,7 +20,7 @@ In a traditional Retrieval-Augmented Generation (RAG) system, to combine these i
 However, thanks to the work of Jack Morris on [vec2text](https://github.com/vec2text/vec2text),
 we can instead train a lightweight model to invert embeddings back into text.
 While the reconstructed text won’t be an exact replica, it closely preserves the original meaning. The key
-advantage is that enableds direct manipulation of embeddings as opposed to repeatedly relying on an LLM to combine and
+advantage is that enables direct manipulation of embeddings as opposed to repeatedly relying on an LLM to combine and
 re-embed text.
 
 Building on this approach, consider how we can now handle the initial example differently. Instead of pulling in
