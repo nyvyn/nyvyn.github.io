@@ -38,9 +38,14 @@ text) versus the lossy inversion-based approach (reconstructing text from embedd
 <table class="uk-table uk-table-divider">
     <thead>
         <tr>
+            <th></th>
+            <th>Lossless RAG</th>
+            <th>Lossy RAG</th>
+        </tr>
+        <tr>
             <th>Aspect</th>
-            <th>Lossless RAG (Embedding + Text)</th>
-            <th>Lossy RAG (Embedding Inversion)</th>
+            <th>(Embedding + Text)</th>
+            <th>(Embedding Inversion)</th>
         </tr>
     </thead>
     <tbody>
