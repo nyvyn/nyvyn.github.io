@@ -26,7 +26,7 @@ snowboarding in the winters, martial arts, writing, and cycling all year round.
 
 <h3 class="uk-heading-divider uk-text-light ">Experience</h3>
 
-** Chief Technology Officer **
+**Chief Technology Officer**
 ITS
 May 2024 - Present
 
