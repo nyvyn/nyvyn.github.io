@@ -8,7 +8,7 @@ status: Sprouting
 What if AI memory could evolve like the human mind? Instead of static storage, the system would adapt, merge similar
 concepts, and refine its knowledge over time, reducing redundancy and preserving meaning.
 
-## Dynamic Memory Architecture
+## Dynamic memory architecture
 
 Traditional vector databases treat embeddings as fixed data points. While effective for search, they lack adaptability.
 
