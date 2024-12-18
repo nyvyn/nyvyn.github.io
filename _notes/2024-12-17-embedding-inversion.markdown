@@ -5,14 +5,12 @@ description: Exploring a concept-driven approach using embedding inversions
 status: Sprouting
 ---
 
-What if AI memory could evolve like the human mind? Instead of static storage, this system adapts, merges similar
-concepts, and refines its knowledge over time, reducing redundancy and preserving meaning.
+What if AI memory could evolve like the human mind? Instead of static storage, the system would adapt, merge similar
+concepts, and refine its knowledge over time, reducing redundancy and preserving meaning.
 
 ## Dynamic Memory Architecture
 
 Traditional vector databases treat embeddings as fixed data points. While effective for search, they lack adaptability.
-This system introduces a hierarchical memory where embeddings combine into higher-level “concept nodes,” optimizing
-storage and enabling dynamic evolution.
 
 As an example, consider two complex concepts, each represented as an embedding vector:
 
@@ -42,18 +40,18 @@ and producing a new blended text to embed again, we can stay entirely within the
 human-readable output.
 
 1. **Start with embeddings:**  
-   We already have embeddings that represent “Quantum computing for accelerating drug discovery” and “Personalized
-   medicine tailored to individual genetic profiles.” Instead of retrieving original texts, we simply operate directly
-   on these vectors.
+   There are embeddings that represent “Quantum computing for accelerating drug discovery” and 
+   “Personalized  medicine tailored to individual genetic profiles.” 
+2. Instead of retrieving original texts, these vectors are directly transformed.
 
 2. **Merge embeddings directly:**  
-   To form the new concept “quantum-accelerated, genetically-tailored drug design,” we can blend the two original
-   vectors mathematically—say, by averaging or taking a weighted combination. This vector arithmetic is both efficient
-   and straightforward, requiring no LLM calls at this step.
+   To form the new concept “quantum-accelerated, genetically-tailored drug design,” two original
+   vectors are mathematically combined, by averaging or interpolating. This vector arithmetic is 
+   both efficient and straightforward, requiring no external calls at this step.
 
 3. **Invert the combined embedding:**  
-   Now that we have a single embedding representing our merged concept, we use `vec2text` to invert the embedding back
-   into text. The resulting text won’t be identical to any original document, but it will be semantically close enough
+   When the text is needed, a library such as `vec2text` is used to invert the embedding into text. The resulting 
+   text won’t be identical to any original document, but it will be semantically close enough
    to convey the intended idea: a fusion of quantum-accelerated drug discovery with personalized genetic medicine.
 
 This direct embedding manipulation approach moves the dependency on an LLM from merging in a vector database
