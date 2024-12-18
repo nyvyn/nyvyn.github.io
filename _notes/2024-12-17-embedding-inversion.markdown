@@ -5,13 +5,17 @@ description: Exploring a concept-driven approach using embedding inversions
 status: Sprouting
 ---
 
-Imagine you have two complex, forward-looking concepts, each represented as an embedding vector:
+As an example, assume ther are two complex concepts, each represented as an embedding vector:
 
-- **Concept A**: “Quantum computing for accelerating drug discovery”
-- **Concept B**: “Personalized medicine tailored to individual genetic profiles”
+- **Concept A**: “quantum computing for accelerating drug discovery”
+- **Concept B**: “personalized medicine tailored to individual genetic profiles”
 
-In a traditional Retrieval-Augmented Generation (RAG) system, to combine these into a new vision—say, a concept of
-“quantum-accelerated, genetically-tailored drug design”—you’d typically have to:
+And there is a need to combine them - because of memory constraints or a higher-order concept is desired:
+
+- **Merged C**: "quantum-accelerated, genetically-tailored drug design”
+
+In a vector database, the embedding is only used as an identifier of associated text: both must be stored and retrieved.
+And merging concepts requires a smart intemediary such as an LLM:
 
 1. **Retrieve text** describing each concept.
 2. **Use a language model (LLM)** to merge and summarize the texts into a coherent narrative.
