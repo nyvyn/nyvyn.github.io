@@ -26,11 +26,11 @@ snowboarding in the winters, martial arts, writing, and cycling all year round.
 
 <h3 class="uk-heading-divider uk-text-light ">Experience</h3>
 
-**Advisor**  
-Personify  
-February 2024 - Present
+** Chief Technology Officer **
+ITS
+May 2024 - Present
 
-Advisory role on efficacy, guardrails, security, and ethical use of generative AI.
+Leading product and technology for high-stakes testing and certification.
 
 **Chief Product Officer**  
 Augeo  
