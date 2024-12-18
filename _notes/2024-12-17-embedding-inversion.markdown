@@ -41,8 +41,8 @@ human-readable output.
 
 1. **Start with embeddings:**  
    There are embeddings that represent “Quantum computing for accelerating drug discovery” and 
-   “Personalized  medicine tailored to individual genetic profiles.” 
-2. Instead of retrieving original texts, these vectors are directly transformed.
+   “Personalized  medicine tailored to individual genetic profiles.” Instead of retrieving original texts, these 
+   vectors are directly transformed.
 
 2. **Merge embeddings directly:**  
    To form the new concept “quantum-accelerated, genetically-tailored drug design,” two original
