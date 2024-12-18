@@ -17,7 +17,7 @@ As an example, consider two complex concepts, each represented as an embedding v
 - **Concept A**: “quantum computing for accelerating drug discovery”
 - **Concept B**: “personalized medicine tailored to individual genetic profiles”
 
-And there is a need to combine them - because of memory constraints or a higher-order concept is desired:
+Assuming a need to combine them (this need is explored further below):
 
 - **Merged C**: "quantum-accelerated, genetically-tailored drug design”
 
