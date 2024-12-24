@@ -310,12 +310,14 @@ relevant_concepts = query_concept_graph(query,
                                         cross_encoder)
 ```
 
-This implementation combines the hierarchical matryoshka embeddings with GraphRAG principles by:
+This implementation draws inspiration from GraphRAG[^9] while focusing on hierarchical matryoshka embeddings to build semantic concept graphs. The key components are:
 
-1. Building a directed concept graph that preserves the dimensional hierarchy
+1. Building a directed concept graph that preserves the dimensional hierarchy of matryoshka embeddings
 2. Using cross-encoders for accurate relationship verification
 3. Implementing hybrid retrieval that leverages both embedding similarity and cross-encoding
 4. Supporting graph-based concept mining through traversal of related nodes
+
+[^9]: Liu, S., Yu, T., Xiao, T., Peng, Z., & Hong, Y. (2023). GraphRAG: Unlocking LLM's Potential for Complex Question Answering over Knowledge Graphs. arXiv preprint arXiv:2310.05842.
 
 The use of cross-encoders in this implementation deserves special attention. Unlike bi-encoders that encode texts
 separately (as in traditional embedding models), cross-encoders process both texts simultaneously through a transformer
