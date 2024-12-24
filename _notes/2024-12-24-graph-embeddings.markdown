@@ -309,7 +309,7 @@ ensuring that the relationships suggested by embedding similarity actually repre
 
 For example, when comparing "Dolphins use echolocation" with "Bats navigate by sound", a bi-encoder might miss the 
 connection due to different vocabulary, but a cross-encoder can recognize the functional similarity by processing both 
-statements together. This makes cross-encoders particularly valuable for verifying complex semantic relationships in 
+statements together through cross-attention mechanisms (Reimers & Gurevych, 2019)[^8]. This makes cross-encoders particularly valuable for verifying complex semantic relationships in 
 knowledge graphs, even though their computational cost typically limits them to reranking a pre-filtered set of candidates.
 
 To illustrate how GraphRAG thinks about concept relationships in graph form, let's examine our animal examples:
