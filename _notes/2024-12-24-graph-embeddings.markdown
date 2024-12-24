@@ -117,15 +117,15 @@ embeddings = get_embeddings(statements)
 graph = build_hierarchical_graph(embeddings)
 ```
 
-GraphRAG, introduced by Microsoft Research, extends traditional Retrieval-Augmented Generation (RAG) by incorporating
-graph-based knowledge structures. While standard RAG systems retrieve relevant documents based on similarity, GraphRAG
-builds and traverses a knowledge graph where nodes represent concepts and edges capture semantic relationships. This
-approach combines three key components: (1) dense retrievers using embedding similarity for initial candidate selection,
-(2) cross-encoders for precise relationship verification, and (3) graph-based reasoning to explore concept connections.
-The result is a more nuanced understanding of conceptual hierarchies and relationships, particularly valuable for
-complex knowledge domains where simple similarity matching might miss important contextual connections.
+The hierarchical nature of matryoshka embeddings provides a natural foundation for building semantic knowledge graphs.
+By analyzing relationships at different dimensional depths, we can construct rich networks of conceptual connections
+that capture both broad categorical relationships and fine-grained semantic details. This approach combines three key
+components: (1) embedding similarity at various dimensional levels for initial relationship discovery, (2) cross-encoders
+for precise semantic verification, and (3) graph-based reasoning to explore concept connections. The result is a more
+nuanced understanding of conceptual hierarchies and relationships, particularly valuable for complex knowledge domains
+where simple similarity matching might miss important contextual connections.
 
-To effectively query and mine concepts from this hierarchical structure, we can leverage Microsoft's GraphRAG approach,
+To effectively query and mine concepts from this hierarchical structure, we can leverage the natural layering of semantic information,
 which combines graph-based knowledge representation with retrieval-augmented generation. Here's how to implement this:
 
 ```python
@@ -227,17 +227,17 @@ def query_concept_graph(query: str,
                         embeddings_model: OpenAI,
                         cross_encoder: CrossEncoder,
                         top_k: int = 3,
-                        community_level: int = 768) -> List[Dict]:
+                        dimensional_level: int = 768) -> List[Dict]:
     """
-    Query the concept graph using hierarchical community-aware retrieval.
+    Query the semantic concept graph using hierarchical embedding structure.
     
     Args:
         query: Query text
-        graph: NetworkX graph with hierarchical community structure
+        graph: NetworkX graph with hierarchical semantic structure
         embeddings_model: OpenAI API client
         cross_encoder: Cross-encoder model
         top_k: Number of results to return
-        community_level: Dimensional level for community context (768, 1536, or 3072)
+        dimensional_level: Embedding dimension level for context (768, 1536, or 3072)
     """
     query_emb = get_embeddings([query])[0]
 
@@ -331,7 +331,7 @@ particularly valuable for verifying complex semantic relationships in
 knowledge graphs, even though their computational cost typically limits them to reranking a pre-filtered set of
 candidates.
 
-To illustrate how GraphRAG thinks about concept relationships in graph form, let's examine our animal examples:
+To illustrate how hierarchical embeddings capture concept relationships in graph form, let's examine our animal examples:
 
 1. Direct Relationships (First-order connections):
     - Dolphins → Echolocation → Bats
@@ -409,8 +409,6 @@ This theoretical framework explains why GraphRAG's approach is particularly effe
 [^1]: Yu, W., Luo, F., Zhu, P., Peng, P., Zhou, J., Wen, X., ... & Zhou, J. (2022). Matryoshka representation learning.
 Advances in Neural Information Processing Systems, 35, 12156-12168.
 
-[^2]: Liu, S., Thudumu, S., Cheng, H. et al. (2023). GraphRAG: Unlocking LLM Power for Knowledge Graphs. arXiv preprint
-arXiv:2308.11118.
 
 [^3]: Newman, M. E. J. (2006). Modularity and community structure in networks. Proceedings of the National Academy of
 Sciences, 103(23), 8577-8582.
