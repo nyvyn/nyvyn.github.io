@@ -177,8 +177,7 @@ This theoretical framework explains why GraphRAG's approach is particularly effe
 - Cross-encoder verification aligns with spectral clustering's ability to identify genuine communities
 - The multi-dimensional approach mirrors multi-resolution community detection methods
 
-[^1]: Yu, W., Luo, F., Zhu, P., Peng, P., Zhou, J., Wen, X., ... & Zhou, J. (2022). Matryoshka representation learning.
-Advances in Neural Information Processing Systems, 35, 12156-12168.
+[^1]: Yu, W., Luo, F., Zhu, P., Peng, P., Zhou, J., Wen, X., ... & Zhou, J. (2022). Matryoshka representation learning. Advances in Neural Information Processing Systems, 35, 12156-12168.
 
 
 [^3]: Newman, M. E. J. (2006). Modularity and community structure in networks. Proceedings of the National Academy of
