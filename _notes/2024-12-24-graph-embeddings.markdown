@@ -172,8 +172,28 @@ def build_concept_graph(embeddings: np.ndarray,
                       if any(dim == d_level for d_level, _ in d['hierarchical_sims'])]
         subG = G.edge_subgraph(level_edges)
         
-        # Detect communities using Louvain method
-        communities[dim] = nx.community.louvain_communities(subG)
+        # Detect communities using Hierarchical Leiden Algorithm
+        try:
+            import leidenalg
+            import igraph as ig
+            
+            # Convert NetworkX graph to igraph
+            g_ig = ig.Graph.from_networkx(subG)
+            
+            # Run Leiden algorithm with recursive refinement
+            partition = leidenalg.find_partition(
+                g_ig,
+                leidenalg.RBConfigurationVertexPartition,
+                resolution_parameter=1.0,
+                n_iterations=-1,  # Run until convergence
+                seed=42
+            )
+            
+            # Convert partition back to node lists
+            communities[dim] = [set(p) for p in partition]
+        except ImportError:
+            # Fallback to Louvain if leidenalg not installed
+            communities[dim] = nx.community.louvain_communities(subG)
     
     # Add community information to nodes
     for dim, comms in communities.items():
@@ -346,6 +366,8 @@ different dimensional layers of matryoshka embeddings as representing hierarchic
    - Concepts that maintain high centrality across dimensions often represent key bridging nodes
    - Example: "echolocation" maintains high centrality across dimensions as it bridges marine/flying mammals
 
+The implementation uses the Hierarchical Leiden Algorithm, an improvement over the Louvain method that guarantees well-connected communities. As shown by Traag et al.[^7], Leiden addresses resolution-limit and disconnected-communities issues that can affect Louvain, making it particularly suitable for knowledge graphs where community coherence is crucial.
+
 This theoretical framework explains why GraphRAG's approach is particularly effective:
 - The matryoshka structure naturally captures the hierarchical community structure of knowledge
 - Cross-encoder verification aligns with spectral clustering's ability to identify genuine communities
@@ -357,6 +379,8 @@ This theoretical framework explains why GraphRAG's approach is particularly effe
 [^5]: Von Luxburg, U. (2007). A tutorial on spectral clustering. Statistics and Computing, 17(4), 395-416.
 [^6]: Page, L., Brin, S., Motwani, R., & Winograd, T. (1999). The PageRank citation ranking: Bringing order to the web. Stanford InfoLab.
 Advances in Neural Information Processing Systems, 35, 12156-12168.
+
+[^7]: Traag, V. A., Waltman, L., & van Eck, N. J. (2019). From Louvain to Leiden: guaranteeing well-connected communities. Scientific Reports, 9(1), 1-12.
 
 [^2]: Liu, S., Thudumu, S., Cheng, H. et al. (2023). GraphRAG: Unlocking LLM Power for Knowledge Graphs. 
 arXiv preprint arXiv:2308.11118.
