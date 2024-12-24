@@ -30,6 +30,28 @@
     <script defer src="/assets/js/uikit-icons.js"></script>
     <script type="module">
         import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
-        mermaid.initialize({ startOnLoad: true });
+        mermaid.initialize({ startOnLoad: true, theme:'neutral' });
+        await mermaid.run({querySelector:'code.language-mermaid'})
     </script>
+    <style>
+        code.language-mermaid {
+            display: flex;
+            justify-content: center;
+        }
+        pre:has(code.language-mermaid), code.language-mermaid {
+            background-color: transparent;
+        }
+        .edgeLabel {
+            font-size: 92%;
+            opacity: .95;
+            color: #111;
+            padding: 0 3px;
+        }
+        .node rect {
+            stroke: #214f78 !important;
+        }
+        .nodeLabel {
+            color: #214f78 !important;
+        }
+    </style>
 </head>
