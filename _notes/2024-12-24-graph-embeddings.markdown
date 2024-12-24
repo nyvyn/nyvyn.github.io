@@ -100,11 +100,6 @@ To illustrate how hierarchical embeddings capture concept relationships in graph
     F & H -->|uses| J
     G -->|uses| K
     I -->|uses| L
-    
-    %% Define styles
-    classDef category fill:#e1f5fe,stroke:#81d4fa,stroke-width:2px
-    classDef animal fill:#e8f5e9,stroke:#81c784,stroke-width:2px
-    classDef trait fill:#f3e5f5,stroke:#ba68c8,stroke-width:2px
    ```
    This hierarchy emerges naturally from the matryoshka embedding structure, where broader categories are captured in
    lower dimensions and specific traits in higher dimensions.
@@ -149,13 +144,6 @@ different dimensional layers of matryoshka embeddings as representing hierarchic
             D --> E1[First Few <br> Broad Structure]
             D --> E2[Higher Order <br> Fine Details]
         end
-        
-        style A fill:#e1f5fe
-        style B fill:#b3e5fc
-        style C fill:#81d4fa
-        style D fill:#4fc3f7
-        style E1 fill:#29b6f6
-        style E2 fill:#03a9f4
     ```
 
 3. Information Flow and Centrality:
