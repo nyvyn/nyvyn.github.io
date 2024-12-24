@@ -218,6 +218,44 @@ connection due to different vocabulary, but a cross-encoder can recognize the fu
 statements together. This makes cross-encoders particularly valuable for verifying complex semantic relationships in 
 knowledge graphs, even though their computational cost typically limits them to reranking a pre-filtered set of candidates.
 
+To illustrate how GraphRAG thinks about concept relationships in graph form, let's examine our animal examples:
+
+1. Direct Relationships (First-order connections):
+   - Dolphins → Echolocation → Bats
+   - Dolphins → Marine Mammals → Whales
+   These connections are established through high similarity scores in both embedding space and cross-encoder verification.
+
+2. Indirect Relationships (Higher-order connections):
+   - Dolphins → Marine Mammals → Mammals → Bats
+   GraphRAG can traverse these paths to discover non-obvious relationships, like understanding that dolphins and bats 
+   share mammalian traits despite living in different environments.
+
+3. Hierarchical Relationships:
+   ```
+   Animals
+   ├── Mammals
+   │   ├── Marine Mammals
+   │   │   ├── Dolphins (echolocation)
+   │   │   └── Whales (sound communication)
+   │   └── Flying Mammals
+   │       └── Bats (echolocation)
+   └── Birds
+       └── Eagles (visual hunting)
+   ```
+   This hierarchy emerges naturally from the matryoshka embedding structure, where broader categories are captured in 
+   lower dimensions and specific traits in higher dimensions.
+
+4. Cross-cutting Relationships:
+   - {Dolphins, Bats} → Echolocation
+   - {Dolphins, Whales} → Marine habitat
+   - {Eagles, Bats} → Flight capability
+   GraphRAG can maintain multiple valid categorizations simultaneously, allowing for flexible concept retrieval based on 
+   different aspects of knowledge.
+
+This graph-based representation enables sophisticated queries like "Find animals that navigate without vision" or 
+"Identify shared traits between marine and flying mammals," where the system can traverse multiple relationship paths 
+to construct comprehensive answers.
+
 [^1]: Yu, W., Luo, F., Zhu, P., Peng, P., Zhou, J., Wen, X., ... & Zhou, J. (2022). Matryoshka representation learning.
 Advances in Neural Information Processing Systems, 35, 12156-12168.
 
