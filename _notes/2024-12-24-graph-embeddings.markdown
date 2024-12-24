@@ -5,31 +5,9 @@ description: Thinking about embeddings as graphs
 status: Growing
 ---
 
-Matryoshka embeddings, introduced by Yu et al. in their 2022 paper "Matryoshka Representation Learning"[^1], are a
-hierarchical neural network embedding architecture that enables the extraction of multiple nested vector
-representations of decreasing dimensionality from a single embedding space.
+Matryoshka embeddings (Yu et al., 2022)[^1] are hierarchical neural networks that produce nested vector representations of decreasing dimensionality from a single embedding space. Using a specialized loss function, they maintain semantic consistency across dimensional subsets, enabling flexible deployment across different computational constraints while preserving relationships.
 
-Unlike traditional fixed-dimension embeddings, matryoshka embeddings are trained with a specialized loss function that
-ensures semantic consistency across dimensional subsets, allowing for dynamic dimensionality reduction while preserving
-hierarchical relationships.
-
-This innovative technique allows for dynamic dimensionality, where shorter vectors can be extracted from longer ones
-while preserving semantic relationships. This enables efficient storage and flexible deployment across various
-computational constraints without requiring separate models for different embedding sizes.
-
-For example, OpenAI's text-embedding-3-large model produces 3072-dimensional embeddings using the matryoshka principle.
-The full vector represents detailed text semantics, while the first 1536 dimensions capture core meaning,
-and the first 768 dimensions retain essential concepts.
-This is often used for performance or to save space, by deploying the same embedding at different sizes -
-using all 3072 dimensions on powerful servers, but only the first 768 on mobile devices, while maintaining some semantic
-consistency across deployments.
-
-This nested structure enables an interesting approach to building semantic graphs: we can construct multiple layers of
-concept relationships by comparing similarities at different dimensional depths. For instance, comparing the full
-3072-dimensional vectors might reveal fine-grained topic clusters, while similarities in the first 768 dimensions could
-identify broader thematic communities. By analyzing how these relationships shift across different dimensional
-"slices" of the embeddings, we can build a rich hierarchical graph structure that captures both granular connections
-and high-level concept groupings, all from a single set of embeddings.
+For example, OpenAI's text-embedding-3-large model produces 3072-dimensional embeddings where the full vector captures detailed semantics, while the first 1536 and 768 dimensions preserve core meaning and essential concepts respectively. This nested structure enables building semantic graphs with multiple layers - using full dimensionality for fine-grained relationships and reduced dimensions for broader thematic connections.
 
 ```mermaid
 graph TD
@@ -47,26 +25,12 @@ graph TD
     end
 ```
 
-Consider these knowledge statements about animals:
+For example, when comparing animal-related statements through different dimensional depths:
+- 768d: Groups mammals together, separating them from birds
+- 1536d: Identifies shared traits like echolocation or marine habitat
+- 3072d: Distinguishes fine details like nocturnal vs diurnal behavior
 
-1. "Dolphins are intelligent marine mammals that use echolocation to navigate"
-2. "Bats are flying mammals that use echolocation to navigate at night"
-3. "Whales are large marine mammals that communicate through complex songs"
-4. "Eagles are birds of prey with excellent daytime vision"
-
-When comparing these statements using different dimensional depths of their embeddings:
-
-- At 768 dimensions: Statements 1-3 cluster together as "mammals", separate from statement 4
-- At 1536 dimensions: Statements 1-2 group closely (echolocation), while 3 forms a looser cluster with 1 (marine
-  mammals)
-- At full 3072 dimensions: The fine distinctions become clear - marine mammals (1,3), nocturnal echolocation (2), and
-  visual predators (4) each form distinct clusters
-
-This demonstrates how the matryoshka structure preserves broad categorical relationships in the lower dimensions while
-encoding more specific features in the higher dimensions. However, it's important to note that this hierarchical
-preservation is not perfect - some fine-grained relationships may be lost or distorted in lower dimensions, and the
-quality of preservation can vary depending on the training data distribution and the specific implementation of the
-dimensional reduction mechanism.
+This demonstrates how matryoshka embeddings preserve broad categories in lower dimensions while encoding specific features in higher dimensions, though some granular relationships may be lost in dimensional reduction.
 
 In practice, creating meaningful graph structures from embeddings requires careful consideration of similarity
 thresholds and edge directionality. A common approach is to use cosine similarity with different thresholds at
