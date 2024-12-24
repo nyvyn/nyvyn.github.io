@@ -90,24 +90,24 @@ To illustrate how hierarchical embeddings capture concept relationships in graph
 
 3. Hierarchical Relationships:
    ```mermaid
-   graph TD
-    A[Animals] --> B[Mammals]
-    A --> C[Birds]
-    B --> D[Marine Mammals]
-    B --> E[Flying Mammals]
-    D --> F[Dolphins]
-    D --> G[Whales]
-    E --> H[Bats]
-    C --> I[Eagles]
+   flowchart TD
+    A["Animals"] --> B["Mammals"]
+    A --> C["Birds"]
+    B --> D["Marine Mammals"]
+    B --> E["Flying Mammals"]
+    D --> F["Dolphins"]
+    D --> G["Whales"]
+    E --> H["Bats"]
+    C --> I["Eagles"]
     
-    F -->|uses| J[Echolocation]
+    F -->|uses| J["Echolocation"]
     H -->|uses| J
-    G -->|uses| K[Sound Communication]
-    I -->|uses| L[Visual Hunting]
+    G -->|uses| K["Sound Communication"]
+    I -->|uses| L["Visual Hunting"]
     
-    style J fill:#f9f,stroke:#333
-    style K fill:#f9f,stroke:#333
-    style L fill:#f9f,stroke:#333
+    style J fill:#f9f,stroke:#333,stroke-width:2px
+    style K fill:#f9f,stroke:#333,stroke-width:2px
+    style L fill:#f9f,stroke:#333,stroke-width:2px
    ```
    This hierarchy emerges naturally from the matryoshka embedding structure, where broader categories are captured in
    lower dimensions and specific traits in higher dimensions.
