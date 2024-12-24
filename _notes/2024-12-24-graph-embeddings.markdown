@@ -177,7 +177,7 @@ This theoretical framework explains why GraphRAG's approach is particularly effe
 - Cross-encoder verification aligns with spectral clustering's ability to identify genuine communities
 - The multi-dimensional approach mirrors multi-resolution community detection methods
 
-[^1]: Yu, W., Luo, F., Zhu, P., Peng, P., Zhou, J., Wen, X., ... & Zhou, J. (2022). [Matryoshka representation learning](https://proceedings.neurips.cc/paper_files/paper/2022/hash/e614f646836aaed9f89ce58e837e2310-Abstract.html). *Advances in Neural Information Processing Systems*, 35, 12156-12168.
+[^1]: Yu, W., Luo, F., Zhu, P., Peng, P., Zhou, J., Wen, X., ... & Zhou, J. (2022). [Matryoshka representation learning](https://proceedings.neurips.cc/paper_files/paper/2022/hash/e614f646836aaed9f89ce58e837e2310-Abstract.html){:target="_blank"}. *Advances in Neural Information Processing Systems*, 35, 12156-12168. [↩](https://www.ronlancaster.com/)
 
 [^2]: Liu, S., Yu, T., Xiao, T., Peng, Z., & Hong, Y. (2023). [GraphRAG: Unlocking LLM's Potential for Complex Question Answering over Knowledge Graphs](https://arxiv.org/abs/2310.05842). arXiv preprint arXiv:2310.05842.
 
