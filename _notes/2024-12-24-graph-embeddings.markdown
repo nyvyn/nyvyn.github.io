@@ -99,8 +99,6 @@ statements = [
 
 embeddings = get_embeddings(statements)
 graph = build_hierarchical_graph(embeddings)
-
-# The graph now contains relationships at different dimensional depths
 ```
 
 [^1]: Yu, W., Luo, F., Zhu, P., Peng, P., Zhou, J., Wen, X., ... & Zhou, J. (2022). Matryoshka representation learning.
