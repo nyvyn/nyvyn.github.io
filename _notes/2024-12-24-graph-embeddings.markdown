@@ -41,6 +41,19 @@ visual predators (4) each form distinct clusters
 This demonstrates how the matryoshka structure preserves broad categorical relationships in the lower dimensions while
 encoding more specific features in the higher dimensions.
 
+In practice, creating meaningful graph structures from embeddings requires careful consideration of similarity
+thresholds and edge directionality. A common approach is to use cosine similarity with different thresholds at
+each dimensional level - for example, requiring >0.8 similarity at 768 dimensions for broad category connections,
+but >0.9 at 3072 dimensions for fine-grained relationships. To create a directed acyclic graph (DAG), we can:
+1. Use dimensional asymmetry: connect nodes based on how their similarity changes across dimensions, with edges
+pointing from broader to more specific concepts
+2. Apply information content: direct edges from concepts with lower to higher information density
+3. Enforce hierarchical constraints: maintain strict level ordering based on embedding dimension depths
+4. Employ temporal ordering: if concepts have associated timestamps, use these to ensure acyclicity
+
+This approach naturally produces hierarchical knowledge graphs where edges represent both semantic similarity and
+conceptual dependencies, while the acyclic nature ensures clear paths of reasoning from general to specific concepts.
+
 [^1]: Yu, W., Luo, F., Zhu, P., Peng, P., Zhou, J., Wen, X., ... & Zhou, J. (2022). Matryoshka representation learning.
 Advances in Neural Information Processing Systems, 35, 12156-12168.
 
