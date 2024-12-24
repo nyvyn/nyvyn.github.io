@@ -9,6 +9,7 @@ url: "https://www.ronlancaster.com"
 excerpt_separator: <!--more-->
 markdown: kramdown
 mermaid: true
+use_math: true
 permalink: /posts/:title
 timezone: US/Central
 
