@@ -209,4 +209,7 @@ This implementation combines the hierarchical matryoshka embeddings with GraphRA
 [^1]: Yu, W., Luo, F., Zhu, P., Peng, P., Zhou, J., Wen, X., ... & Zhou, J. (2022). Matryoshka representation learning.
 Advances in Neural Information Processing Systems, 35, 12156-12168.
 
+[^2]: Liu, S., Thudumu, S., Cheng, H. et al. (2023). GraphRAG: Unlocking LLM Power for Knowledge Graphs. 
+arXiv preprint arXiv:2308.11118.
+
 
