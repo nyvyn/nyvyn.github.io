@@ -10,6 +10,7 @@ excerpt_separator: <!--more-->
 markdown: kramdown
 permalink: /posts/:title
 timezone: US/Central
+mermaid: true
 
 # Define additional collections
 collections:
