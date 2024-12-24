@@ -13,13 +13,29 @@ url=page.url
 
 <script type="module">
   import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  
+  // Initialize mermaid with system color scheme detection
+  const darkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  
   mermaid.initialize({ 
     startOnLoad: true,
-    theme: 'default',
+    theme: darkMode ? 'dark' : 'default',
     securityLevel: 'loose',
     flowchart: {
       htmlLabels: true,
-      curve: 'basis'
+      curve: 'basis',
+      padding: 15
+    },
+    themeVariables: {
+      fontFamily: 'system-ui, -apple-system, sans-serif',
+      fontSize: '14px'
     }
+  });
+
+  // Update theme when system preference changes
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+    mermaid.initialize({ 
+      theme: event.matches ? 'dark' : 'default'
+    });
   });
 </script>

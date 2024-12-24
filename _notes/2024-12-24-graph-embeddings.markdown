@@ -91,23 +91,35 @@ To illustrate how hierarchical embeddings capture concept relationships in graph
 3. Hierarchical Relationships:
    ```mermaid
    flowchart TD
-    A["Animals"] --> B["Mammals"]
-    A --> C["Birds"]
-    B --> D["Marine Mammals"]
-    B --> E["Flying Mammals"]
-    D --> F["Dolphins"]
-    D --> G["Whales"]
-    E --> H["Bats"]
-    C --> I["Eagles"]
+    %% Define nodes with cleaner styling
+    A([Animals]):::category
+    B([Mammals]):::category
+    C([Birds]):::category
+    D([Marine Mammals]):::category
+    E([Flying Mammals]):::category
+    F([Dolphins]):::animal
+    G([Whales]):::animal
+    H([Bats]):::animal
+    I([Eagles]):::animal
+    J[Echolocation]:::trait
+    K[Sound Communication]:::trait
+    L[Visual Hunting]:::trait
     
-    F -->|uses| J["Echolocation"]
-    H -->|uses| J
-    G -->|uses| K["Sound Communication"]
-    I -->|uses| L["Visual Hunting"]
+    %% Define relationships
+    A --> B & C
+    B --> D & E
+    D --> F & G
+    E --> H
+    C --> I
     
-    style J fill:#f9f,stroke:#333,stroke-width:2px
-    style K fill:#f9f,stroke:#333,stroke-width:2px
-    style L fill:#f9f,stroke:#333,stroke-width:2px
+    F & H -->|uses| J
+    G -->|uses| K
+    I -->|uses| L
+    
+    %% Define styles
+    classDef category fill:#e1f5fe,stroke:#81d4fa,stroke-width:2px
+    classDef animal fill:#e8f5e9,stroke:#81c784,stroke-width:2px
+    classDef trait fill:#f3e5f5,stroke:#ba68c8,stroke-width:2px
    ```
    This hierarchy emerges naturally from the matryoshka embedding structure, where broader categories are captured in
    lower dimensions and specific traits in higher dimensions.
