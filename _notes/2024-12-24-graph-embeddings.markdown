@@ -127,7 +127,7 @@ class ConceptNode:
 def build_concept_graph(embeddings: np.ndarray, 
                        texts: List[str],
                        cross_encoder: CrossEncoder) -> nx.DiGraph:
-    """Build a directed graph of concepts with weighted edges."""
+    """Build a directed graph of concepts with hierarchical community structure."""
     G = nx.DiGraph()
     
     # Create nodes with full dimensional info
@@ -135,22 +135,51 @@ def build_concept_graph(embeddings: np.ndarray,
     for i, node in enumerate(nodes):
         G.add_node(i, data=node)
     
-    # Add edges based on dimensional analysis
-    dims = [768, 1536, 3072]
+    # Define dimensional thresholds based on Newman's modularity theory
+    dims_thresholds = [
+        (768, 0.6),   # Broad communities (lower threshold)
+        (1536, 0.75), # Mid-level relationships
+        (3072, 0.85)  # Fine-grained connections
+    ]
+    
+    # Build hierarchical edges
     for i in range(len(nodes)):
         for j in range(len(nodes)):
             if i != j:
-                # Calculate similarity at each dimension
-                sims = [cosine_similarity(nodes[i].embedding[:d],
-                                        nodes[j].embedding[:d])
-                       for d in dims]
+                edge_weights = []
+                # Analyze similarity at each dimensional level
+                for dim, threshold in dims_thresholds:
+                    sim = cosine_similarity(nodes[i].embedding[:dim],
+                                         nodes[j].embedding[:dim])
+                    if sim > threshold:
+                        edge_weights.append((dim, sim))
                 
-                # If similarity increases with dimension, create directed edge
-                if all(sims[i] <= sims[i+1] for i in range(len(sims)-1)):
-                    # Verify relationship with cross-encoder
-                    score = cross_encoder.predict([nodes[i].text, nodes[j].text])
-                    if score > 0.7:  # Confidence threshold
-                        G.add_edge(i, j, weight=score)
+                if edge_weights:
+                    # Verify with cross-encoder
+                    ce_score = cross_encoder.predict([nodes[i].text, nodes[j].text])
+                    if ce_score > 0.7:
+                        # Store hierarchical information in edge attributes
+                        G.add_edge(i, j, 
+                                 weight=ce_score,
+                                 hierarchical_sims=edge_weights,
+                                 community_level=len(edge_weights))
+    
+    # Calculate community metrics
+    communities = {}
+    for dim, _ in dims_thresholds:
+        # Create subgraph of edges at this dimensional level
+        level_edges = [(u, v) for u, v, d in G.edges(data=True) 
+                      if any(dim == d_level for d_level, _ in d['hierarchical_sims'])]
+        subG = G.edge_subgraph(level_edges)
+        
+        # Detect communities using Louvain method
+        communities[dim] = nx.community.louvain_communities(subG)
+    
+    # Add community information to nodes
+    for dim, comms in communities.items():
+        for i, comm in enumerate(comms):
+            for node in comm:
+                G.nodes[node][f'community_{dim}'] = i
     
     return G
 
@@ -158,32 +187,72 @@ def query_concept_graph(query: str,
                        graph: nx.DiGraph,
                        embeddings_model: OpenAI,
                        cross_encoder: CrossEncoder,
-                       top_k: int = 3) -> List[str]:
-    """Query the concept graph using hybrid retrieval."""
-    # Get query embedding
+                       top_k: int = 3,
+                       community_level: int = 768) -> List[Dict]:
+    """
+    Query the concept graph using hierarchical community-aware retrieval.
+    
+    Args:
+        query: Query text
+        graph: NetworkX graph with hierarchical community structure
+        embeddings_model: OpenAI API client
+        cross_encoder: Cross-encoder model
+        top_k: Number of results to return
+        community_level: Dimensional level for community context (768, 1536, or 3072)
+    """
     query_emb = get_embeddings([query])[0]
     
-    # Initial retrieval based on embedding similarity
-    candidates = []
+    # Initial community-based retrieval
+    community_scores = {}
     for node_id in graph.nodes():
         node_data = graph.nodes[node_id]['data']
-        sim = cosine_similarity(query_emb, node_data.embedding)
-        candidates.append((node_id, sim))
+        # Get similarity at specified community level
+        sim = cosine_similarity(query_emb[:community_level], 
+                              node_data.embedding[:community_level])
+        comm_id = graph.nodes[node_id][f'community_{community_level}']
+        if comm_id not in community_scores:
+            community_scores[comm_id] = []
+        community_scores[comm_id].append((node_id, sim))
     
-    # Sort by similarity and get top-k*2 candidates
-    candidates.sort(key=lambda x: x[1], reverse=True)
-    initial_candidates = candidates[:top_k*2]
+    # Get top nodes from each relevant community
+    candidates = []
+    for comm_id, nodes in community_scores.items():
+        # Sort nodes within community
+        nodes.sort(key=lambda x: x[1], reverse=True)
+        # Take top 2 from each community
+        candidates.extend(nodes[:2])
     
-    # Rerank using cross-encoder
+    # Cross-encoder reranking with community context
     reranked = []
-    for node_id, _ in initial_candidates:
+    for node_id, _ in candidates:
         node_text = graph.nodes[node_id]['data'].text
-        score = cross_encoder.predict([query, node_text])
-        reranked.append((node_text, score))
+        # Get community context
+        comm_id = graph.nodes[node_id][f'community_{community_level}']
+        comm_nodes = [n for n in graph.nodes() 
+                     if graph.nodes[n][f'community_{community_level}'] == comm_id]
+        
+        # Include community context in scoring
+        context = " ".join([graph.nodes[n]['data'].text for n in comm_nodes[:3]])
+        score = cross_encoder.predict([f"Context: {context}\nQuery: {query}", 
+                                     node_text])
+        
+        # Calculate PageRank centrality within community
+        comm_subgraph = graph.subgraph(comm_nodes)
+        centrality = nx.pagerank(comm_subgraph).get(node_id, 0)
+        
+        # Combine scores
+        final_score = 0.7 * score + 0.3 * centrality
+        
+        reranked.append({
+            'text': node_text,
+            'score': final_score,
+            'community_id': comm_id,
+            'centrality': centrality
+        })
     
-    # Return top-k after reranking
-    reranked.sort(key=lambda x: x[1], reverse=True)
-    return [text for text, _ in reranked[:top_k]]
+    # Return top-k results with metadata
+    reranked.sort(key=lambda x: x['score'], reverse=True)
+    return reranked[:top_k]
 
 # Example usage
 from sentence_transformers import CrossEncoder
