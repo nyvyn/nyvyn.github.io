@@ -11,14 +11,6 @@ markdown: kramdown
 permalink: /posts/:title
 timezone: US/Central
 
-# Kramdown settings
-kramdown:
-  footnote_backlink: "↩"
-  footnote_backlink_inline: true
-  syntax_highlighter_opts:
-    disable: true
-  math_engine: mathjax
-
 # Define additional collections
 collections:
   notes:
