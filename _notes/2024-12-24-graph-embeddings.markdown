@@ -54,6 +54,55 @@ pointing from broader to more specific concepts
 This approach naturally produces hierarchical knowledge graphs where edges represent both semantic similarity and
 conceptual dependencies, while the acyclic nature ensures clear paths of reasoning from general to specific concepts.
 
+Here's a simple implementation demonstrating these concepts:
+
+```python
+from openai import OpenAI
+import numpy as np
+from typing import List, Tuple
+
+def get_embeddings(texts: List[str], model="text-embedding-3-large") -> np.ndarray:
+    """Get embeddings for a list of texts."""
+    client = OpenAI()
+    embeddings = client.embeddings.create(input=texts, model=model).data
+    return np.array([e.embedding for e in embeddings])
+
+def cosine_similarity(v1: np.ndarray, v2: np.ndarray) -> float:
+    """Calculate cosine similarity between vectors."""
+    return np.dot(v1, v2) / (np.linalg.norm(v1) * np.linalg.norm(v2))
+
+def build_hierarchical_graph(embeddings: np.ndarray, 
+                           thresholds: List[Tuple[int, float]] = [(768, 0.8), 
+                                                                 (1536, 0.85), 
+                                                                 (3072, 0.9)]) -> dict:
+    """Build hierarchical graph at different dimensional depths."""
+    graph = {depth: [] for depth, _ in thresholds}
+    
+    for depth, threshold in thresholds:
+        for i in range(len(embeddings)):
+            for j in range(i + 1, len(embeddings)):
+                # Compare embeddings up to current depth
+                sim = cosine_similarity(embeddings[i][:depth], 
+                                     embeddings[j][:depth])
+                if sim > threshold:
+                    graph[depth].append((i, j, sim))
+    
+    return graph
+
+# Example usage
+statements = [
+    "Dolphins are intelligent marine mammals that use echolocation to navigate",
+    "Bats are flying mammals that use echolocation to navigate at night",
+    "Whales are large marine mammals that communicate through complex songs",
+    "Eagles are birds of prey with excellent daytime vision"
+]
+
+embeddings = get_embeddings(statements)
+graph = build_hierarchical_graph(embeddings)
+
+# The graph now contains relationships at different dimensional depths
+```
+
 [^1]: Yu, W., Luo, F., Zhu, P., Peng, P., Zhou, J., Wen, X., ... & Zhou, J. (2022). Matryoshka representation learning.
 Advances in Neural Information Processing Systems, 35, 12156-12168.
 
