@@ -8,9 +8,9 @@ url: "https://www.ronlancaster.com"
 # Output options
 excerpt_separator: <!--more-->
 markdown: kramdown
+mermaid: true
 permalink: /posts/:title
 timezone: US/Central
-mermaid: true
 
 # Define additional collections
 collections:
