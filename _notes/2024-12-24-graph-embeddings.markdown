@@ -5,9 +5,11 @@ description: Thinking about embeddings as graphs
 status: Growing
 ---
 
-Matryoshka embeddings, introduced by Yu et al. in their 2022 paper "Matryoshka Representation Learning"[^1], represent a
-fascinating approach to neural network embeddings where multiple vector
-representations of different dimensions are nested within a single embedding space, much like Russian nesting dolls.
+Matryoshka embeddings, introduced by Yu et al. in their 2022 paper "Matryoshka Representation Learning"[^1], are a
+hierarchical neural network embedding architecture that enables the extraction of multiple nested vector
+representations of decreasing dimensionality from a single embedding space. Unlike traditional fixed-dimension embeddings,
+matryoshka embeddings are trained with a specialized loss function that ensures semantic consistency across dimensional
+subsets, allowing for dynamic dimensionality reduction while preserving hierarchical relationships.
 This innovative technique allows for dynamic dimensionality, where shorter vectors can be extracted from longer ones
 while preserving semantic relationships, enabling efficient storage and flexible deployment across various computational
 constraints without requiring separate models for different embedding sizes.
@@ -39,7 +41,10 @@ When comparing these statements using different dimensional depths of their embe
 visual predators (4) each form distinct clusters
 
 This demonstrates how the matryoshka structure preserves broad categorical relationships in the lower dimensions while
-encoding more specific features in the higher dimensions.
+encoding more specific features in the higher dimensions. However, it's important to note that this hierarchical
+preservation is not perfect - some fine-grained relationships may be lost or distorted in lower dimensions, and the
+quality of preservation can vary depending on the training data distribution and the specific implementation of the
+dimensional reduction mechanism.
 
 In practice, creating meaningful graph structures from embeddings requires careful consideration of similarity
 thresholds and edge directionality. A common approach is to use cosine similarity with different thresholds at
@@ -350,8 +355,11 @@ community detection. Drawing from Newman's seminal work on community structure i
 different dimensional layers of matryoshka embeddings as representing hierarchical community structures:
 
 1. Modularity and Dimensional Reduction:
-   - Lower dimensions (e.g., 768) capture high-level community structure, analogous to Newman's modularity maximization
-   - Higher dimensions (3072) reveal fine-grained sub-communities, similar to hierarchical clustering coefficients
+   - Lower dimensions (e.g., 768) capture high-level community structure through Newman's modularity Q:
+     Q = (1/2m)∑ᵢⱼ[Aᵢⱼ - (kᵢkⱼ/2m)]δ(cᵢ,cⱼ)
+     where m is the number of edges, A is the adjacency matrix, k represents node degrees
+   - Higher dimensions (3072) reveal fine-grained sub-communities through hierarchical clustering coefficients,
+     with transitivity T = (3 × number of triangles) / (number of connected triples)
    - The dimensional reduction preserves the natural community structure, as demonstrated by Fortunato's resolution 
      limit theory[^4]
 
@@ -381,6 +389,8 @@ This theoretical framework explains why GraphRAG's approach is particularly effe
 Advances in Neural Information Processing Systems, 35, 12156-12168.
 
 [^7]: Traag, V. A., Waltman, L., & van Eck, N. J. (2019). From Louvain to Leiden: guaranteeing well-connected communities. Scientific Reports, 9(1), 1-12.
+
+[^8]: Reimers, N., & Gurevych, I. (2019). Sentence-BERT: Sentence embeddings using Siamese BERT-networks. In Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing. Association for Computational Linguistics.
 
 [^2]: Liu, S., Thudumu, S., Cheng, H. et al. (2023). GraphRAG: Unlocking LLM Power for Knowledge Graphs. 
 arXiv preprint arXiv:2308.11118.
