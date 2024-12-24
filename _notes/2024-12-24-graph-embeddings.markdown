@@ -101,6 +101,14 @@ embeddings = get_embeddings(statements)
 graph = build_hierarchical_graph(embeddings)
 ```
 
+GraphRAG, introduced by Microsoft Research, extends traditional Retrieval-Augmented Generation (RAG) by incorporating 
+graph-based knowledge structures. While standard RAG systems retrieve relevant documents based on similarity, GraphRAG 
+builds and traverses a knowledge graph where nodes represent concepts and edges capture semantic relationships. This 
+approach combines three key components: (1) dense retrievers using embedding similarity for initial candidate selection, 
+(2) cross-encoders for precise relationship verification, and (3) graph-based reasoning to explore concept connections. 
+The result is a more nuanced understanding of conceptual hierarchies and relationships, particularly valuable for 
+complex knowledge domains where simple similarity matching might miss important contextual connections.
+
 To effectively query and mine concepts from this hierarchical structure, we can leverage Microsoft's GraphRAG approach,
 which combines graph-based knowledge representation with retrieval-augmented generation. Here's how to implement this:
 
