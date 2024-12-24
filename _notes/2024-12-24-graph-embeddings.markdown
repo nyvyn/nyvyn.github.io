@@ -381,18 +381,20 @@ This theoretical framework explains why GraphRAG's approach is particularly effe
 - Cross-encoder verification aligns with spectral clustering's ability to identify genuine communities
 - The multi-dimensional approach mirrors multi-resolution community detection methods
 
-[^1]: Yu, W., Luo, F., Zhu, P., Peng, P., Zhou, J., Wen, X., ... & Zhou, J. (2022). Matryoshka representation learning.
+[^1]: Yu, W., Luo, F., Zhu, P., Peng, P., Zhou, J., Wen, X., ... & Zhou, J. (2022). Matryoshka representation learning. Advances in Neural Information Processing Systems, 35, 12156-12168.
+
+[^2]: Liu, S., Thudumu, S., Cheng, H. et al. (2023). GraphRAG: Unlocking LLM Power for Knowledge Graphs. arXiv preprint arXiv:2308.11118.
+
 [^3]: Newman, M. E. J. (2006). Modularity and community structure in networks. Proceedings of the National Academy of Sciences, 103(23), 8577-8582.
+
 [^4]: Fortunato, S., & Barthélemy, M. (2007). Resolution limit in community detection. Proceedings of the National Academy of Sciences, 104(1), 36-41.
+
 [^5]: Von Luxburg, U. (2007). A tutorial on spectral clustering. Statistics and Computing, 17(4), 395-416.
+
 [^6]: Page, L., Brin, S., Motwani, R., & Winograd, T. (1999). The PageRank citation ranking: Bringing order to the web. Stanford InfoLab.
-Advances in Neural Information Processing Systems, 35, 12156-12168.
 
 [^7]: Traag, V. A., Waltman, L., & van Eck, N. J. (2019). From Louvain to Leiden: guaranteeing well-connected communities. Scientific Reports, 9(1), 1-12.
 
 [^8]: Reimers, N., & Gurevych, I. (2019). Sentence-BERT: Sentence embeddings using Siamese BERT-networks. In Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing. Association for Computational Linguistics.
-
-[^2]: Liu, S., Thudumu, S., Cheng, H. et al. (2023). GraphRAG: Unlocking LLM Power for Knowledge Graphs. 
-arXiv preprint arXiv:2308.11118.
 
 
