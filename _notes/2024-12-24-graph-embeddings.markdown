@@ -11,7 +11,7 @@ This innovative technique allows for dynamic dimensionality, where shorter vecto
 while preserving semantic relationships, enabling efficient storage and flexible deployment across various computational
 constraints without requiring separate models for different embedding sizes.
 
-# Why could? AI!
+## Benefits of Matryoshka Embeddings
 For example, consider a 1024-dimensional word embedding using the matryoshka principle. The full vector could represent
 detailed word semantics, while the first 512 dimensions could capture core meaning, and the first 256 dimensions might
 retain essential concepts. This allows deploying the same embedding at different sizes - using all 1024 dimensions on
