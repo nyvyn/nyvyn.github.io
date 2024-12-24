@@ -19,6 +19,8 @@ This is often used for performance or to save space, by deploying the same embed
 using all 3072 dimensions on powerful servers, but only the first 768 on mobile devices, while maintaining some semantic
 consistency across deployments.
 
+
+
 [^1]: Yu, W., Luo, F., Zhu, P., Peng, P., Zhou, J., Wen, X., ... & Zhou, J. (2022). Matryoshka representation learning.
 Advances in Neural Information Processing Systems, 35, 12156-12168.
 
