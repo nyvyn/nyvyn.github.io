@@ -61,8 +61,6 @@ The implementation of this approach draws inspiration from GraphRAG[^9] while fo
 3. Implementing hybrid retrieval that leverages both embedding similarity and cross-encoding
 4. Supporting graph-based concept mining through traversal of related nodes
 
-[^9]: Liu, S., Yu, T., Xiao, T., Peng, Z., & Hong, Y. (2023). GraphRAG: Unlocking LLM's Potential for Complex Question Answering over Knowledge Graphs. arXiv preprint arXiv:2310.05842.
-
 The use of cross-encoders in this implementation deserves special attention. Unlike bi-encoders that encode texts
 separately (as in traditional embedding models), cross-encoders process both texts simultaneously through a transformer
 architecture. This allows them to perform more nuanced comparison by attending to interactions between the texts at all
@@ -199,5 +197,7 @@ communities. Scientific Reports, 9(1), 1-12.
 
 [^8]: Reimers, N., & Gurevych, I. (2019). Sentence-BERT: Sentence embeddings using Siamese BERT-networks. In Proceedings
 of the 2019 Conference on Empirical Methods in Natural Language Processing. Association for Computational Linguistics.
+
+[^9]: Liu, S., Yu, T., Xiao, T., Peng, Z., & Hong, Y. (2023). GraphRAG: Unlocking LLM's Potential for Complex Question Answering over Knowledge Graphs. arXiv preprint arXiv:2310.05842.
 
 
