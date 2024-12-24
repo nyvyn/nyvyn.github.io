@@ -177,20 +177,20 @@ This theoretical framework explains why GraphRAG's approach is particularly effe
 - Cross-encoder verification aligns with spectral clustering's ability to identify genuine communities
 - The multi-dimensional approach mirrors multi-resolution community detection methods
 
-[^1]: Yu, W., Luo, F., Zhu, P., Peng, P., Zhou, J., Wen, X., ... & Zhou, J. (2022). [Matryoshka representation learning](https://proceedings.neurips.cc/paper_files/paper/2022/hash/e614f646836aaed9f89ce58e837e2310-Abstract.html){:target="_blank"}. *Advances in Neural Information Processing Systems*, 35, 12156-12168. [↩](https://www.ronlancaster.com/)
+[^1]: Yu, W., Luo, F., Zhu, P., Peng, P., Zhou, J., Wen, X., ... & Zhou, J. (2022). [Matryoshka representation learning](https://proceedings.neurips.cc/paper_files/paper/2022/hash/e614f646836aaed9f89ce58e837e2310-Abstract.html){:target="_blank"}. *Advances in Neural Information Processing Systems*, 35, 12156-12168.
 
-[^2]: Liu, S., Yu, T., Xiao, T., Peng, Z., & Hong, Y. (2023). [GraphRAG: Unlocking LLM's Potential for Complex Question Answering over Knowledge Graphs](https://arxiv.org/abs/2310.05842). arXiv preprint arXiv:2310.05842.
+[^2]: Liu, S., Yu, T., Xiao, T., Peng, Z., & Hong, Y. (2023). [GraphRAG: Unlocking LLM's Potential for Complex Question Answering over Knowledge Graphs](https://arxiv.org/abs/2310.05842){:target="_blank"}. arXiv preprint arXiv:2310.05842.
 
-[^3]: Newman, M. E. J. (2006). [Modularity and community structure in networks](https://doi.org/10.1073/pnas.0601602103). *Proceedings of the National Academy of Sciences*, 103(23), 8577-8582.
+[^3]: Newman, M. E. J. (2006). [Modularity and community structure in networks](https://doi.org/10.1073/pnas.0601602103){:target="_blank"}. *Proceedings of the National Academy of Sciences*, 103(23), 8577-8582.
 
-[^4]: Fortunato, S., & Barthélemy, M. (2007). [Resolution limit in community detection](https://doi.org/10.1073/pnas.0605965104). *Proceedings of the National Academy of Sciences*, 104(1), 36-41.
+[^4]: Fortunato, S., & Barthélemy, M. (2007). [Resolution limit in community detection](https://doi.org/10.1073/pnas.0605965104){:target="_blank"}. *Proceedings of the National Academy of Sciences*, 104(1), 36-41.
 
-[^5]: Von Luxburg, U. (2007). [A tutorial on spectral clustering](https://doi.org/10.1007/s11222-007-9033-z). *Statistics and Computing*, 17(4), 395-416.
+[^5]: Von Luxburg, U. (2007). [A tutorial on spectral clustering](https://doi.org/10.1007/s11222-007-9033-z){:target="_blank"}. *Statistics and Computing*, 17(4), 395-416.
 
-[^6]: Page, L., Brin, S., Motwani, R., & Winograd, T. (1999). [The PageRank citation ranking: Bringing order to the web](http://ilpubs.stanford.edu:8090/422/). Technical Report. Stanford InfoLab.
+[^6]: Page, L., Brin, S., Motwani, R., & Winograd, T. (1999). [The PageRank citation ranking: Bringing order to the web](http://ilpubs.stanford.edu:8090/422/){:target="_blank"}. Technical Report. Stanford InfoLab.
 
-[^7]: Traag, V. A., Waltman, L., & van Eck, N. J. (2019). [From Louvain to Leiden: guaranteeing well-connected communities](https://doi.org/10.1038/s41598-019-41695-z). *Scientific Reports*, 9(1), 1-12.
+[^7]: Traag, V. A., Waltman, L., & van Eck, N. J. (2019). [From Louvain to Leiden: guaranteeing well-connected communities](https://doi.org/10.1038/s41598-019-41695-z){:target="_blank"}. *Scientific Reports*, 9(1), 1-12.
 
-[^8]: Reimers, N., & Gurevych, I. (2019). [Sentence-BERT: Sentence embeddings using Siamese BERT-networks](https://aclanthology.org/D19-1410/). In *Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing*. Association for Computational Linguistics.
+[^8]: Reimers, N., & Gurevych, I. (2019). [Sentence-BERT: Sentence embeddings using Siamese BERT-networks](https://aclanthology.org/D19-1410/){:target="_blank"}. In *Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing*. Association for Computational Linguistics.
 
 
