@@ -31,6 +31,22 @@ identify broader thematic communities. By analyzing how these relationships shif
 "slices" of the embeddings, we can build a rich hierarchical graph structure that captures both granular connections
 and high-level concept groupings, all from a single set of embeddings.
 
+```mermaid
+graph TD
+    subgraph "3072d - Fine Details"
+        A1[Dolphin Navigation] -->|echolocation| B1[Bat Navigation]
+        A1 -->|marine habitat| C1[Whale Communication]
+    end
+    subgraph "1536d - Mid-level Concepts"
+        A2[Marine Mammals] -->|sound use| B2[Flying Mammals]
+        A2 -->|habitat| C2[Ocean Life]
+    end
+    subgraph "768d - Broad Categories"
+        A3[Mammals] -->|classification| B3[Animals]
+        C3[Marine Life] -->|ecosystem| B3
+    end
+```
+
 Consider these knowledge statements about animals:
 
 1. "Dolphins are intelligent marine mammals that use echolocation to navigate"
@@ -347,16 +363,25 @@ To illustrate how hierarchical embeddings capture concept relationships in graph
       share mammalian traits despite living in different environments.
 
 3. Hierarchical Relationships:
-   ```
-   Animals
-   ├── Mammals
-   │   ├── Marine Mammals
-   │   │   ├── Dolphins (echolocation)
-   │   │   └── Whales (sound communication)
-   │   └── Flying Mammals
-   │       └── Bats (echolocation)
-   └── Birds
-       └── Eagles (visual hunting)
+   ```mermaid
+   graph TD
+    A[Animals] --> B[Mammals]
+    A --> C[Birds]
+    B --> D[Marine Mammals]
+    B --> E[Flying Mammals]
+    D --> F[Dolphins]
+    D --> G[Whales]
+    E --> H[Bats]
+    C --> I[Eagles]
+    
+    F -->|uses| J[Echolocation]
+    H -->|uses| J
+    G -->|uses| K[Sound Communication]
+    I -->|uses| L[Visual Hunting]
+    
+    style J fill:#f9f,stroke:#333
+    style K fill:#f9f,stroke:#333
+    style L fill:#f9f,stroke:#333
    ```
    This hierarchy emerges naturally from the matryoshka embedding structure, where broader categories are captured in
    lower dimensions and specific traits in higher dimensions.
@@ -391,6 +416,24 @@ different dimensional layers of matryoshka embeddings as representing hierarchic
     - These correspond to different levels of Von Luxburg's spectral clustering theory[^5], where:
         * Lower dimensions ≈ first few eigenvectors (broad structure)
         * Higher dimensions ≈ finer spectral components (detailed relationships)
+
+    ```mermaid
+    graph LR
+        subgraph "Spectral Clustering Levels"
+            A[Raw Embeddings] --> B[Similarity Matrix]
+            B --> C[Laplacian Matrix]
+            C --> D[Eigenvectors]
+            D --> E1[First Few <br> Broad Structure]
+            D --> E2[Higher Order <br> Fine Details]
+        end
+        
+        style A fill:#e1f5fe
+        style B fill:#b3e5fc
+        style C fill:#81d4fa
+        style D fill:#4fc3f7
+        style E1 fill:#29b6f6
+        style E2 fill:#03a9f4
+    ```
 
 3. Information Flow and Centrality:
     - PageRank-like measures[^6] can be computed at each dimensional level
