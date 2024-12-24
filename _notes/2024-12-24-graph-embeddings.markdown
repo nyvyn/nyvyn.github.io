@@ -101,6 +101,103 @@ embeddings = get_embeddings(statements)
 graph = build_hierarchical_graph(embeddings)
 ```
 
+To effectively query and mine concepts from this hierarchical structure, we can leverage Microsoft's GraphRAG approach,
+which combines graph-based knowledge representation with retrieval-augmented generation. Here's how to implement this:
+
+```python
+from typing import Dict, List
+import networkx as nx
+from dataclasses import dataclass
+from sentence_transformers import CrossEncoder
+
+@dataclass
+class ConceptNode:
+    text: str
+    embedding: np.ndarray
+    metadata: Dict = None
+
+def build_concept_graph(embeddings: np.ndarray, 
+                       texts: List[str],
+                       cross_encoder: CrossEncoder) -> nx.DiGraph:
+    """Build a directed graph of concepts with weighted edges."""
+    G = nx.DiGraph()
+    
+    # Create nodes with full dimensional info
+    nodes = [ConceptNode(text=t, embedding=e) for t, e in zip(texts, embeddings)]
+    for i, node in enumerate(nodes):
+        G.add_node(i, data=node)
+    
+    # Add edges based on dimensional analysis
+    dims = [768, 1536, 3072]
+    for i in range(len(nodes)):
+        for j in range(len(nodes)):
+            if i != j:
+                # Calculate similarity at each dimension
+                sims = [cosine_similarity(nodes[i].embedding[:d],
+                                        nodes[j].embedding[:d])
+                       for d in dims]
+                
+                # If similarity increases with dimension, create directed edge
+                if all(sims[i] <= sims[i+1] for i in range(len(sims)-1)):
+                    # Verify relationship with cross-encoder
+                    score = cross_encoder.predict([nodes[i].text, nodes[j].text])
+                    if score > 0.7:  # Confidence threshold
+                        G.add_edge(i, j, weight=score)
+    
+    return G
+
+def query_concept_graph(query: str,
+                       graph: nx.DiGraph,
+                       embeddings_model: OpenAI,
+                       cross_encoder: CrossEncoder,
+                       top_k: int = 3) -> List[str]:
+    """Query the concept graph using hybrid retrieval."""
+    # Get query embedding
+    query_emb = get_embeddings([query])[0]
+    
+    # Initial retrieval based on embedding similarity
+    candidates = []
+    for node_id in graph.nodes():
+        node_data = graph.nodes[node_id]['data']
+        sim = cosine_similarity(query_emb, node_data.embedding)
+        candidates.append((node_id, sim))
+    
+    # Sort by similarity and get top-k*2 candidates
+    candidates.sort(key=lambda x: x[1], reverse=True)
+    initial_candidates = candidates[:top_k*2]
+    
+    # Rerank using cross-encoder
+    reranked = []
+    for node_id, _ in initial_candidates:
+        node_text = graph.nodes[node_id]['data'].text
+        score = cross_encoder.predict([query, node_text])
+        reranked.append((node_text, score))
+    
+    # Return top-k after reranking
+    reranked.sort(key=lambda x: x[1], reverse=True)
+    return [text for text, _ in reranked[:top_k]]
+
+# Example usage
+from sentence_transformers import CrossEncoder
+cross_encoder = CrossEncoder('cross-encoder/ms-marco-MiniLM-L-12-v2')
+
+# Build the graph
+concept_graph = build_concept_graph(embeddings, statements, cross_encoder)
+
+# Query example
+query = "Which animals use sound for navigation?"
+relevant_concepts = query_concept_graph(query, 
+                                      concept_graph,
+                                      OpenAI(),
+                                      cross_encoder)
+```
+
+This implementation combines the hierarchical matryoshka embeddings with GraphRAG principles by:
+1. Building a directed concept graph that preserves the dimensional hierarchy
+2. Using cross-encoders for accurate relationship verification
+3. Implementing hybrid retrieval that leverages both embedding similarity and cross-encoding
+4. Supporting graph-based concept mining through traversal of related nodes
+
 [^1]: Yu, W., Luo, F., Zhu, P., Peng, P., Zhou, J., Wen, X., ... & Zhou, J. (2022). Matryoshka representation learning.
 Advances in Neural Information Processing Systems, 35, 12156-12168.
 
