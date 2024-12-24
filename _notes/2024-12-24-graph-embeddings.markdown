@@ -57,23 +57,8 @@ where simple similarity matching might miss important contextual connections.
 The implementation of this approach draws inspiration from GraphRAG[^2] while focusing on hierarchical matryoshka embeddings to build semantic concept graphs. The key components are:
 
 1. Building a directed concept graph that preserves the dimensional hierarchy of matryoshka embeddings
-2. Using cross-encoders for accurate relationship verification
-3. Implementing hybrid retrieval that leverages both embedding similarity and cross-encoding
-4. Supporting graph-based concept mining through traversal of related nodes
-
-The use of cross-encoders in this implementation deserves special attention. Unlike bi-encoders that encode texts
-separately (as in traditional embedding models), cross-encoders process both texts simultaneously through a transformer
-architecture. This allows them to perform more nuanced comparison by attending to interactions between the texts at all
-levels. While computationally more intensive than simple embedding similarity, cross-encoders achieve significantly
-higher accuracy in determining semantic relationships. In our implementation, they serve as a verification layer,
-ensuring that the relationships suggested by embedding similarity actually represent meaningful conceptual connections.
-
-For example, when comparing "Dolphins use echolocation" with "Bats navigate by sound", a bi-encoder might miss the
-connection due to different vocabulary, but a cross-encoder can recognize the functional similarity by processing both
-statements together through cross-attention mechanisms (Reimers & Gurevych, 2019)[^8]. This makes cross-encoders
-particularly valuable for verifying complex semantic relationships in
-knowledge graphs, even though their computational cost typically limits them to reranking a pre-filtered set of
-candidates.
+2. Implementing similarity-based retrieval leveraging embedding dimensions
+3. Supporting graph-based concept mining through traversal of related nodes
 
 To illustrate how hierarchical embeddings capture concept relationships in graph form, let's examine our animal examples:
 
@@ -203,6 +188,5 @@ This theoretical framework explains why GraphRAG's approach is particularly effe
 
 [^7]: Traag, V. A., Waltman, L., & van Eck, N. J. (2019). [From Louvain to Leiden: guaranteeing well-connected communities](https://doi.org/10.1038/s41598-019-41695-z){:target="_blank"}. *Scientific Reports*, 9(1), 1-12.
 
-[^8]: Reimers, N., & Gurevych, I. (2019). [Sentence-BERT: Sentence embeddings using Siamese BERT-networks](https://aclanthology.org/D19-1410/){:target="_blank"}. In *Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing*. Association for Computational Linguistics.
 
 
