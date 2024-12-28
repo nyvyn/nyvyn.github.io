@@ -17,7 +17,7 @@ A key reason for this jump in acceptance rate is because of Anthropic's Sonnet u
 And I do enjoy the architect mode of Aider where it proposes a plan using a "strong" model and then defers
 to a "weaker" model to prepare the code diffs.
 
-By this time next year, I suspect I'll be accepting AI-proposed code changes 90-100% of the time.
+By this time next year, I suspect I'll be accepting AI-proposed code changes >90% of the time.
 
 ---
 
