@@ -5,7 +5,7 @@ But I don't think I'll write software again without the option to collaborate wi
 
 AI still makes mistakes. That's why, at this moment in time, I believe it's best for experts.
 
-My workflow includes Aider.chat in architect mode (/architect) to suggest changes at my direction.
+My workflow includes Aider.chat in architect mode (/architect) to suggest a plan first.
 And I review every change - either in-flight at the suggestions are made 
 or afterwards as a review of the diffs in git.
 
