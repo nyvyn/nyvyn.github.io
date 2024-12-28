@@ -1,9 +1,9 @@
 I don't think I'll write software again without the option to collaborate with AI.
 
-To be clear, AI makes mistakes. That's why, right at this moment in time, I believe it's best for experts.
-My workflow is something along the lines of /architect with Aider.chat to suggest changes at my direction.
+To be clear, AI makes mistakes. That's why, at this moment in time, I believe it's best for experts.
 
-I review every change - either in-flight at the suggestions are made or afterwards as a review of the diffs in git.
+My workflow is something along the lines of /architect with Aider.chat to suggest changes at my direction.
+And I review every change - either in-flight at the suggestions are made or afterwards as a review of the diffs in git.
 
 ---
 
