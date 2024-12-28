@@ -4,7 +4,7 @@ tags: [ "software engineering" ]
 ---
 
 I write software as a hobby because it's something I enjoy. 
-But I don't think I'll write software again without the option to collaborate with AI.
+But I don't think I'll continue to do so without the option to collaborate with AI.
 
 ---
 
