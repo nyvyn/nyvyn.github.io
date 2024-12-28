@@ -16,7 +16,7 @@ or afterwards through review of the diffs in git.
 
 ---
 
-Six months ago, I was accepting AI-proposed changes 20-30% of the time. Now, on the precipice of 2025, it's 50%-80%.
+Six months ago, I was accepting AI-proposed changes 20-30% of the time. Now, on the precipice of 2025, it's 40-70%.
 
 A key reason for this jump in acceptance rate is because of Anthropic's Sonnet update on Ocober 22nd.
 And I do enjoy the architect mode of Aider where it proposes a plan using a "strong" model and then defers
