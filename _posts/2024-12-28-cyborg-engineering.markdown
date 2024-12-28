@@ -20,4 +20,4 @@ By this time next year, I suspect I'll be accepting AI-proposed code changes 90-
 This has profound implications on the role of software engineer...
 
 My current take is that we'll see software engineers evolve to become more like product leaders who can code.
-With much fewer of the specialized engineers we have today.
+As a consequence, we'll have far fewer people writing code - with increased specialization of those who do.
