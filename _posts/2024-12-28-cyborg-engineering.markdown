@@ -1,10 +1,11 @@
 I don't think I'll write software again without the option to collaborate with AI.
 
 To be clear, AI makes mistakes. That's why, right at this moment in time, I believe it's best for experts.
-My workflow is something along the lines of /architect with Aider to describe what changes it'd suggest.
-Or to place Aider in architect mode and interrupt in the few cases where I think it's going in the wrong direction.
+My workflow is something along the lines of /architect with Aider.chat to suggest changes at my direction.
 
-Afterwards, either I feel that I read through the proposed changes well enough, or I review the diffs in git.
+I review every change - either in-flight at the suggestions are made or afterwards as a review of the diffs in git.
+
+---
 
 Six months ago, I was using accepting AI changes 20-40% of the time. Now, on the precipice of 2025, it's 50%-80%.
 
@@ -14,7 +15,9 @@ to a "weaker" model to prepare the code diffs.
 
 By this time next year, I suspect I'll be accepting AI-proposed code changes 90-100% of the time.
 
+---
+
 This has profound implications on the role of software engineer...
 
-...I currently believe that we'll see software engineers evolve to become more like  product leaders who can code.
+My current take is that we'll see software engineers evolve to become more like product leaders who can code.
 With much fewer of the specialized engineers we have today.
