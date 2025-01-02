@@ -13,5 +13,7 @@
         - {%- include read_time.html content=include.content -%}
     </aside>
 
+    {% if include.full %}
     <div class="uk-margin-small-top" id="content">{{ include.markdown }}</div>
+    {% endif %}
 </article>

@@ -1,5 +1,5 @@
 <ul class="uk-list uk-list-large uk-margin-medium-top" id="post-list">
-    {% for note in site.notes reversed %}
+    {% for note in site.notes limit:include.limit reversed %}
     {% if note.status == "Stable" %}
     {% assign icon = "bookmark" %}
     {% else %}
@@ -10,6 +10,7 @@
         content=note.content
         date=note.date
         description=note.description
+        full=include.full
         link=note.link
         markdown=markdown
         status=note.status
