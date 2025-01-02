@@ -1,12 +1,18 @@
 ---
 layout: default
 ---
+{% if note.status == "Stable" %}
+{% assign icon = "bookmark" %}
+{% else %}
+{% assign icon = "question" %}
+{% endif %}
 
 {% include note.html
 content=page.content
 date=page.date
 description=page.description
 full=true
+icon=icon
 markdown=page.content
 status=page.status
 title=page.title
