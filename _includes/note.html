@@ -10,6 +10,7 @@
     <aside class="uk-article-meta">
         {{ include.date | date_to_string }}
         - {%- include read_time.html content=include.content -%}
+        {{ note.description }}
     </aside>
 
     <div class="uk-margin-small-top" id="content">{{ include.markdown }}</div>
