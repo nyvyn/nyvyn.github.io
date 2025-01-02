@@ -17,7 +17,7 @@ permalink: /
         <hr class="uk-divider-small">
 
         <div class="uk-visible@s uk-link-text">
-        {% include posts.html full=false limit=1 %}
+        {% include posts.html full=true limit=1 %}
         </div>
     </div>
 
