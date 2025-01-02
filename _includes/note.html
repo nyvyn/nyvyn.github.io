@@ -8,9 +8,9 @@
     </a>
 
     <aside class="uk-article-meta">
+        {{ note.description }}<br/>
         {{ include.date | date_to_string }}
         - {%- include read_time.html content=include.content -%}
-        {{ note.description }}
     </aside>
 
     <div class="uk-margin-small-top" id="content">{{ include.markdown }}</div>
