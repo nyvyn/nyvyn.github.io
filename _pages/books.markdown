@@ -1,5 +1,5 @@
 ---
-layout: full
+layout: page
 title: Library
 permalink: /books
 ---
