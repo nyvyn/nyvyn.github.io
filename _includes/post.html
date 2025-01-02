@@ -25,7 +25,7 @@
         - {%- include read_time.html content=include.content -%}
     </aside>
 
-    {% if include.full or not include.title %}
+    {% if include.full %}
     <div class="uk-margin-small-top">{{ include.markdown }}</div>
     {% endif %}
 
