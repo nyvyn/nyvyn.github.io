@@ -61,22 +61,6 @@ ul {
     font-weight: 300;
 }
 
-#note-list a + p, #post-list a + p {
-    margin-top: 0;
-}
-
-#note-list p > a, #post-list p > a {
-    text-decoration: underline;
-}
-
-#note-list p:last-of-type, #post-list p:last-of-type {
-    margin-bottom: 0;
-}
-
-#note-list li:nth-child(n+2), #post-list li:nth-child(n+2) {
-    margin-top: 2rem;
-}
-
 #site-bio {
     font-size: 20px;
     font-weight: 300;
