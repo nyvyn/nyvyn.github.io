@@ -25,9 +25,11 @@
         - {%- include read_time.html content=include.content -%}
     </aside>
 
-    {% if include.full == false and include.content contains site.excerpt_separator %}
+    {% if include.full or not include.title %}
     <div class="uk-margin-small-top">{{ include.markdown }}</div>
+    {% endif %}
 
+    {% if include.full == false and include.content contains site.excerpt_separator %}
     <a class="uk-button uk-button-text uk-margin-top" href="{{ include.url }}">
         Keep reading <span data-uk-icon="arrow-right"></span>
     </a>
