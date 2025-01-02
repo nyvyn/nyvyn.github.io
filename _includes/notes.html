@@ -1,22 +1,19 @@
-<ul class="uk-list uk-list-large uk-list-divider uk-margin-medium-top" id="note-list">
+<ul class="uk-list uk-list-large uk-margin-medium-top" id="post-list">
     {% for note in site.notes reversed %}
     {% if note.status == "Stable" %}
     {% assign icon = "bookmark" %}
     {% else %}
     {% assign icon = "question" %}
     {% endif %}
-    <li>
-        <a class="uk-link-toggle" href="{{- note.url -}}">
-            <div class="uk-flex uk-flex-middle uk-text-light uk-link-heading">
-                <span class="uk-margin-small-right">{{ note.title }}</span>
-                <span class="uk-text-meta" style="margin-left: 4px">({{ note.status }})</span>
-            </div>
-            <aside class="uk-article-meta">
-                {{ note.date | date_to_string }}
-                - {%- include read_time.html content=note.content -%}
-            </aside>
-            <span class="uk-display-block uk-text-light">{{ note.description }}</span>
-        </a>
+    <li class="uk-width-xlarge">
+        {% include note.html
+        content=note.content
+        date=note.date
+        link=note.link
+        markdown=markdown
+        title=note.title
+        url=note.url
+        %}
     </li>
     {% endfor %}
 </ul>
