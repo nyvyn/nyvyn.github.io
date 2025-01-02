@@ -11,6 +11,10 @@ markdown: kramdown
 permalink: /posts/:title
 timezone: US/Central
 
+# Paginate posts
+paginate: 10
+paginate_path: "/posts/:num"
+
 # Define additional collections
 collections:
   notes:
