@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: full
 title: Garden
 permalink: /notes
 ---
@@ -12,6 +12,11 @@ permalink: /notes
 </h4>
 <hr class="uk-divider-small">
 
+<div class="uk-grid-medium uk-flex uk-child-width-1-2@m" data-uk-grid>
+<div>
+{% include notes.html full=false limit=100 %}
+</div>
+<div class="uk-flex-first">
 [Maggie Appleton](https://maggieappleton.com/garden-history) describes a digital garden as:
 
 > ...a collection of evolving ideas that aren't strictly
@@ -25,5 +30,5 @@ In contrast, a digital garden is a collection of notes that are more durable and
 Below, are a few of these topical notes. More in the future.
 
 <hr class="uk-divider-icon">
-
-{% include notes.html full=false limit=100 %}
+</div>
+</div>
