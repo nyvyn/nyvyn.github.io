@@ -1,5 +1,5 @@
 <ul class="uk-list uk-list-large uk-list-divider uk-margin-medium-top" id="post-list">
-    {% for post in site.posts limit:include.limit %}
+    {% for post in paginator.posts %}
     {% capture markdown %}
     {% if include.full %}
     {{ post.content | markdownify }}
@@ -20,3 +20,12 @@
     </li>
     {% endfor %}
 </ul>
+
+<div class="pagination">
+    {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path }}">Previous</a>
+    {% endif %}
+    {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path }}">Next</a>
+    {% endif %}
+</div>
