@@ -6,8 +6,6 @@ tags: [ "artificial intelligence" ]
 
 Two research papers this year demonstrate that generative AI can significantly enhance productivity in the workplace.
 
-<!--more-->
-
 ---
 
 The first, an MIT [study][1] in March, "Experimental Evidence on the Productivity Effects of Generative Artificial

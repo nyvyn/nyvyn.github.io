@@ -6,8 +6,6 @@ title: "Steven Nordberg and Betsy McDonald donate $6m to Humane Society"
 
 A wonderful gift and a great example of the kind and generous people that they were.
 
-<!--more-->
-
 > Steven Nordberg and Betsy McDonald were dedicated volunteers who cared for what are known as bottle babies — orphaned
 > kittens that have to be raised and fed by hand, around the clock to start.
 >

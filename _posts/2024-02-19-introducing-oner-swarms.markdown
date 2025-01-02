@@ -9,8 +9,6 @@ tags: [ "artificial intelligence" ]
 
 See Oner here: [https://www.oner.chat](https://www.oner.chat "Oner Chat").
 
-<!--more-->
-
 In a typical AI chat session without tools, the format is commonly call and response: that is, the user asks a question
 and the AI makes its best attempt at an answer.
 

@@ -7,8 +7,6 @@ tags: ["population"]
 The United Nations recently estimated that the world’s population had surpassed 8 billion people. That number has
 doubled in the past 50 years.
 
-<!--more-->
-
 It took until 1804 to surpass 1 billion people and another 130 years to double that (1927). From there, it only took 50
 years to double again to 4 billion (1974).
 

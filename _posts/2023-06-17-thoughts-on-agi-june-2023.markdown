@@ -8,8 +8,6 @@ Early versions of GPT-4 could “solve novel and difficult tasks that span mathe
 psychology, and more, without needing any special prompting.” - [Sparks of Artificial General Intelligence][1] research
 paper by Microsoft Research, April 13 2023.
 
-<!--more-->
-
 In contrast to this statement, I suspect many people have been wondering, “if AI is so smart, why isn’t it helping me
 with my work?” To which, a reasonable response is - good question.
 

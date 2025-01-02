@@ -6,8 +6,6 @@ tags: [ "software engineering" ]
 I write software as a hobby because it's something I enjoy. 
 But I don't think I'll continue to do so without the option to collaborate with AI.
 
-<!--more-->
-
 ---
 
 AI still makes mistakes. That's why, at this moment in time, I believe it's best for experts.

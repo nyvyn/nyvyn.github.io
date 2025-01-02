@@ -6,8 +6,6 @@ tags: [ "artificial intelligence" ]
 
 I recently improved how memory is managed in my work on interactive AI agents, and am pleased with the results.
 
-<!--more-->
-
 Taking a step back - there are various types of "memory" for agents, but I prefer to reduce it to two: there is the
 context of the current conversation between the AI and the person, and then there is supporting context from previous
 conversations between the two.

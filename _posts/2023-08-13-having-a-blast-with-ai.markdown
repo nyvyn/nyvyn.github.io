@@ -6,8 +6,6 @@ tags: [ "artificial intelligence" ]
 
 I’ve been having an absolute blast with AI (GPT3.5/GPT4 from OpenAI) and wanted to share some of my enthusiasm.
 
-<!--more-->
-
 Over and over, I’ve experienced situations where using AI has allowed me to do something that I might not have been able
 to do otherwise. And I see this most often when writing software; applying AI lets me solve problems that would have
 been difficult or impossible for me previously.

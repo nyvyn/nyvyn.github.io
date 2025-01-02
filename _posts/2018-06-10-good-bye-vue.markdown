@@ -8,8 +8,6 @@ To my colleagues at VUE,
 
 This past Friday was my last day at Pearson VUE - marking the end of over two decades.
 
-<!--more-->
-
 Together, we have built a terrific company - one that ensures the public safety, one that helps people achieve their
 life’s goals, and one that assists people in achieving professional success.
 

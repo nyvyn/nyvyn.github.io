@@ -5,8 +5,6 @@ title: "Steve, you will be missed"
 
 Over the weekend, my good friend and mentor, Steve Nordberg, passed away.
 
-<!--more-->
-
 Early in my career, Steve took a chance on me to become a software developer. I had no experience and not much in the
 way of credentials, but despite the early stage VUE was at (few customers and building a testing system in nine months),
 he was willing to take me on as an intern.

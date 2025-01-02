@@ -8,8 +8,6 @@ tags: ["artificial intelligence"]
 
 Big update from Meta on an advancement to a general purpose learning algorithm:
 
-<!--more-->
-
 > Meta AI is excited to announce data2vec, the first high-performance self-supervised algorithm that works for multiple
 > modalities. We apply data2vec separately to speech, images and text and it outperformed the previous best single-purpose
 > algorithms for computer vision and speech and it is competitive on NLP tasks.

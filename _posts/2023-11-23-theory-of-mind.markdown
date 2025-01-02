@@ -14,8 +14,6 @@ current chat.
 
 Below is an example. Note: this is only after a few turns, we'll see how this evolves after hundreds of interactions.
 
-<!--more-->
-
 **Stored Information Update for Individual Ron as of 11/23/2023**
 
 **Name and Interaction History:**

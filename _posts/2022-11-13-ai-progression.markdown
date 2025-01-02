@@ -8,12 +8,8 @@ The beginning of AI could be characterized as sophisticated pattern recognition.
 as classifying whether an image is of a dog or a cat or if a radiograph contains cancer. This is extremely valuable for
 a broad class of problems.
 
-<!--more-->
-
 Building on this, once a pattern can be reliably identified, then a prediction can be made about what’s next. For
 example, based on a set of real estate sales data, a prediction can be made about the next home for sale.
-
-<!--more-->
 
 Arguably, detecting cancer is of greater importance than home values. But in terms of comparing artificial intelligence
 to human intelligence, predicting the future is a higher order capability than pattern recognition.

@@ -6,8 +6,6 @@ tags: [ "structural" ]
 I recently joined Structural (structural.com), the Employee Success Platform. Moving to a startup has long been a dream
 of mine. But, the right one needed to be... well, right. So, what follows are a few reasons why I chose Structural.
 
-<!--more-->
-
 ### RIGHT TEAM
 
 I've been incredibly impressed by the talent of this company. Formed by High Alpha, a venture studio out of

@@ -8,8 +8,6 @@ tags: [ "software architecture" ]
 This is a great read on some of the considerations of microservices (and a software approach to
 addressing).
 
-<!--more-->
-
 I'm minimizing the point of the paper, which is the authors' approach to solving the problem, because the clarity of
 the benefits and issues with microservices is so good!
 

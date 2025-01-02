@@ -9,8 +9,6 @@ Two related thoughts to consider:
 
 The "secret", of course, is that I'm using AI to co-write Python programs.
 
-<!--more-->
-
 This approach is somewhat analogous to a person who can understand a spoken language,
 but perhaps isn't that capable in speaking themselves.
 

@@ -7,8 +7,6 @@ tags: ["artificial intelligence"]
 The stunning advances in AI this year further underlines the imperative that every company needs to invest in
 incorporating these capabilities into their business.
 
-<!--more-->
-
 Over the past several years, AI models have demonstrated the ability to see, hear, and speak - as well as or better than
 humans. AI has bested experts in almost every type of game from board games to video games to game shows. And robotics
 has exceeded human-level ability to navigate complex environments.
