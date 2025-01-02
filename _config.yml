@@ -11,10 +11,6 @@ markdown: kramdown
 permalink: /posts/:title
 timezone: US/Central
 
-# Plugins
-plugins:
-  - jekyll-paginate
-
 # Paginate posts
 paginate: 10
 paginate_path: "/posts/:num"
