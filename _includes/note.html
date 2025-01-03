@@ -19,7 +19,7 @@
     {% if include.references %}
     <div class="uk-margin-medium-top">
         <h4 class="uk-heading-divider uk-text-light">References</h4>
-        <ul class="uk-list uk-list-circle">
+        <ul class="uk-list uk-list-hyphen">
         {% for reference in include.references %}
             <li>{{ reference | markdownify }}</li>
         {% endfor %}
