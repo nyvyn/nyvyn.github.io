@@ -5,7 +5,7 @@ description: Exploring this new approach to language models
 status: Sprouting
 ---
 
-[Large Concept Models (LCMs)](https://ai.meta.com/research/publications/large-concept-models-language-modeling-in-a-sentence-representation-space/)
+[Large Concept Models (LCMs)](https://ai.meta.com/research/publications/large-concept-models-language-modeling-in-a-sentence-representation-space)
 are designed to work with "concepts" rather than individual tokens. In the implementation from Meta, a concept
 corresponds to a sentence, represented in a high-dimensional embedding space using SONAR.
 
@@ -17,7 +17,8 @@ corresponds to a sentence, represented in a high-dimensional embedding space usi
 - Decoding: SONAR decodes the output concepts back into subwords or tokens.
 
 ## SONAR
-# Update with an overview of Sonar from Meta AI!
+
+SONAR is a sophisticated encoder developed by Meta AI, designed to transform sentences into high-dimensional embeddings. It plays a crucial role in the LCM framework by enabling the conversion of textual data into a format suitable for conceptual reasoning. The encoder is optimized for capturing semantic nuances and relationships between concepts, facilitating advanced language understanding and generation tasks.
 
 
 ## Model Training
