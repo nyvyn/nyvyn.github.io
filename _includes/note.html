@@ -15,5 +15,16 @@
 
     {% if include.full %}
     <div class="uk-margin-small-top" id="content">{{ include.markdown }}</div>
+    
+    {% if page.references %}
+    <div class="uk-margin-medium-top">
+        <h2 class="uk-heading-divider">References</h2>
+        <ul class="uk-list uk-list-divider">
+        {% for reference in page.references %}
+            <li>{{ reference }}</li>
+        {% endfor %}
+        </ul>
+    </div>
+    {% endif %}
     {% endif %}
 </article>
