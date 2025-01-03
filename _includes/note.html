@@ -21,7 +21,15 @@
         <h2 class="uk-heading-divider">References</h2>
         <ul class="uk-list uk-list-divider">
         {% for reference in include.references %}
-            <li>{{ reference }}</li>
+            <li>
+                {% assign arxiv_match = reference | regex_match: 'arXiv:(\d+\.\d+)' %}
+                {% if arxiv_match %}
+                    {% assign arxiv_id = arxiv_match[1] %}
+                    {{ reference | replace: arxiv_match[0], '' | append: ' ' }}<a href="https://arxiv.org/abs/{{ arxiv_id }}" class="uk-link-text">arXiv:{{ arxiv_id }}</a>
+                {% else %}
+                    {{ reference }}
+                {% endif %}
+            </li>
         {% endfor %}
         </ul>
     </div>
