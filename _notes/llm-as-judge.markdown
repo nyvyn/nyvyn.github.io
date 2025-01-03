@@ -6,4 +6,4 @@ date: 2025-1-3
 status: Sprouting
 ---
 
-Sprouting
+# Introduction of what an LLM as judge means AI!
