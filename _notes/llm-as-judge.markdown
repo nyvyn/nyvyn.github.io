@@ -4,6 +4,8 @@ title: LLM as judge
 description: Best practices when using LLMs as evaluators
 date: 2025-1-3
 status: Sprouting
+references:
+  - Li, H., Dong, Q., Chen, J., Ai, Q., Zhou, Y., Liu, Y. (2024). LLMs-as-Judges: A Comprehensive Survey on LLM-based Evaluation Methods. arXiv:2412.05579v1 [cs.CL]
 ---
 
 # Introduction
