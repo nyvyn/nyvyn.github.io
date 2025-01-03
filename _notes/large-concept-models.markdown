@@ -11,9 +11,23 @@ references:
     [Viliotti, A. (2024). Large Concept Model (LCM): a new paradigm for large-scale semantic reasoning in AI](https://www.andreaviliotti.it/post/large-concept-model-lcm-a-new-paradigm-for-large-scale-semantic-reasoning-in-ai)
 ---
 
-[Large Concept Models (LCMs)](https://ai.meta.com/research/publications/large-concept-models-language-modeling-in-a-sentence-representation-space)
-are designed to work with "concepts" rather than individual tokens. In the implementation from Meta, a concept
+In December 2024, Meta introduced the Large Concept Model (LCM) which is
+designed to work with "concepts" rather than individual tokens. In the implementation from Meta, a concept
 corresponds to a sentence, represented in a high-dimensional embedding space using SONAR.
+
+> In practice, a concept would often correspond to a sentence in a text document, or an equivalent speech utterance. 
+> We posit that a sentence is an appropriate unit to achieve language independence, in opposition to single words. 
+> This is in sharp contrast to current LLMs techniques which are heavily English centric and token based.
+
+The paper goes to assert:
+
+> Despite the undeniable success of LLMs and continued progress, all current LLMs miss a crucial characteristic of 
+> human intelligence: explicit reasoning and planning at multiple levels of abstraction. The human brain does not 
+> operate at the word level only. We usually have a top-down process to solve a complex task or compose a long 
+> document: we first plan at a higher level the overall structure, and then step-by-step, add details at lower 
+> levels of abstraction. One may argue that LLMs are implicitly learning a hierarchical representation, but we 
+> stipulate that models with an explicit hierarchical architecture are better suited to create coherent long-form 
+> output.
 
 ## Key Components
 
