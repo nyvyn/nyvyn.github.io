@@ -9,8 +9,6 @@ references:
     [Li, H., Dong, Q., Chen, J., Ai, Q., Zhou, Y., Liu, Y. (2024)](LLMs-as-Judges: A Comprehensive Survey on LLM-based Evaluation Methods. arXiv:2412.05579v1)
 ---
 
-# Introduction
-
 Large Language Models (LLMs) can serve as effective evaluators or "judges" for various tasks, from assessing writing
 quality to reviewing code. When using LLMs as judges, they analyze inputs against specific criteria and provide
 structured feedback or scores.

@@ -14,12 +14,12 @@
     </aside>
 
     {% if include.full %}
-    <div class="uk-margin-small-top" id="content">{{ include.markdown }}</div>
+    <div class="uk-margin-medium-top" id="content">{{ include.markdown }}</div>
     
     {% if include.references %}
     <div class="uk-margin-medium-top">
         <h4 class="uk-heading-divider">References</h4>
-        <ul class="uk-list uk-list-divider">
+        <ul class="uk-list uk-list-circle">
         {% for reference in include.references %}
             <li>{{ reference | markdownify }}</li>
         {% endfor %}
