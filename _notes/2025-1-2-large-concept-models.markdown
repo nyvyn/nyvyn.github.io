@@ -18,7 +18,12 @@ corresponds to a sentence, represented in a high-dimensional embedding space usi
 
 ## SONAR
 
-SONAR is a sophisticated encoder developed by Meta AI, designed to transform sentences into high-dimensional embeddings. It plays a crucial role in the LCM framework by enabling the conversion of textual data into a format suitable for conceptual reasoning. The encoder is optimized for capturing semantic nuances and relationships between concepts, facilitating advanced language understanding and generation tasks.
+SONAR is a sophisticated encoder developed by Meta AI, designed to transform sentences into high-dimensional embeddings.
+It plays a crucial role in the LCM framework by enabling the conversion of textual data into a format suitable for
+conceptual reasoning. The encoder is optimized for capturing semantic nuances and relationships between concepts,
+facilitating advanced language understanding and generation tasks.
+
+# How does it compare to vec2text? AI!
 
 
 ## Model Training
