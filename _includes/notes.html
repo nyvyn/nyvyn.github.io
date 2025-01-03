@@ -1,5 +1,6 @@
 <ul class="uk-list uk-list-large uk-margin-medium-top" id="post-list">
-    {% for note in site.notes limit:include.limit reversed %}
+    {% assign seton = site.notes | reverse %}
+    {% for note in seton limit:include.limit %}
     {% if note.status == "Stable" %}
     {% assign icon = "bookmark" %}
     {% else %}
