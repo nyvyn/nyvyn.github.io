@@ -2,6 +2,7 @@
 layout: note
 title: Embedding inversion
 description: Exploring a concept-driven approach using embedding inversions
+date: 2024-12-17
 status: Sprouting
 ---
 

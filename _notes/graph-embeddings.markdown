@@ -2,6 +2,7 @@
 layout: note
 title: Graph Embeddings
 description: Thinking about embeddings as graphs
+date: 2024-12-24
 status: Growing
 ---
 

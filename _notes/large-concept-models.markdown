@@ -2,6 +2,7 @@
 layout: note
 title: Large Concept Models
 description: Exploring this new approach to language models
+date: 2025-1-2
 status: Sprouting
 ---
 

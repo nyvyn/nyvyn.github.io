@@ -2,6 +2,7 @@
 layout: note
 title: Artificial Intelligence
 description: Thoughts on generative AI and the future of software
+date: 2023-05-15
 status: Stable
 ---
 

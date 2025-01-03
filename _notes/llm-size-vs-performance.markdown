@@ -2,6 +2,7 @@
 layout: note
 title: LLM size compared to performance
 description: A look at how size and performance have evolved in LLMs
+date: 2025-1-2
 status: Sprouting
 ---
 

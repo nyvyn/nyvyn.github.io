@@ -2,6 +2,7 @@
 layout: note
 title: How AI is changing the role of software engineering
 description: The impact of AI on software
+date: 2024-12-27
 status: Growing
 ---
 

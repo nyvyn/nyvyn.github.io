@@ -2,6 +2,7 @@
 layout: note
 title: AI that can learn
 description: A review of ways to move beyond frozen LLMs
+date: 2024-05-08
 status: Growing
 ---
 

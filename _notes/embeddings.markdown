@@ -2,6 +2,7 @@
 layout: note
 title: An overview of embeddings
 description: A comprehensive guide to embeddings
+date: 2024-12-17
 status: Growing
 ---
 
