@@ -10,6 +10,8 @@ references:
   - >-
     [Anthropic (2024). Claude 3.5 sonnet](https://www.anthropic.com/claude/sonnet)
   - >-
+    [Google (2024). Gemini 2.0 Flash](https://blog.google/technology/ai/gemini-2-0/)
+  - >-
     [OpenAI (2023a). GPT-3.5-turbo](https://platform.openai.com/docs/models#gpt-3-5-turbo)
   - >-
     [OpenAI (2023b). GPT-4](https://platform.openai.com/docs/models#gpt-4-turbo-and-gpt-4)
@@ -19,6 +21,12 @@ references:
     [OpenAI (2024b). GPT-4o mini](https://platform.openai.com/docs/models#gpt-4o-mini)
   - >-
     [OpenAI (2024c). o1-mini](https://platform.openai.com/docs/models#o1)
+  - >-
+    [OpenAI (2024d). o1-preview](https://platform.openai.com/docs/models#o1-preview)
+  - >-
+    [Singhal et al. (2023). Med-PaLM: Large Language Models Encode Clinical Knowledge](https://arxiv.org/abs/2212.13138)
+  - >-
+    [Zhang et al. (2024). Medec: A benchmark for medical error detection and correction in clinical notes](https://arxiv.org/pdf/2412.19260)
 ---
 
 
@@ -36,6 +44,5 @@ references:
 > The exact numbers of parameters of several LLMs (e.g., GPT, Gemini 2.0 Flash) have not been publicly disclosed yet.
 > Most numbers of parameters are estimate reported to provide more context for understanding the models’ performance.
 
-From:
-[Medec: A benchmark for medical error detection and correction in clinical notes](https://arxiv.org/pdf/2412.19260)
+From Zhang et al. (2024):
 
