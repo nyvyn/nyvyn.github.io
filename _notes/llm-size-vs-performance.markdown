@@ -4,6 +4,21 @@ title: LLM size compared to performance
 description: A look at how size and performance have evolved in LLMs
 date: 2025-1-2
 status: Sprouting
+references:
+  - >-
+    [Abdin et al. (2024). Phi-3 technical report: A highly capable language model locally on your phone](https://arxiv.org/abs/2404.14219)
+  - >-
+    [Anthropic (2024). Claude 3.5 sonnet](https://www.anthropic.com/claude/sonnet)
+  - >-
+    [OpenAI (2023a). GPT-3.5-turbo](https://platform.openai.com/docs/models#gpt-3-5-turbo)
+  - >-
+    [OpenAI (2023b). GPT-4](https://platform.openai.com/docs/models#gpt-4-turbo-and-gpt-4)
+  - >-
+    [OpenAI (2024a). GPT-4o](https://platform.openai.com/docs/models#gpt-4o)
+  - >-
+    [OpenAI (2024b). GPT-4o mini](https://platform.openai.com/docs/models#gpt-4o-mini)
+  - >-
+    [OpenAI (2024c). o1-mini](https://platform.openai.com/docs/models#o1)
 ---
 
 
@@ -24,11 +39,3 @@ status: Sprouting
 From:
 [Medec: A benchmark for medical error detection and correction in clinical notes](https://arxiv.org/pdf/2412.19260)
 
-References:
-- Phi-3 technical report: A highly capable language model locally on your phone. https://arxiv.org/abs/2404.14219
-- Anthropic. Claude 3.5 sonnet. https://www.anthropic.com/claude/sonnet, 2024.
-- OpenAI. gpt-3.5-turbo. https://platform.openai.com/docs/models#gpt-3-5-turbo, 2023a.
-- OpenAI. Gpt-4. https://platform.openai.com/docs/models#gpt-4-turbo-and-gpt-4, 2023b.
-- OpenAI. Gpt-4o. https://platform.openai.com/docs/models#gpt-4o, 2024a. Accessed: 09/2024.
-- OpenAI. Gpt-4o mini. https://platform.openai.com/docs/models#gpt-4o-mini, 2024b.
-- OpenAI. o1-mini. https://platform.openai.com/docs/models#o1, 2024c.
