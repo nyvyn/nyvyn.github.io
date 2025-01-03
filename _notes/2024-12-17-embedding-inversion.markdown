@@ -1,6 +1,6 @@
 ---
 layout: note
-title: Toward a more human-like memory model
+title: Embedding inversion
 description: Exploring a concept-driven approach using embedding inversions
 status: Sprouting
 ---
