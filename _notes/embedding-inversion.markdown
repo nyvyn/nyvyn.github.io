@@ -4,6 +4,9 @@ title: Embedding inversion
 description: Exploring a concept-driven approach using embedding inversions
 date: 2024-12-17
 status: Sprouting
+references:
+  - >-
+    [Beltagy et al. (2023). Text Embeddings Reveal (Almost) As Much As Text](https://arxiv.org/pdf/2310.06816)
 ---
 
 What if AI memory could evolve like the human mind? Instead of static storage, the system would adapt, merge similar

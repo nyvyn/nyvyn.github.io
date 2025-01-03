@@ -4,6 +4,11 @@ title: Large Concept Models
 description: Exploring this new approach to language models
 date: 2025-1-2
 status: Sprouting
+references:
+  - >-
+    [Meta AI (2024). Large Concept Models: Language Modeling in a Sentence Representation Space](https://ai.meta.com/research/publications/large-concept-models-language-modeling-in-a-sentence-representation-space)
+  - >-
+    [Viliotti, A. (2024). Large Concept Model (LCM): a new paradigm for large-scale semantic reasoning in AI](https://www.andreaviliotti.it/post/large-concept-model-lcm-a-new-paradigm-for-large-scale-semantic-reasoning-in-ai)
 ---
 
 [Large Concept Models (LCMs)](https://ai.meta.com/research/publications/large-concept-models-language-modeling-in-a-sentence-representation-space)

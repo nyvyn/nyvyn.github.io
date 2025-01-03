@@ -4,6 +4,11 @@ title: Artificial Intelligence
 description: Thoughts on generative AI and the future of software
 date: 2023-05-15
 status: Stable
+references:
+  - >-
+    [Andreessen, M. (2011). Why Software is Eating the World](https://a16z.com/2011/08/20/why-software-is-eating-the-world/)
+  - >-
+    [Altman, S. (2023). Moore's Law for Everything](https://moores.samaltman.com)
 ---
 
 Something exciting and perhaps incredible is happening in AI right now. In short, we’re seeing massive leaps in AI where
