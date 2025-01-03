@@ -23,7 +23,9 @@ It plays a crucial role in the LCM framework by enabling the conversion of textu
 conceptual reasoning. The encoder is optimized for capturing semantic nuances and relationships between concepts,
 facilitating advanced language understanding and generation tasks.
 
-# How does it compare to vec2text? AI!
+## Comparison with vec2text
+
+SONAR and vec2text both aim to transform textual data into embeddings, but they differ in their approach and application. While vec2text focuses on generating embeddings for individual words or phrases, SONAR operates at the sentence level, capturing more complex semantic relationships. This makes SONAR particularly suited for tasks requiring a deeper understanding of context and meaning across longer text spans.
 
 
 ## Model Training
