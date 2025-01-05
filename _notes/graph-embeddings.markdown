@@ -6,9 +6,15 @@ date: 2024-12-24
 status: Growing
 ---
 
-Matryoshka embeddings (Yu et al., 2022)[^1] are hierarchical neural networks that produce nested vector representations of decreasing dimensionality from a single embedding space. Using a specialized loss function, they maintain semantic consistency across dimensional subsets, enabling flexible deployment across different computational constraints while preserving relationships.
+Matryoshka embeddings (Yu et al., 2022)[^1] are hierarchical neural networks that produce nested vector representations
+of decreasing dimensionality from a single embedding space. Using a specialized loss function, they maintain semantic
+consistency across dimensional subsets, enabling flexible deployment across different computational constraints while
+preserving relationships.
 
-For example, OpenAI's text-embedding-3-large model produces 3072-dimensional embeddings where the full vector captures detailed semantics, while the first 1536 and 768 dimensions preserve core meaning and essential concepts respectively. This nested structure enables building semantic graphs with multiple layers - using full dimensionality for fine-grained relationships and reduced dimensions for broader thematic connections.
+For example, OpenAI's text-embedding-3-large model produces 3072-dimensional embeddings where the full vector captures
+detailed semantics, while the first 1536 and 768 dimensions preserve core meaning and essential concepts respectively.
+This nested structure enables building semantic graphs with multiple layers - using full dimensionality for fine-grained
+relationships and reduced dimensions for broader thematic connections.
 
 ```mermaid
 graph TD
@@ -27,11 +33,13 @@ graph TD
 ```
 
 For example, when comparing animal-related statements through different dimensional depths:
+
 - 768d: Groups mammals together, separating them from birds
 - 1536d: Identifies shared traits like echolocation or marine habitat
 - 3072d: Distinguishes fine details like nocturnal vs diurnal behavior
 
-This demonstrates how matryoshka embeddings preserve broad categories in lower dimensions while encoding specific features in higher dimensions, though some granular relationships may be lost in dimensional reduction.
+This demonstrates how matryoshka embeddings preserve broad categories in lower dimensions while encoding specific
+features in higher dimensions, though some granular relationships may be lost in dimensional reduction.
 
 In practice, creating meaningful graph structures from embeddings requires careful consideration of similarity
 thresholds and edge directionality. A common approach is to use cosine similarity with different thresholds at
@@ -50,18 +58,21 @@ conceptual dependencies, while the acyclic nature ensures clear paths of reasoni
 The hierarchical nature of matryoshka embeddings provides a natural foundation for building semantic knowledge graphs.
 By analyzing relationships at different dimensional depths, we can construct rich networks of conceptual connections
 that capture both broad categorical relationships and fine-grained semantic details. This approach combines three key
-components: (1) embedding similarity at various dimensional levels for initial relationship discovery, (2) cross-encoders
+components: (1) embedding similarity at various dimensional levels for initial relationship discovery, (2)
+cross-encoders
 for precise semantic verification, and (3) graph-based reasoning to explore concept connections. The result is a more
 nuanced understanding of conceptual hierarchies and relationships, particularly valuable for complex knowledge domains
 where simple similarity matching might miss important contextual connections.
 
-The implementation of this approach draws inspiration from GraphRAG[^2] while focusing on hierarchical matryoshka embeddings to build semantic concept graphs. The key components are:
+The implementation of this approach draws inspiration from GraphRAG[^2] while focusing on hierarchical matryoshka
+embeddings to build semantic concept graphs. The key components are:
 
 1. Building a directed concept graph that preserves the dimensional hierarchy of matryoshka embeddings
 2. Implementing similarity-based retrieval leveraging embedding dimensions
 3. Supporting graph-based concept mining through traversal of related nodes
 
-To illustrate how hierarchical embeddings capture concept relationships in graph form, let's examine our animal examples:
+To illustrate how hierarchical embeddings capture concept relationships in graph form, let's examine our animal
+examples:
 
 1. Direct Relationships (First-order connections):
     - Dolphins → Echolocation → Bats
@@ -163,19 +174,32 @@ This theoretical framework explains why GraphRAG's approach is particularly effe
 - Cross-encoder verification aligns with spectral clustering's ability to identify genuine communities
 - The multi-dimensional approach mirrors multi-resolution community detection methods
 
-[^1]: Yu, W., Luo, F., Zhu, P., Peng, P., Zhou, J., Wen, X., ... & Zhou, J. (2022). [Matryoshka representation learning](https://proceedings.neurips.cc/paper_files/paper/2022/hash/e614f646836aaed9f89ce58e837e2310-Abstract.html){:target="_blank"}. *Advances in Neural Information Processing Systems*, 35, 12156-12168.
+[^1]: Yu, W., Luo, F., Zhu, P., Peng, P., Zhou, J., Wen, X., ... & Zhou, J. (
+2022). [Matryoshka representation learning](https://proceedings.neurips.cc/paper_files/paper/2022/hash/e614f646836aaed9f89ce58e837e2310-Abstract.html){:
+target="_blank"}. *Advances in Neural Information Processing Systems*, 35, 12156-12168.
 
-[^2]: Liu, S., Yu, T., Xiao, T., Peng, Z., & Hong, Y. (2023). [GraphRAG: Unlocking LLM's Potential for Complex Question Answering over Knowledge Graphs](https://arxiv.org/abs/2310.05842){:target="_blank"}. arXiv preprint arXiv:2310.05842.
+[^2]: Liu, S., Yu, T., Xiao, T., Peng, Z., & Hong, Y. (
+2023). [GraphRAG: Unlocking LLM's Potential for Complex Question Answering over Knowledge Graphs](https://arxiv.org/abs/2310.05842){:
+target="_blank"}. arXiv preprint arXiv:2310.05842.
 
-[^3]: Newman, M. E. J. (2006). [Modularity and community structure in networks](https://doi.org/10.1073/pnas.0601602103){:target="_blank"}. *Proceedings of the National Academy of Sciences*, 103(23), 8577-8582.
+[^3]: Newman, M. E. J. (
+2006). [Modularity and community structure in networks](https://doi.org/10.1073/pnas.0601602103){:target="_blank"}.
+*Proceedings of the National Academy of Sciences*, 103(23), 8577-8582.
 
-[^4]: Fortunato, S., & Barthélemy, M. (2007). [Resolution limit in community detection](https://doi.org/10.1073/pnas.0605965104){:target="_blank"}. *Proceedings of the National Academy of Sciences*, 104(1), 36-41.
+[^4]: Fortunato, S., & Barthélemy, M. (
+2007). [Resolution limit in community detection](https://doi.org/10.1073/pnas.0605965104){:target="_blank"}.
+*Proceedings of the National Academy of Sciences*, 104(1), 36-41.
 
-[^5]: Von Luxburg, U. (2007). [A tutorial on spectral clustering](https://doi.org/10.1007/s11222-007-9033-z){:target="_blank"}. *Statistics and Computing*, 17(4), 395-416.
+[^5]: Von Luxburg, U. (2007). [A tutorial on spectral clustering](https://doi.org/10.1007/s11222-007-9033-z){:target="_
+blank"}. *Statistics and Computing*, 17(4), 395-416.
 
-[^6]: Page, L., Brin, S., Motwani, R., & Winograd, T. (1999). [The PageRank citation ranking: Bringing order to the web](http://ilpubs.stanford.edu:8090/422/){:target="_blank"}. Technical Report. Stanford InfoLab.
+[^6]: Page, L., Brin, S., Motwani, R., & Winograd, T. (
+1999). [The PageRank citation ranking: Bringing order to the web](http://ilpubs.stanford.edu:8090/422/){:target="_
+blank"}. Technical Report. Stanford InfoLab.
 
-[^7]: Traag, V. A., Waltman, L., & van Eck, N. J. (2019). [From Louvain to Leiden: guaranteeing well-connected communities](https://doi.org/10.1038/s41598-019-41695-z){:target="_blank"}. *Scientific Reports*, 9(1), 1-12.
+[^7]: Traag, V. A., Waltman, L., & van Eck, N. J. (
+2019). [From Louvain to Leiden: guaranteeing well-connected communities](https://doi.org/10.1038/s41598-019-41695-z){:
+target="_blank"}. *Scientific Reports*, 9(1), 1-12.
 
 
 
