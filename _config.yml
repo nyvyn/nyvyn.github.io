@@ -16,6 +16,9 @@ collections:
   notes:
     output: true
     permalink: /notes/:title
+  projects:
+    output: true
+    permalink: /projects/:title
 
 # Add these pages to the default list of inclusions.
 include:

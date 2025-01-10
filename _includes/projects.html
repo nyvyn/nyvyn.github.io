@@ -1,13 +1,16 @@
+{% assign projects = site.data.projects.docs | concat: site.projects %}
+
 <ul class="uk-list uk-list-large uk-margin-medium-top">
-    {% for item in site.data.projects.docs %}
+    {% for item in projects %}
     <li>
         <a class="uk-link-toggle" href="{{- item.url -}}">
             <div class="uk-flex uk-flex-middle uk-link-heading">
                 <span class="uk-margin-small-right" data-uk-icon="icon: {{- item.icon -}}; ratio: 0.9"></span>
-                {{ item.name }}
+                {{ item.title }}
             </div>
             <span class="uk-display-block uk-text-light">{{ item.description }}</span>
         </a>
     </li>
     {% endfor %}
 </ul>
+

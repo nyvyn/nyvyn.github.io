@@ -3,6 +3,8 @@ docs:
     url: posts
   - title: Garden
     url: notes
+  - title: Projects
+    url: projects
   - title: Library
     url: books
   - title: About
