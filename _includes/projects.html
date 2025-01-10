@@ -5,7 +5,9 @@
     <li>
         <a class="uk-link-toggle" href="{{- item.url -}}">
             <div class="uk-flex uk-flex-middle uk-link-heading">
-                <span class="uk-margin-small-right" data-uk-icon="icon: {{- item.icon -}}; ratio: 0.9"></span>
+                <span class="uk-margin-small-right"
+                      data-uk-icon="icon: {{- item.icon | default: 'star' -}}; ratio: 0.9"
+                ></span>
                 {{ item.title }}
             </div>
             <span class="uk-display-block uk-text-light">{{ item.description }}</span>
