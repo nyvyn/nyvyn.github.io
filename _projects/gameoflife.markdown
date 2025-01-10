@@ -7,7 +7,9 @@ date: 2025-01-10
 
 This is a simple demonstration of emergent behavior inspired by Conway's Game of Life.
 
-<canvas id="gameCanvas" width="400" height="400" style="border:1px solid #000000;"></canvas>
+<div style="display: flex; justify-content: center;">
+  <canvas id="gameCanvas" width="400" height="400" style="border:1px solid #000000;"></canvas>
+</div>
 
 <script>
   const canvas = document.getElementById('gameCanvas');
