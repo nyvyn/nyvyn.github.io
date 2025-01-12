@@ -17,9 +17,10 @@ This is a simple demonstration of emergent behavior inspired by Conway's Game of
 
 <script type="module">
     import { pipeline } from 'https://cdn.jsdelivr.net/npm/@huggingface/transformers@3.2.4';
-    import "/assets/js/chat.js";
+    import { setupChatInterface } from "/assets/js/chat.js";
     import "/assets/js/listener.js";
     import "/assets/js/worker.js";
+  setupChatInterface('chatInterface');
 </script>
 
 <script>
