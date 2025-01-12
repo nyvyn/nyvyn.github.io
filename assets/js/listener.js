@@ -1,5 +1,5 @@
 let worker = null;
-let status = null;
+let status = "loading";
 let error = null;
 let loadingMessage = "";
 let progressItems = [];
@@ -17,6 +17,9 @@ function setupWorker() {
 
   worker.addEventListener("message", onMessageReceived);
   worker.addEventListener("error", onErrorReceived);
+
+  // Load the model when the worker is set up
+  worker.postMessage({ type: "load" });
   // Listen for messages from chat.js
   window.addEventListener('sendMessage', function(event) {
     const messageText = event.detail;
@@ -32,6 +35,7 @@ function onMessageReceived(e) {
     case "loading":
       status = "loading";
       loadingMessage = e.data.data;
+      status = "complete";
       break;
     case "initiate":
       progressItems.push(e.data);
