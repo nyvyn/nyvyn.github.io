@@ -19,16 +19,4 @@ This is a test for loading an ai model directly in the browser.
   </div>
 </div>
 
-<script type="module">
-  const checkpoint = "onnx-community/Llama-3.2-1B-Instruct-q4f16";
-  import { AutoTokenizer, AutoModelForCausalLM, env } from "https://cdn.jsdelivr.net/npm/@huggingface/transformers@3.2.4/dist/transformers.min.js";
-
-  env.allowLocalModels = false;
-
-  const device = "webgpu";
-  const tokenizer = AutoTokenizer.from_pretrained(checkpoint);
-  const model = AutoModelForCausalLM.from_pretrained(checkpoint).to(device);
-
-  const inputs = tokenizer("a");
-  await model.generate({ ...inputs, max_new_tokens: 1 });
-</script>
+<script type="module" src="/assets/js/listener.js"></script>
