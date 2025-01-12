@@ -8,6 +8,10 @@ let messages = [];
 let tps = null;
 let numTokens = null;
 
+document.addEventListener('DOMContentLoaded', (event) => {
+  setupWorker();
+});
+
 export function setupWorker() {
 
   if (!worker) {
