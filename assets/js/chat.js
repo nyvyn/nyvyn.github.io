@@ -37,7 +37,8 @@ document.addEventListener('DOMContentLoaded', function() {
       messageItem.textContent = messageText;
       messageList.appendChild(messageItem);
       inputField.value = '';
-      // Here you can add logic to send the message to the worker or server
+      // Send the message to the listener
+      window.dispatchEvent(new CustomEvent('sendMessage', { detail: messageText }));
     }
   });
 });

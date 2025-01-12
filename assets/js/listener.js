@@ -17,7 +17,14 @@ function setupWorker() {
 
   worker.addEventListener("message", onMessageReceived);
   worker.addEventListener("error", onErrorReceived);
-}
+  // Listen for messages from chat.js
+  window.addEventListener('sendMessage', function(event) {
+    const messageText = event.detail;
+    if (worker && status === "ready") {
+      worker.postMessage({ type: "generate", data: [{ role: "user", content: messageText }] });
+      isRunning = true;
+    }
+  });
 
 function onMessageReceived(e) {
   switch (e.data.status) {
