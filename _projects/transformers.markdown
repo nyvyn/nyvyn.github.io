@@ -44,8 +44,10 @@ This is a test for loading an ai model directly in the browser.
     botMessageElement.textContent = `Bot: ${event.response}`;
     chatMessages.appendChild(botMessageElement);
   });
+
   // Initialize the worker when the document is loaded
   window.addEventListener('DOMContentLoaded', function() {
+    console.log("setting up worker");
     setupWorker();
   });
 </script>
