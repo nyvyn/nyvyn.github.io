@@ -9,26 +9,17 @@ let tps = null;
 let numTokens = null;
 
 export function setupWorker() {
-  // Append the Hugging Face pipeline script
-  const hfScript = document.createElement('script');
-  hfScript.type = 'module';
-  hfScript.src = 'https://cdn.jsdelivr.net/npm/@huggingface/transformers';
 
-  hfScript.onload = function() {
-    // Only set up the worker after the Hugging Face script has loaded
-    if (!worker) {
-      worker = new Worker('/assets/js/worker.js', { type: "module" });
-      worker.postMessage({ type: "check" });
-    }
+  if (!worker) {
+    worker = new Worker('/assets/js/worker.js', { type: "module" });
+    worker.postMessage({ type: "check" });
+  }
 
-    worker.addEventListener("message", onMessageReceived);
-    worker.addEventListener("error", onErrorReceived);
+  worker.addEventListener("message", onMessageReceived);
+  worker.addEventListener("error", onErrorReceived);
 
-    // Load the model when the worker is set up
-    worker.postMessage({ type: "load" });
-  };
-
-  document.body.appendChild(hfScript);
+  // Load the model when the worker is set up
+  worker.postMessage({ type: "load" });
 
   // Listen for messages from chat.js
   window.addEventListener('sendMessage', function(event) {
@@ -81,9 +72,3 @@ function onMessageReceived(e) {
 function onErrorReceived(e) {
   console.error("Worker error:", e);
 }
-
-function initialize() {
-  setupWorker();
-}
-
-document.addEventListener('DOMContentLoaded', initialize);
