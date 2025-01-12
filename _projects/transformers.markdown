@@ -21,5 +21,6 @@ This is a test for loading an ai model directly in the browser.
 
 <script type="module">
   import { setupWorker } from "/assets/js/listener.js";
+  import { pipeline, env } from 'https://cdn.jsdelivr.net/npm/@xenova/transformers@3.0.0';
   setupWorker();
 </script>
