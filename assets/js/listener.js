@@ -12,7 +12,7 @@ export function setupWorker() {
   // Append the Hugging Face pipeline script
   const hfScript = document.createElement('script');
   hfScript.type = 'module';
-  hfScript.src = 'https://cdn.jsdelivr.net/npm/@xenova/transformers';
+  hfScript.src = 'https://cdn.jsdelivr.net/npm/@xenova/transformers@1.0.0/dist/transformers.min.js';
   document.body.appendChild(hfScript);
 
   // Append the worker.js script
