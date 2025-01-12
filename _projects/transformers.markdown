@@ -1,3 +1,5 @@
+---
+layout: project
 title: Transformers.js Test
 description: Test of loading ai models in browser
 date: 2025-01-12
