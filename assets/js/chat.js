@@ -1,4 +1,4 @@
-function setupChatInterface(containerId) {
+function setupChat(containerId) {
   const containerElement = document.getElementById(containerId);
   if (!containerElement) {
     console.error(`Element with ID '${containerId}' not found.`);
@@ -49,5 +49,5 @@ function setupChatInterface(containerId) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-  setupChatInterface('chatInterface');
+  setupCjhat('chatInterface');
 });
