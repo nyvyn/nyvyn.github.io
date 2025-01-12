@@ -23,4 +23,32 @@ This is a test for loading an ai model directly in the browser.
   import { setupWorker } from "/assets/js/listener.js";
   import { pipeline, env } from 'https://cdn.jsdelivr.net/npm/@xenova/transformers@3.0.0';
   setupWorker();
+
+  // Handle chat form submission
+  document.getElementById('chatForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const input = document.getElementById('chatInput');
+    const message = input.value.trim();
+    if (message) {
+      // Send the message to the worker
+      window.dispatchEvent(new CustomEvent('sendMessage', { detail: message }));
+      input.value = '';
+
+      // Display the user's message in the chat
+      const chatMessages = document.getElementById('chatMessages');
+      const userMessageElement = document.createElement('div');
+      userMessageElement.textContent = `User: ${message}`;
+      chatMessages.appendChild(userMessageElement);
+    }
+  });
+
+  // Listen for messages from the worker
+  window.addEventListener('message', function(event) {
+    if (event.data && event.data.status === 'complete') {
+      const chatMessages = document.getElementById('chatMessages');
+      const botMessageElement = document.createElement('div');
+      botMessageElement.textContent = `Bot: ${event.data.output}`;
+      chatMessages.appendChild(botMessageElement);
+    }
+  });
 </script>
