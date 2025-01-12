@@ -48,4 +48,3 @@ function setupChat() {
 }
 
 document.addEventListener('DOMContentLoaded', setupChat);
-});
