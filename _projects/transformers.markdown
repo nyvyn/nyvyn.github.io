@@ -22,21 +22,35 @@ This is a test for loading an ai model directly in the browser.
 <script src="https://cdn.jsdelivr.net/npm/@xenova/transformers@2.6.0/dist/transformers.min.js"></script>
 <script type="module">
 
-  // Handle chat form submission
+  // Initialize the text generation pipeline
+  let textGenerationPipeline;
+
+  async function setupModel() {
+    textGenerationPipeline = await window.transformers.pipeline('text-generation', 'gpt2');
+  }
+
+  setupModel();
   document.getElementById('chatForm').addEventListener('submit', function(event) {
     event.preventDefault();
     const input = document.getElementById('chatInput');
     const message = input.value.trim();
     if (message) {
-      // Send the message to the worker
-      window.dispatchEvent(new CustomEvent('sendMessage', { detail: message }));
-      input.value = '';
+      if (textGenerationPipeline) {
+        // Generate a response using the model
+        textGenerationPipeline(message, { max_length: 50 }).then(response => {
+          const chatMessages = document.getElementById('chatMessages');
+          
+          // Display the user's message in the chat
+          const userMessageElement = document.createElement('div');
+          userMessageElement.textContent = `User: ${message}`;
+          chatMessages.appendChild(userMessageElement);
 
-      // Display the user's message in the chat
-      const chatMessages = document.getElementById('chatMessages');
-      const userMessageElement = document.createElement('div');
-      userMessageElement.textContent = `User: ${message}`;
-      chatMessages.appendChild(userMessageElement);
+          // Display the bot's response in the chat
+          const botMessageElement = document.createElement('div');
+          botMessageElement.textContent = `Bot: ${response[0].generated_text}`;
+          chatMessages.appendChild(botMessageElement);
+        });
+      }
     }
   });
 
