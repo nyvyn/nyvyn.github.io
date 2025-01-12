@@ -36,11 +36,12 @@ This is a test for loading an ai model directly in the browser.
     const sendMessageEvent = new CustomEvent('sendMessage', { detail: message });
     window.dispatchEvent(sendMessageEvent);
   });
+
   // Listen for the botResponse event to append the assistant's message
-  window.addEventListener('botResponse', function(event) {
+  window.addEventListener('receiveMessage', function(event) {
     const chatMessages = document.getElementById('chatMessages');
     const botMessageElement = document.createElement('div');
-    botMessageElement.textContent = `Bot: ${event.detail}`;
+    botMessageElement.textContent = `Bot: ${event.response}`;
     chatMessages.appendChild(botMessageElement);
   });
 </script>
