@@ -17,9 +17,10 @@ This is a simple demonstration of emergent behavior inspired by Conway's Game of
 
 <script type="module">
   import { setupChatInterface } from "/assets/js/chat.js";
-  import "/assets/js/listener.js";
+  import { setup } from "/assets/js/listener.js";
   import "/assets/js/worker.js";
   setupChatInterface('chatInterface');
+  setup();
 </script>
 
 <script>
