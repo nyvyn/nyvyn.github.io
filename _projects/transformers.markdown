@@ -12,6 +12,7 @@ This is a test for loading an ai model directly in the browser.
     <h3 class="uk-card-title">Chat</h3>
     <div id="chatMessages" class="uk-height-medium uk-overflow-auto"></div>
     <form id="chatForm" class="uk-margin">
+      <label for="chatInput"></label>
       <input class="uk-input" type="text" id="chatInput" placeholder="Type your message here...">
       <button class="uk-button uk-button-primary uk-margin-top" type="submit">Send</button>
     </form>
@@ -19,9 +20,6 @@ This is a test for loading an ai model directly in the browser.
 </div>
 
 <script type="module">
-  
-  import { setupChat } from "/assets/js/chat.js";
   import { setupWorker } from "/assets/js/listener.js";
-  setupChat();
   setupWorker();
 </script>
