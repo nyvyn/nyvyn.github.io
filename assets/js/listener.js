@@ -25,6 +25,7 @@ function setupWorker() {
       isRunning = true;
     }
   });
+}
 
 function onMessageReceived(e) {
   switch (e.data.status) {
