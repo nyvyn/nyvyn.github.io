@@ -19,51 +19,16 @@ This is a test for loading an ai model directly in the browser.
   </div>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/@xenova/transformers@2.6.0/dist/transformers.min.js"></script>
 <script type="module">
+  const checkpoint = "onnx-community/Llama-3.2-1B-Instruct-q4f16";
+  import { AutoTokenizer, AutoModelForCausalLM, env } from "https://cdn.jsdelivr.net/npm/@huggingface/transformers@3.2.4/dist/transformers.min.js";
 
-  // Import the pipeline function from the transformers library
-  import { pipeline } from 'https://cdn.jsdelivr.net/npm/@xenova/transformers@2.6.0/dist/transformers.min.js';
+  env.allowLocalModels = false;
 
-  // Initialize the text generation pipeline with the phi-3 model
-  let textGenerationPipeline;
+  const device = "webgpu";
+  const tokenizer = AutoTokenizer.from_pretrained(checkpoint);
+  const model = AutoModelForCausalLM.from_pretrained(checkpoint).to(device);
 
-  async function setupModel() {
-    textGenerationPipeline = await pipeline('text-generation', 'onnx-community/Phi-3.5-mini-instruct-onnx-web');
-  }
-
-  setupModel();
-  document.getElementById('chatForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-    const input = document.getElementById('chatInput');
-    const message = input.value.trim();
-    if (message) {
-      if (textGenerationPipeline) {
-        // Generate a response using the model
-        textGenerationPipeline(message, { max_length: 50 }).then(response => {
-          const chatMessages = document.getElementById('chatMessages');
-          
-          // Display the user's message in the chat
-          const userMessageElement = document.createElement('div');
-          userMessageElement.textContent = `User: ${message}`;
-          chatMessages.appendChild(userMessageElement);
-
-          // Display the bot's response in the chat
-          const botMessageElement = document.createElement('div');
-          botMessageElement.textContent = `Bot: ${response[0].generated_text}`;
-          chatMessages.appendChild(botMessageElement);
-        });
-      }
-    }
-  });
-
-  // Listen for messages from the worker
-  window.addEventListener('message', function(event) {
-    if (event.data && event.data.status === 'complete') {
-      const chatMessages = document.getElementById('chatMessages');
-      const botMessageElement = document.createElement('div');
-      botMessageElement.textContent = `Bot: ${event.data.output}`;
-      chatMessages.appendChild(botMessageElement);
-    }
-  });
+  const inputs = tokenizer("a");
+  await model.generate({ ...inputs, max_new_tokens: 1 });
 </script>
