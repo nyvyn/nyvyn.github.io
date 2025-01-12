@@ -26,6 +26,12 @@ This is a test for loading an ai model directly in the browser.
     const message = input.value;
     input.value = '';
 
+    // Append the user's message to the chat window
+    const chatMessages = document.getElementById('chatMessages');
+    const userMessageElement = document.createElement('div');
+    userMessageElement.textContent = `User: ${message}`;
+    chatMessages.appendChild(userMessageElement);
+
     // Dispatch the sendMessage event
     const sendMessageEvent = new CustomEvent('sendMessage', { detail: message });
     window.dispatchEvent(sendMessageEvent);
