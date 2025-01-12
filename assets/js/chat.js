@@ -1,9 +1,8 @@
-function setupChat(containerId) {
-  const containerElement = document.getElementById(containerId);
-  if (!containerElement) {
-    console.error(`Element with ID '${containerId}' not found.`);
-    return;
-  }
+function setupChat() {
+  const containerElement = document.createElement('div');
+  containerElement.id = 'chatInterface';
+  containerElement.style.marginTop = '20px';
+  document.body.appendChild(containerElement);
   const chatContainer = document.createElement('div');
   chatContainer.className = 'uk-container uk-margin-top';
 
@@ -48,6 +47,5 @@ function setupChat(containerId) {
   });
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-  setupCjhat('chatInterface');
+document.addEventListener('DOMContentLoaded', setupChat);
 });
