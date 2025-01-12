@@ -34,6 +34,22 @@ var TextGenerationPipeline = (function () {
     };
 })();
 
+function InterruptableStoppingCriteria() {
+    this.interrupted = false;
+
+    this.reset = function() {
+        this.interrupted = false;
+    };
+
+    this.interrupt = function() {
+        this.interrupted = true;
+    };
+
+    this.isInterrupted = function() {
+        return this.interrupted;
+    };
+}
+
 var stopping_criteria = new InterruptableStoppingCriteria();
 var past_key_values_cache = null;
 
