@@ -19,6 +19,7 @@ This is a test for loading an ai model directly in the browser.
   </div>
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/@xenova/transformers@2.6.0/dist/transformers.min.js"></script>
 <script type="module">
 
   // Handle chat form submission
