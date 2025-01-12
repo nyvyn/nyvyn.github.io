@@ -22,11 +22,14 @@ This is a test for loading an ai model directly in the browser.
 <script src="https://cdn.jsdelivr.net/npm/@xenova/transformers@2.6.0/dist/transformers.min.js"></script>
 <script type="module">
 
-  // Initialize the text generation pipeline
+  // Import the pipeline function from the transformers library
+  import { pipeline } from 'https://cdn.jsdelivr.net/npm/@xenova/transformers@2.6.0/dist/transformers.min.js';
+
+  // Initialize the text generation pipeline with the phi-3 model
   let textGenerationPipeline;
 
   async function setupModel() {
-    textGenerationPipeline = await window.transformers.pipeline('text-generation', 'gpt2');
+    textGenerationPipeline = await pipeline('text-generation', 'onnx-community/Phi-3.5-mini-instruct-onnx-web');
   }
 
   setupModel();
