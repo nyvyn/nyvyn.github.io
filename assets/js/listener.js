@@ -9,7 +9,18 @@ let messages = [];
 let tps = null;
 let numTokens = null;
 
-function setupWorker() {
+function setup() {
+  // Append the Hugging Face pipeline script
+  const hfScript = document.createElement('script');
+  hfScript.type = 'module';
+  hfScript.src = 'https://cdn.jsdelivr.net/npm/@huggingface/transformers@3.2.4';
+  document.body.appendChild(hfScript);
+
+  // Append the worker.js script
+  const workerScript = document.createElement('script');
+  workerScript.type = 'module';
+  workerScript.src = './worker.js';
+  document.body.appendChild(workerScript);
   if (!worker) {
     worker = new Worker('./worker.js', { type: "module" });
     worker.postMessage({ type: "check" });
@@ -73,7 +84,7 @@ function onErrorReceived(e) {
 }
 
 function initialize() {
-  setupWorker();
+  setup();
 }
 
 document.addEventListener('DOMContentLoaded', initialize);
