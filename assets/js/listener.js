@@ -41,11 +41,11 @@ function onMessageReceived(e) {
       status = "loading";
       loadingMessage = e.data.data;
       status = "complete";
-      // Append the assistant's response to the chat window
-      const chatMessages = document.getElementById('chatMessages');
-      const botMessageElement = document.createElement('div');
-      botMessageElement.textContent = `Bot: ${messages[messages.length - 1].content}`;
-      chatMessages.appendChild(botMessageElement);
+      // Dispatch a custom event with the assistant's response
+      const botResponseEvent = new CustomEvent('botResponse', {
+        detail: messages[messages.length - 1].content
+      });
+      window.dispatchEvent(botResponseEvent);
       break;
     case "initiate":
       progressItems.push(e.data);
