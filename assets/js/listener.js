@@ -4,12 +4,11 @@ let error = null;
 let loadingMessage = "";
 let progressItems = [];
 let isRunning = false;
-let input = "";
 let messages = [];
 let tps = null;
 let numTokens = null;
 
-function setup() {
+export function setupWorker() {
   // Append the Hugging Face pipeline script
   const hfScript = document.createElement('script');
   hfScript.type = 'module';
@@ -19,10 +18,10 @@ function setup() {
   // Append the worker.js script
   const workerScript = document.createElement('script');
   workerScript.type = 'module';
-  workerScript.src = './worker.js';
+  workerScript.src = '/assets/js/worker.js';
   document.body.appendChild(workerScript);
   if (!worker) {
-    worker = new Worker('./worker.js', { type: "module" });
+    worker = new Worker('/assets/js/worker.js', { type: "module" });
     worker.postMessage({ type: "check" });
   }
 
@@ -84,7 +83,7 @@ function onErrorReceived(e) {
 }
 
 function initialize() {
-  setup();
+  setupWorker();
 }
 
 document.addEventListener('DOMContentLoaded', initialize);
