@@ -1,4 +1,9 @@
-document.addEventListener('DOMContentLoaded', function() {
+function setupChatInterface(containerId) {
+  const containerElement = document.getElementById(containerId);
+  if (!containerElement) {
+    console.error(`Element with ID '${containerId}' not found.`);
+    return;
+  }
   const chatContainer = document.createElement('div');
   chatContainer.className = 'uk-container uk-margin-top';
 
@@ -28,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
   chatBox.appendChild(messageList);
   chatContainer.appendChild(chatBox);
   chatContainer.appendChild(inputContainer);
-  document.body.appendChild(chatContainer);
+  containerElement.appendChild(chatContainer);
 
   sendButton.addEventListener('click', function() {
     const messageText = inputField.value.trim();
@@ -41,4 +46,8 @@ document.addEventListener('DOMContentLoaded', function() {
       window.dispatchEvent(new CustomEvent('sendMessage', { detail: messageText }));
     }
   });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  setupChatInterface('chatInterface');
 });
