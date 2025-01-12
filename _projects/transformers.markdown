@@ -19,4 +19,17 @@ This is a test for loading an ai model directly in the browser.
   </div>
 </div>
 
+<script type="module">
+  document.getElementById('chatForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const input = document.getElementById('chatInput');
+    const message = input.value;
+    input.value = '';
+
+    // Dispatch the sendMessage event
+    const sendMessageEvent = new CustomEvent('sendMessage', { detail: message });
+    window.dispatchEvent(sendMessageEvent);
+  });
+</script>
+
 <script type="module" src="/assets/js/listener.js"></script>
