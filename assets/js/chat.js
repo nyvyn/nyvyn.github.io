@@ -1,4 +1,4 @@
-function setupChat() {
+export function setupChat() {
   const containerElement = document.createElement('div');
   containerElement.id = 'chatInterface';
   containerElement.style.marginTop = '20px';
