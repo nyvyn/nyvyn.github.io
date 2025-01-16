@@ -26,10 +26,8 @@ const generator = await pipeline(
   { dtype: "q4", device: "webgpu" },
 );
 
-// Define the list of messages
 const messages = [
-  { role: "system", content: "You are a helpful assistant." },
-  { role: "user", content: "Tell me a funny joke." },
+  { role: "system", content: "You are a helpful assistant." }
 ];
 
 document.getElementById('chat-form').addEventListener('submit', async (event) => {
