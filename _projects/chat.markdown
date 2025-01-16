@@ -8,7 +8,7 @@ date: 2025-01-16
 Simple chat prototype.
 
 <div class="uk-container uk-margin-top">
-    <div id="chat-display" class="uk-card uk-card-default uk-card-body uk-margin"></div>
+    <div id="chat-display" class="uk-card uk-card-body uk-card-muted uk-margin"></div>
     <form id="chat-form" class="uk-form-stacked">
         <div class="uk-margin">
             <input class="uk-input" type="text" id="user-input" placeholder="Type your message here...">
