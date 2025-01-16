@@ -32,8 +32,6 @@ const messages = [
   { role: "user", content: "Tell me a funny joke." },
 ];
 
-// Generate a response
-const output = await generator(messages, { max_new_tokens: 128 });
 document.getElementById('chat-form').addEventListener('submit', async (event) => {
     event.preventDefault();
     const userInput = document.getElementById('user-input').value;
