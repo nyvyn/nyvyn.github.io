@@ -5,13 +5,6 @@ description: Demonstration of local browser model chat
 date: 2025-01-16
 ---
 
-<!-- UIkit CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.16/dist/css/uikit.min.css" />
-
-<!-- UIkit JS -->
-<script src="https://cdn.jsdelivr.net/npm/uikit@3.6.16/dist/js/uikit.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/uikit@3.6.16/dist/js/uikit-icons.min.js"></script>
-
 <div class="uk-container uk-margin-top">
     <h2 class="uk-heading-line"><span>Chat Interface</span></h2>
     <div id="chat-display" class="uk-card uk-card-default uk-card-body uk-margin"></div>
