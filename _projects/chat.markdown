@@ -50,7 +50,8 @@ document.getElementById('chat-form').addEventListener('submit', async (event) =>
     // Display assistant response
     chatDisplay.innerHTML += `<div class="uk-alert-success" uk-alert>${response}</div>`;
 
-    // Clear input field
+    // Scroll to the bottom of the chat display
+    chatDisplay.scrollTop = chatDisplay.scrollHeight;
     document.getElementById('user-input').value = '';
 });
 </script>
