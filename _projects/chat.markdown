@@ -5,8 +5,9 @@ description: Demonstration of local browser model chat
 date: 2025-01-16
 ---
 
+Simple chat prototype.
+
 <div class="uk-container uk-margin-top">
-    <h2 class="uk-heading-line"><span>Chat Interface</span></h2>
     <div id="chat-display" class="uk-card uk-card-default uk-card-body uk-margin"></div>
     <form id="chat-form" class="uk-form-stacked">
         <div class="uk-margin">
