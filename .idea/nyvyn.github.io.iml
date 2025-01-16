@@ -10,5 +10,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="uikit" level="application" />
+    <orderEntry type="library" name="@xenova/transformers" level="application" />
+    <orderEntry type="library" name="@huggingface/transformers" level="application" />
   </component>
 </module>
