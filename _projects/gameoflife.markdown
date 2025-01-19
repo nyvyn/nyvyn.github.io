@@ -18,6 +18,7 @@ This is a simple demonstration of emergent behavior inspired by Conway's Game of
 
 <script>
   const canvas = document.getElementById('gameCanvas');
+  const ctx = canvas.getContext('2d');
   const resolution = 10;
   canvas.width = 400;
   canvas.height = 400;
@@ -104,7 +105,7 @@ This is a simple demonstration of emergent behavior inspired by Conway's Game of
 
   function update() {
     const next = updateGrid(grid);
-    render(next);
+    render(grid);
     // Add current grid to history
     history.push(JSON.stringify(grid));
     if (history.length > maxHistoryLength) {
