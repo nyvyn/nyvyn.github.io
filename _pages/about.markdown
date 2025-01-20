@@ -11,20 +11,8 @@ permalink: /about.html
     ¯\_(ツ)_/¯
 </h4>
 <hr class="uk-divider-small">
-<div class="uk-margin-medium-top"></div>
-
-I'm passionate about technology and the practical application of AI.
-I also love spending time with my family,
-snowboarding in the winters, martial arts, writing, and cycling all year round.
 
 <div class="uk-margin-medium-top"></div>
-
-<h3 class="uk-heading-divider uk-text-light ">Projects</h3>
-{% include projects.html %}
-
-<div class="uk-margin-medium-top"></div>
-
-<h3 class="uk-heading-divider uk-text-light ">Experience</h3>
 
 **Chief Technology Officer**  
 ITS  

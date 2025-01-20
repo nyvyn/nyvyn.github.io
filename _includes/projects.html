@@ -4,11 +4,11 @@
     {% for item in projects %}
     <li>
         <a class="uk-link-toggle" href="{{- item.url -}}">
-            <h4 class="uk-link-heading uk-margin-remove-bottom uk-text-light uk-flex uk-flex-middle">
+            <h4 class="uk-link-heading uk-margin-remove-bottom uk-text-light">
                 <span class="uk-margin-small-right"
                       data-uk-icon="icon: {{- item.icon | default: 'star' -}}; ratio: 0.9"
                 ></span>
-                {{ item.title }}
+                <span class="uk-text-middle">{{ item.title }}</span>
             </h4>
             <span class="uk-display-block uk-text-light">{{ item.description }}</span>
         </a>
