@@ -2,6 +2,7 @@
 layout: post
 title: "Good bye VUE, and thank you"
 tags: ["vue"]
+published: false
 ---
 
 To my colleagues at VUE,

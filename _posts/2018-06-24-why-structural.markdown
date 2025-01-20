@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Why Structural"
 tags: [ "structural" ]
 ---

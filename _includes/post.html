@@ -1,5 +1,5 @@
 {% capture link %}
-{% if include.link %}
+{% if include.link and include.full %}
 {{ include.link }}
 {% else %}
 {{ include.url }}
@@ -12,7 +12,7 @@
         <header class="uk-article-title">
             <h4 class="uk-link-heading uk-margin-remove-bottom uk-text-light">
                 {{ include.title }}
-                {% if include.link %}
+                {% if include.link and !include.full %}
                 <span data-uk-icon="icon: link-external; ratio: 0.7"></span>
                 {% endif %}
             </h4>
