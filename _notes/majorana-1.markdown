@@ -21,8 +21,8 @@ exotic quasiparticles that are their own antiparticles (first theorized in the 1
 
 In practice, Microsoft engineered a specialized semiconductor-superconductor structure to realize these particles: the
 chip is fabricated from **indium arsenide (InAs) nanowires coated with aluminum (Al)**, creating a hybrid system that
-can host pairs of Majorana zero modes under the right conditions. This new materials system is termed a *
-*“topoconductor,”** a breakthrough class of material enabling **topological superconductivity** – essentially a new
+can host pairs of Majorana zero modes under the right conditions. This new materials system is termed a 
+**“topoconductor,”** a breakthrough class of material enabling **topological superconductivity** – essentially a new
 state of matter that had existed only in theory until now. By inducing a topological superconducting phase, the device
 can spawn and manipulate Majorana quasiparticles, which serve as the carriers of quantum information.
 
