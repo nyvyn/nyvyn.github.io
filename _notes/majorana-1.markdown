@@ -56,16 +56,9 @@ can spawn and manipulate Majorana quasiparticles, which serve as the carriers of
 
 ## Key Breakthrough and Its Significance
 
-### **First Quantum Processor with a Topological Core**
+- **First Quantum Processor with a Topological Core**: Majorana-1 is the **first-ever quantum processor that uses topological qubits**. Microsoft describes this as creating the **“quantum transistor”**, akin to the classical transistor breakthrough that revolutionized computing. The Nature publication supporting this work validates the approach and signals a paradigm shift.
 
-Majorana-1 is the **first-ever quantum processor that uses topological qubits**. Microsoft describes this as creating
-the **“quantum transistor”**, akin to the classical transistor breakthrough that revolutionized computing. The Nature
-publication supporting this work validates the approach and signals a paradigm shift.
-
-### **Milestone for the Quantum Industry and Research**
-
-This breakthrough positions Microsoft as a leader in quantum research, receiving recognition from DARPA’s *
-*Underexplored Systems for Utility-Scale Quantum Computing (US2QC)** program.
+- **Milestone for the Quantum Industry and Research**: This breakthrough positions Microsoft as a leader in quantum research, receiving recognition from DARPA’s **Underexplored Systems for Utility-Scale Quantum Computing (US2QC)** program.
 
 ## Industry and Academic Perspectives on Feasibility and Future Outlook
 
