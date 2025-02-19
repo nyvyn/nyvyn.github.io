@@ -40,8 +40,8 @@ can spawn and manipulate Majorana quasiparticles, which serve as the carriers of
   is designed to slot into a compact quantum computer that could be deployed in standard data centers.
 - **Digital Control Mechanism:** Unlike superconducting qubits that require precisely tuned analog microwave pulses,
   Majorana-1 uses **digital control**, allowing qubits to be manipulated via standard electronics and software logic.
-- **Scalability Design:** The current Majorana-1 chip hosts **8 topological qubits**, but it’s explicitly built as a *
-  *scalable module**. Microsoft envisions expanding this to **hundreds, thousands, and eventually a million qubits on a
+- **Scalability Design:** The current Majorana-1 chip hosts **8 topological qubits**, but it’s explicitly built as a 
+  **scalable module**. Microsoft envisions expanding this to **hundreds, thousands, and eventually a million qubits on a
   single chip**.
 
 ## Differences from Existing Quantum Computing Approaches
