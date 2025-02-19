@@ -6,8 +6,8 @@ date: 2025-02-19
 status: Stable
 ---
 
-In February 2025, Microsoft unveiled **Majorana-1**, a quantum computing chip that for the first time harnesses *
-*topological qubits** based on Majorana fermions. Majorana-1 is a **Quantum Processing Unit (QPU)** built with a novel
+In February 2025, Microsoft unveiled **Majorana-1**, a quantum computing chip that for the first time harnesses 
+**topological qubits** based on Majorana fermions. Majorana-1 is a **Quantum Processing Unit (QPU)** built with a novel
 “Topological Core” architecture, containing 8 qubits and integrated control electronics on a single chip. This
 technology promises to realize quantum computers capable of solving meaningful, industrial-scale problems on much
 shorter timescales – **“years, not decades,”** according to Microsoft.
