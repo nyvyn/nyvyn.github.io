@@ -92,12 +92,6 @@ integration.
 - **AI and Autonomous Systems**: Quantum acceleration of AI may lead to powerful AI systems sooner than expected,
   requiring ethical considerations around control and regulation.
 
-- **Environmental and Workforce Considerations**: Quantum hardware requires cryogenic cooling and specialized materials,
-  raising sustainability concerns. Workforce retraining in quantum computing is essential.
-
-- **The Quantum Divide**: If quantum computing access is limited to a few entities, it could exacerbate global
-  inequality. International cooperation will be essential for equitable distribution of benefits.
-
 ## Conclusion
 
 Microsoft’s **Majorana-1** chip represents a bold step toward fault-tolerant quantum computing. If successful, its
