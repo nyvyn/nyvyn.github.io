@@ -46,28 +46,13 @@ can spawn and manipulate Majorana quasiparticles, which serve as the carriers of
 
 ## Differences from Existing Quantum Computing Approaches
 
-### **Intrinsic Error Resistance vs. Error Correction:**
+- **Intrinsic Error Resistance vs. Error Correction**: Traditional qubits (like superconducting transmons or trapped ions) require elaborate error-correction schemes, often requiring hundreds or thousands of physical qubits to maintain one error-corrected qubit. By contrast, **topological qubits are inherently more error-resistant**, meaning useful computations could be done with far fewer total qubits.
 
-Traditional qubits (like superconducting transmons or trapped ions) require elaborate error-correction schemes, often
-requiring hundreds or thousands of physical qubits to maintain one error-corrected qubit. By contrast, **topological
-qubits are inherently more error-resistant**, meaning useful computations could be done with far fewer total qubits.
+- **Control: Digital vs. Analog Tuning**: Most current quantum computers, especially superconducting ones, rely on analog control – continuous microwave pulses and precise voltage biases – to manipulate qubit states. **Majorana-1 employs digital control**, simplifying operation and improving stability.
 
-### **Control: Digital vs. Analog Tuning:**
+- **Materials and Operating Conditions**: While superconducting qubits use aluminum or niobium circuits and trapped ions require ultra-high vacuum chambers, Majorana-1 introduces a **hybrid semiconductor-superconductor approach**, potentially offering a more scalable and robust alternative.
 
-Most current quantum computers, especially superconducting ones, rely on analog control – continuous microwave pulses
-and precise voltage biases – to manipulate qubit states. **Majorana-1 employs digital control**, simplifying operation
-and improving stability.
-
-### **Materials and Operating Conditions:**
-
-While superconducting qubits use aluminum or niobium circuits and trapped ions require ultra-high vacuum chambers,
-Majorana-1 introduces a **hybrid semiconductor-superconductor approach**, potentially offering a more scalable and
-robust alternative.
-
-### **Scalability and Integration:**
-
-Quantum systems today struggle with wiring complexity as qubits scale. Microsoft’s **integrated qubits plus control
-logic on one chip** reduces external connections and enables a more efficient scaling roadmap.
+- **Scalability and Integration**: Quantum systems today struggle with wiring complexity as qubits scale. Microsoft’s **integrated qubits plus control logic on one chip** reduces external connections and enables a more efficient scaling roadmap.
 
 ## Key Breakthrough and Its Significance
 
