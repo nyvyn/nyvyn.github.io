@@ -28,21 +28,21 @@ can spawn and manipulate Majorana quasiparticles, which serve as the carriers of
 
 ### Key Technical Features of Majorana-1:
 
-- **Topological Qubits with Hardware Error Protection:** Each qubit is encoded non-locally across pairs of Majorana
-  fermions, making it inherently resistant to local sources of decoherence. The **Topological Core** of Majorana-1
-  provides error-resilience at the hardware level, meaning the qubits are **“reliable by design”** and more stable than
+- **Topological Qubits with Hardware Error Protection**: Each qubit is encoded non-locally across pairs of Majorana
+  fermions, making it inherently resistant to local sources of decoherence. The Topological Core of Majorana-1
+  provides error-resilience at the hardware level, meaning the qubits are "reliable by design" and more stable than
   ordinary qubits.
-- **First-of-its-Kind Material and Architecture:** Microsoft’s chip leverages the world’s first **topoconductor**, which
-  can **“observe and control Majorana particles to produce more reliable and scalable qubits.”** This material
+- **First-of-its-Kind Material and Architecture**: Microsoft’s chip leverages the world’s first topoconductor, which
+  can "observe and control Majorana particles to produce more reliable and scalable qubits." This material
   innovation underpins a radically different qubit architecture.
-- **Integrated Qubits and Control Electronics:** Majorana-1 contains not only the qubits but also much of the
+- **Integrated Qubits and Control Electronics**: Majorana-1 contains not only the qubits but also much of the
   surrounding control circuitry on the same chip. The entire processor is small enough to fit in the palm of a hand and
   is designed to slot into a compact quantum computer that could be deployed in standard data centers.
-- **Digital Control Mechanism:** Unlike superconducting qubits that require precisely tuned analog microwave pulses,
-  Majorana-1 uses **digital control**, allowing qubits to be manipulated via standard electronics and software logic.
-- **Scalability Design:** The current Majorana-1 chip hosts **8 topological qubits**, but it’s explicitly built as a
-  **scalable module**. Microsoft envisions expanding this to **hundreds, thousands, and eventually a million qubits on a
-  single chip**.
+- **Digital Control Mechanism**: Unlike superconducting qubits that require precisely tuned analog microwave pulses,
+  Majorana-1 uses digital control, allowing qubits to be manipulated via standard electronics and software logic.
+- **Scalability Design**: The current Majorana-1 chip hosts 8 topological qubits, but it’s explicitly built as a
+  scalable module. Microsoft envisions expanding this to hundreds, thousands, and eventually a million qubits on a
+  single chip.
 
 ## Differences from Existing Quantum Computing Approaches
 
