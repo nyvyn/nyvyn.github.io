@@ -30,29 +30,27 @@ references:
 ---
 
 
-| Provider  | Model               | Input Price | Output Price | Context Length | Output Length | Model Size |
-|-----------|---------------------|-------------|--------------|----------------|---------------|------------|
-| Alibaba   | Qwen2.5-Max         | $1.6        | $6.4         | 32k            | 8k            |            |
-| Anthropic | Claude 3.5 Haiku    | $0.8        | $4           | 200k           | 8k            |            |
-| Anthropic | Claude 3.5 Sonnet   | $3          | $15          | 200k           | 8k            | ≈175B      |
-| Anthropic | Claude 3 Haiku      | $0.25       | $1.25        | 200k           | 4k            |            |
-| Anthropic | Claude 3 Opus       | $15         | $75          | 200k           | 4k            |            |
-| Anthropic | Claude 3 Sonnet     | $3          | $15          | 200k           | 4k            |            |
-| DeepSeek  | DeepSeek-R1         | $0.55       | $2.19        | 64k            | 8k            |            |
-| DeepSeek  | DeepSeek-V3         | $0.27       | $1.1         | 64k            | 8k            |            |
-| Google    | Gemini 1.5 Pro      | $1.25       | $5           | 1m             | 8k            |            |
-| Mistral   | Mistral Large 24.11 | $2          | $6           | 128k           |               |            |
-| OpenAI    | gpt-45              | $75         | $150         | 128k           | 16k           | ≈200B      | 
-| OpenAI    | gpt-4o              | $2.5        | $10          | 128k           | 16k           | ≈200B      |
-| OpenAI    | gpt-4o-mini         | $0.15       | $0.6         | 128k           | 16k           | ≈8B        |
-| OpenAI    | o1                  | $15         | $60          | 200k           | 100k          |            |
-| OpenAI    | o1-mini             | $1.1        | $4.4         | 128k           | 65k           | ≈100B      |
-| OpenAI    | o3-mini             | $1.1        | $4.4         | 200k           | 100k          |            |
-| LLAMA     | 3.2 90B             | $0.00204    | $0.00204     | 1k             | 1k            |            |
-| Moondream |                     | $0.00098    | $0.00098     | 1k             | 1k            |            |
-| phi-3.5   | vision              | $0.00013    | $0.00013     | 1k             | 1k            |            |
-| Anthropic | Claude 3.5-sonnet   | $3          | $3           | 1M             | 1M            |            |
-| Google    | gemini-2.0-flash-exp| $0.15       | $0.15        | 1M             | 1M            |            |
+| Provider  | Model                | Input Price | Output Price | Context Length | Output Length | Model Size |
+|-----------|----------------------|-------------|--------------|----------------|---------------|------------|
+| Alibaba   | Qwen2.5-Max          | $1.6        | $6.4         | 32k            | 8k            |            |
+| Azure     | phi-3.5              | $0.00013    | $0.00013     | 1k             | 1k            |            |
+| Anthropic | Claude 3.5 Haiku     | $0.8        | $4           | 200k           | 8k            |            |
+| Anthropic | Claude 3.5 Sonnet    | $3          | $15          | 200k           | 8k            | ≈175B      |
+| Anthropic | Claude 3 Haiku       | $0.25       | $1.25        | 200k           | 4k            |            |
+| Anthropic | Claude 3 Opus        | $15         | $75          | 200k           | 4k            |            |
+| Anthropic | Claude 3 Sonnet      | $3          | $15          | 200k           | 4k            |            |
+| DeepSeek  | DeepSeek-R1          | $0.55       | $2.19        | 64k            | 8k            |            |
+| DeepSeek  | DeepSeek-V3          | $0.27       | $1.1         | 64k            | 8k            |            |
+| Google    | Gemini 1.5 Pro       | $1.25       | $5           | 1m             | 8k            |            |
+| Google    | gemini-2.0-flash-exp | $0.15       | $0.15        | 1M             | 1M            |            |
+| Meta      | Llama 3.2 90B        | $0.00204    | $0.00204     | 128k           | 2k            |            |
+| Mistral   | Mistral Large 24.11  | $2          | $6           | 128k           | 4k            |            |
+| OpenAI    | gpt-45               | $75         | $150         | 128k           | 16k           | ≈200B      | 
+| OpenAI    | gpt-4o               | $2.5        | $10          | 128k           | 16k           | ≈200B      |
+| OpenAI    | gpt-4o-mini          | $0.15       | $0.6         | 128k           | 16k           | ≈8B        |
+| OpenAI    | o1                   | $15         | $60          | 200k           | 100k          |            |
+| OpenAI    | o1-mini              | $1.1        | $4.4         | 128k           | 65k           | ≈100B      |
+| OpenAI    | o3-mini              | $1.1        | $4.4         | 200k           | 100k          |            |
 
 Cost Notes:
 1. Input and output prices are normalized at per million tokens
