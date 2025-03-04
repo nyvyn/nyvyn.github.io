@@ -2,8 +2,8 @@
 layout: note
 title: LLM size compared to performance
 description: A look at how size and performance have evolved in LLMs
-date: 2025-1-2
-status: Sprouting
+date: 2025-3-4
+status: Growing
 references:
   - >-
     [Abdin et al. (2024). Phi-3 technical report: A highly capable language model locally on your phone](https://arxiv.org/abs/2404.14219)
