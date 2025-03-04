@@ -25,17 +25,19 @@
     <script defer src="https://cdn.jsdelivr.net/npm/uikit@3.22.0/dist/js/uikit.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/uikit@3.22.0/dist/js/uikit-icons.min.js"></script>
 
-    <!-- Mermaid JS -->
-    <script type="module">
-        import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
-        mermaid.initialize({ startOnLoad: true, theme:"neutral" });
-        await mermaid.run({querySelector:"code.language-mermaid"})
-    </script>
+    <!-- UIKit mod -->
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             document.querySelectorAll("table").forEach(function(table) {
                 table.classList.add("uk-table");
             });
         });
+    </script>
+
+    <!-- Mermaid JS -->
+    <script type="module">
+        import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+        mermaid.initialize({ startOnLoad: true, theme:"neutral" });
+        await mermaid.run({querySelector:"code.language-mermaid"})
     </script>
 </head>
