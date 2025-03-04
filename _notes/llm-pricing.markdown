@@ -48,6 +48,11 @@ references:
 | OpenAI    | o1                  | $15         | $60          | 200k           | 100k          |            |
 | OpenAI    | o1-mini             | $1.1        | $4.4         | 128k           | 65k           | ≈100B      |
 | OpenAI    | o3-mini             | $1.1        | $4.4         | 200k           | 100k          |            |
+| LLAMA     | 3.2 90B             | $0.00204    | $0.00204     | 1k             | 1k            |            |
+| Moondream |                     | $0.00098    | $0.00098     | 1k             | 1k            |            |
+| phi-3.5   | vision              | $0.00013    | $0.00013     | 1k             | 1k            |            |
+| Anthropic | Claude 3.5-sonnet   | $3          | $3           | 1M             | 1M            |            |
+| Google    | gemini-2.0-flash-exp| $0.15       | $0.15        | 1M             | 1M            |            |
 
 Cost Notes:
 1. Input and output prices are normalized at per million tokens
