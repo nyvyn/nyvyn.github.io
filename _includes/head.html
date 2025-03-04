@@ -31,4 +31,11 @@
         mermaid.initialize({ startOnLoad: true, theme:"neutral" });
         await mermaid.run({querySelector:"code.language-mermaid"})
     </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll("table").forEach(function(table) {
+                table.classList.add("uk-table");
+            });
+        });
+    </script>
 </head>
