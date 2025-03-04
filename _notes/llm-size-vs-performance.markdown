@@ -30,17 +30,23 @@ references:
 ---
 
 
-| Model                | Provider  | Token Cost In/Out (per million) | Prompt Caching | Context Window Size | Model Size |
-|----------------------|-----------|---------------------------------|----------------|---------------------|------------|
-| Phi-3-7B             | Abdin     | $100 / $100                     | Yes            | 2048 tokens         | 7B         |
-| Claude 3.5 Sonnet    | Anthropic | $3 / $15                        | Yes            | 4096 tokens         | 175B       |
-| Gemini 2.0 Flash     | Google    | $20 / $20                       | No             | 8192 tokens         | Unknown    |
-| ChatGPT (GPT-3.5)    | OpenAI    | $1.50 / $2                      | Yes            | 4096 tokens         | 175B       |
-| GPT-4                | OpenAI    | $30 / $60                       | Yes            | 8192 tokens         | 1.76T      |
-| GPT-4o               | OpenAI    | $600 / $600                     | Yes            | 4096 tokens         | 200B       |
-| GPT-4o-mini          | OpenAI    | $700 / $700                     | No             | 2048 tokens         | 8B         |
-| o1-mini              | OpenAI    | $800 / $800                     | Yes            | 4096 tokens         | 100B       |
-| o1-preview           | OpenAI    | $900 / $900                     | No             | 8192 tokens         | 300B       |
+| Owner     | Model              | Input Price ($) | Output Price ($) | Context Length | Max Output Tokens |
+|-----------|--------------------|-----------------|------------------|----------------|-------------------|
+| OpenAI    | o3-mini            | 1.1             | 4.4              | 200k           | 100,000           |
+| OpenAI    | gpt-4o             | 2.5             | 10               | 128k           | 16,384            |
+| DeepSeek  | DeepSeek-R1        | 0.55            | 2.19             | 64k            | 8,000             |
+| OpenAI    | o1                 | 15              | 60               | 200k           | 100,000           |
+| Alibaba   | Qwen2.5-Max        | 1.6             | 6.4              | 32k            | 8,192             |
+| DeepSeek  | DeepSeek-V3        | 0.27            | 1.1              | 64k            | 8,000             |
+| OpenAI    | o1-mini            | 1.1             | 4.4              | 128k           | 65,536            |
+| Google    | Gemini 1.5 Pro     | 1.25            | 5                | 1m             | 8,192             |
+| Anthropic | Claude 3.5 Sonnet  | 3               | 15               | 200k           | 8,192             |
+| OpenAI    | gpt-4o-mini        | 0.15            | 0.6              | 128k           | 16,384            |
+| Anthropic | Claude 3 Opus      | 15              | 75               | 200k           | 4,096             |
+| Mistral   | Mistral Large 24.11| 2               | 6                | 128k           | n/a               |
+| Anthropic | Claude 3.5 Haiku   | 0.8             | 4                | 200k           | 8,192             |
+| Anthropic | Claude 3 Haiku     | 0.25            | 1.25             | 200k           | 4,096             |
+| Anthropic | Claude 3 Sonnet    | 3               | 15               | 200k           | 4,096             |
 
 > 1. Phi-3-7B, a Small Language Model (SLM) with 7 billion parameters [Abdin et al., 2024]
 > 2. Claude 3.5 Sonnet (2024-10-22), the latest model (≈175B parameters) from the Claude 3.5 family offering
