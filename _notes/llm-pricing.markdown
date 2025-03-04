@@ -34,7 +34,7 @@ references:
 |-----------|---------------------|-------------|--------------|----------------|---------------|------------|
 | Alibaba   | Qwen2.5-Max         | $1.6        | $6.4         | 32k            | 8k            |            |
 | Anthropic | Claude 3.5 Haiku    | $0.8        | $4           | 200k           | 8k            |            |
-| Anthropic | Claude 3.5 Sonnet   | $%3         | $15          | 200k           | 8k            | ≈175B      |
+| Anthropic | Claude 3.5 Sonnet   | $3          | $15          | 200k           | 8k            | ≈175B      |
 | Anthropic | Claude 3 Haiku      | $0.25       | $1.25        | 200k           | 4k            |            |
 | Anthropic | Claude 3 Opus       | $15         | $75          | 200k           | 4k            |            |
 | Anthropic | Claude 3 Sonnet     | $3          | $15          | 200k           | 4k            |            |
@@ -50,8 +50,9 @@ references:
 | OpenAI    | o3-mini             | $1.1        | $4.4         | 200k           | 100k          |            |
 
 Cost Notes:
-1. Batch runs with OpenAI are 50% less expensive
-2. Cached input prompts are half cost as well
+1. Input and output prices are normalized at per million tokens
+2. Batch runs with OpenAI are 50% less expensive
+3. Cached input prompts are half cost as well
 
 Size Notes:
 > 1. Phi-3-7B, a Small Language Model (SLM) with 7 billion parameters [Abdin et al., 2024]
