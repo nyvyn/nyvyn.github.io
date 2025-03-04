@@ -30,17 +30,17 @@ references:
 ---
 
 
-| Model                | Token Cost In/Out | Prompt Caching | Context Window Size | Model Size |
-|----------------------|-------------------|----------------|---------------------|------------|
-| Phi-3-7B             | $0.0001 / $0.0001 | Yes            | 2048 tokens         | 7B         |
-| Claude 3.5 Sonnet    | $0.0002 / $0.0002 | Yes            | 4096 tokens         | 175B       |
-| Gemini 2.0 Flash     | $0.0003 / $0.0003 | No             | 8192 tokens         | Unknown    |
-| ChatGPT (GPT-3.5)    | $0.0004 / $0.0004 | Yes            | 4096 tokens         | 175B       |
-| GPT-4                | $0.0005 / $0.0005 | Yes            | 8192 tokens         | 1.76T      |
-| GPT-4o               | $0.0006 / $0.0006 | Yes            | 4096 tokens         | 200B       |
-| GPT-4o-mini          | $0.0007 / $0.0007 | No             | 2048 tokens         | 8B         |
-| o1-mini              | $0.0008 / $0.0008 | Yes            | 4096 tokens         | 100B       |
-| o1-preview           | $0.0009 / $0.0009 | No             | 8192 tokens         | 300B       |
+| Model                | Provider  | Token Cost In/Out (per million) | Prompt Caching | Context Window Size | Model Size |
+|----------------------|-----------|---------------------------------|----------------|---------------------|------------|
+| Phi-3-7B             | Abdin     | $100 / $100                     | Yes            | 2048 tokens         | 7B         |
+| Claude 3.5 Sonnet    | Anthropic | $200 / $200                     | Yes            | 4096 tokens         | 175B       |
+| Gemini 2.0 Flash     | Google    | $300 / $300                     | No             | 8192 tokens         | Unknown    |
+| ChatGPT (GPT-3.5)    | OpenAI    | $400 / $400                     | Yes            | 4096 tokens         | 175B       |
+| GPT-4                | OpenAI    | $500 / $500                     | Yes            | 8192 tokens         | 1.76T      |
+| GPT-4o               | OpenAI    | $600 / $600                     | Yes            | 4096 tokens         | 200B       |
+| GPT-4o-mini          | OpenAI    | $700 / $700                     | No             | 2048 tokens         | 8B         |
+| o1-mini              | OpenAI    | $800 / $800                     | Yes            | 4096 tokens         | 100B       |
+| o1-preview           | OpenAI    | $900 / $900                     | No             | 8192 tokens         | 300B       |
 
 > 1. Phi-3-7B, a Small Language Model (SLM) with 7 billion parameters [Abdin et al., 2024]
 > 2. Claude 3.5 Sonnet (2024-10-22), the latest model (≈175B parameters) from the Claude 3.5 family offering
