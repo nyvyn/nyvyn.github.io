@@ -30,6 +30,7 @@ references:
 ---
 
 
+
 > 1. Phi-3-7B, a Small Language Model (SLM) with 7 billion parameters [Abdin et al., 2024]
 > 2. Claude 3.5 Sonnet (2024-10-22), the latest model (≈175B parameters) from the Claude 3.5 family offering
 >    state-of-the-art performance across several coding, vision, and reasoning tasks [Anthropic, 2024].
@@ -44,5 +45,4 @@ references:
 > The exact numbers of parameters of several LLMs (e.g., GPT, Gemini 2.0 Flash) have not been publicly disclosed yet.
 > Most numbers of parameters are estimate reported to provide more context for understanding the models’ performance.
 
-From Zhang et al. (2024):
-
+From Zhang et al. (2024)
