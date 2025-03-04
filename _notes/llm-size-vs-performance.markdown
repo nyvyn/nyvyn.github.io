@@ -33,10 +33,10 @@ references:
 | Model                | Provider  | Token Cost In/Out (per million) | Prompt Caching | Context Window Size | Model Size |
 |----------------------|-----------|---------------------------------|----------------|---------------------|------------|
 | Phi-3-7B             | Abdin     | $100 / $100                     | Yes            | 2048 tokens         | 7B         |
-| Claude 3.5 Sonnet    | Anthropic | $200 / $200                     | Yes            | 4096 tokens         | 175B       |
-| Gemini 2.0 Flash     | Google    | $300 / $300                     | No             | 8192 tokens         | Unknown    |
-| ChatGPT (GPT-3.5)    | OpenAI    | $400 / $400                     | Yes            | 4096 tokens         | 175B       |
-| GPT-4                | OpenAI    | $500 / $500                     | Yes            | 8192 tokens         | 1.76T      |
+| Claude 3.5 Sonnet    | Anthropic | $3 / $15                        | Yes            | 4096 tokens         | 175B       |
+| Gemini 2.0 Flash     | Google    | $20 / $20                       | No             | 8192 tokens         | Unknown    |
+| ChatGPT (GPT-3.5)    | OpenAI    | $1.50 / $2                      | Yes            | 4096 tokens         | 175B       |
+| GPT-4                | OpenAI    | $30 / $60                       | Yes            | 8192 tokens         | 1.76T      |
 | GPT-4o               | OpenAI    | $600 / $600                     | Yes            | 4096 tokens         | 200B       |
 | GPT-4o-mini          | OpenAI    | $700 / $700                     | No             | 2048 tokens         | 8B         |
 | o1-mini              | OpenAI    | $800 / $800                     | Yes            | 4096 tokens         | 100B       |
