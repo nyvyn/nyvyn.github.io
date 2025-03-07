@@ -1,12 +1,12 @@
 ---
-references:
-  - >-
-    [Simonds, T., Yoshiyama, A. (2025)](https://arxiv.org/abs/2503.00735)
 layout: note
 title: AI that can learn
 description: A review of ways to move beyond frozen LLMs
 date: 2024-05-08
 status: Growing
+references:
+  - >-
+    [Simonds, T., Yoshiyama, A. (2025)](https://arxiv.org/abs/2503.00735)
 ---
 
 Today's LLMs are trained and then frozen in time. What changes when they can continuously learn?
@@ -42,36 +42,22 @@ overhaul the entire model architecture. This approach is particularly useful for
 allows for rapid adjustments in response to new information while maintaining the integrity and stability of the core
 model.
 
-## Lifelong and continual learning
-
-When LLMs can continually learn, they transition from being static entities to dynamic systems that evolve over time.
-Lifelong and continual learning paradigms are designed to enable LLMs to accumulate knowledge continuously, adjust to
-new trends, and forget outdated information in a controlled manner. These paradigms provide the framework for models to
-learn from ongoing streams of data rather than from a fixed training dataset.
-
-This shift has profound implications. It mitigates the need for frequent, resource-intense retraining cycles and
-positions LLMs to become more personalized and responsive, as they can learn from interactions with
-specific users or environments. For industries like customer service or healthcare, where user-specific data can vastly
-improve the utility of automated systems, this capability can transform service delivery.
-
-## The challenge of scale
-
-Adapting these models to continuous learning, however, introduces challenges, particularly regarding scale. The
-mechanisms that allow for continuous updates—like low-rank adaptation or more sophisticated approaches like
-meta-learning—must be designed to operate efficiently at scale. This means they must handle the vast size of LLM
-parameters without compromising the speed and responsiveness crucial for real-time applications.
-
-Moreover, these learning updates need to be managed in a way that balances new learning with the preservation of
-previously learned valuable information. This requires sophisticated algorithms capable of determining what to retain
-and what to overwrite, which can become quite complex as the scale of data and frequency of updates increase.
-
 ## LADDER: Self-Improving LLMs
 
-The LADDER framework, introduced by Simonds and Yoshiyama (2025), represents a significant advancement in the field of continuous learning for LLMs. LADDER stands for Learning through Autonomous Difficulty-Driven Example Recursion, and it enables LLMs to autonomously improve their problem-solving capabilities. This is achieved through self-guided learning, where the model recursively generates and solves progressively simpler variants of complex problems.
+The LADDER framework, introduced by Simonds and Yoshiyama (2025), represents a significant advancement in the field of
+continuous learning for LLMs. LADDER stands for Learning through Autonomous Difficulty-Driven Example Recursion, and it
+enables LLMs to autonomously improve their problem-solving capabilities. This is achieved through self-guided learning,
+where the model recursively generates and solves progressively simpler variants of complex problems.
 
-Unlike traditional methods that rely on curated datasets or human feedback, LADDER leverages the model's own capabilities to generate easier question variants. This approach has demonstrated significant improvements in the accuracy of LLMs on complex tasks, such as mathematical integration, without the need for architectural scaling or human supervision.
+Unlike traditional methods that rely on curated datasets or human feedback, LADDER leverages the model's own
+capabilities to generate easier question variants. This approach has demonstrated significant improvements in the
+accuracy of LLMs on complex tasks, such as mathematical integration, without the need for architectural scaling or human
+supervision.
 
-The introduction of LADDER highlights the potential for LLMs to become more adaptive and capable over time, reducing the need for extensive retraining and enabling more efficient use of computational resources.
+The introduction of LADDER highlights the potential for LLMs to become more adaptive and capable over time, reducing the
+need for extensive retraining and enabling more efficient use of computational resources.
+
+# Thoughts on what's next
 
 Looking towards the future where LLMs can continuously learn, the focus will inevitably shift towards more efficient,
 scalable, and adaptive models. The evolution from static to dynamic learning models not only enhances their practicality
