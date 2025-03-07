@@ -1,16 +1,14 @@
-references:
-  - >-
-    [Simonds, T., Yoshiyama, A. (2025)](https://arxiv.org/abs/2503.00735)
-  - >-
-    [Behrouz, A., Zhong, P., Mirrokni, V. (2024)](https://arxiv.org/abs/2501.00663)
+
 layout: note
 title: AI that can learn
 description: A review of ways to move beyond frozen LLMs
 date: 2024-05-08
 status: Growing
 references:
-  - >-
-    [Simonds, T., Yoshiyama, A. (2025)](https://arxiv.org/abs/2503.00735)
+- >-
+  [Simonds, T., Yoshiyama, A. (2025)](https://arxiv.org/abs/2503.00735)
+- >-
+  [Behrouz, A., Zhong, P., Mirrokni, V. (2024)](https://arxiv.org/abs/2501.00663)
 ---
 
 Today's LLMs are trained and then frozen in time. What changes when they can continuously learn?
