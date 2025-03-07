@@ -1,4 +1,7 @@
 ---
+references:
+  - >-
+    [Simonds, T., Yoshiyama, A. (2025)](https://arxiv.org/abs/2503.00735)
 layout: note
 title: AI that can learn
 description: A review of ways to move beyond frozen LLMs
