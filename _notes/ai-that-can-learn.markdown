@@ -65,7 +65,13 @@ Moreover, these learning updates need to be managed in a way that balances new l
 previously learned valuable information. This requires sophisticated algorithms capable of determining what to retain
 and what to overwrite, which can become quite complex as the scale of data and frequency of updates increase.
 
-## Moving forward
+## LADDER: Self-Improving LLMs
+
+The LADDER framework, introduced by Simonds and Yoshiyama (2025), represents a significant advancement in the field of continuous learning for LLMs. LADDER stands for Learning through Autonomous Difficulty-Driven Example Recursion, and it enables LLMs to autonomously improve their problem-solving capabilities. This is achieved through self-guided learning, where the model recursively generates and solves progressively simpler variants of complex problems.
+
+Unlike traditional methods that rely on curated datasets or human feedback, LADDER leverages the model's own capabilities to generate easier question variants. This approach has demonstrated significant improvements in the accuracy of LLMs on complex tasks, such as mathematical integration, without the need for architectural scaling or human supervision.
+
+The introduction of LADDER highlights the potential for LLMs to become more adaptive and capable over time, reducing the need for extensive retraining and enabling more efficient use of computational resources.
 
 Looking towards the future where LLMs can continuously learn, the focus will inevitably shift towards more efficient,
 scalable, and adaptive models. The evolution from static to dynamic learning models not only enhances their practicality
