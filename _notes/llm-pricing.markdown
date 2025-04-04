@@ -43,6 +43,7 @@ references:
 | DeepSeek  | DeepSeek-V3          | $0.27       | $1.1         | 64k            | 8k            |            |
 | Google    | Gemini 1.5 Pro       | $1.25       | $5           | 1m             | 8k            |            |
 | Google    | gemini-2.0-flash-exp | $0.15       | $0.15        | 1M             | 1M            |            |
+| Google    | gemini-2.5-pro-preview-03-25 | $1.25/$2.50    | $10/$15         | 1,048,576      | 8k            |            |
 | Meta      | Llama 3.2 90B        | $0.00204    | $0.00204     | 128k           | 2k            |            |
 | Mistral   | Mistral Large 24.11  | $2          | $6           | 128k           | 4k            |            |
 | OpenAI    | gpt-45               | $75         | $150         | 128k           | 16k           | ≈200B      | 
