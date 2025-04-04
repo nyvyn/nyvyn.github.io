@@ -33,7 +33,7 @@ references:
 | Provider  | Model                | Input Price | Output Price | Context Length | Output Length | Model Size |
 |-----------|----------------------|-------------|--------------|----------------|---------------|------------|
 | Alibaba   | Qwen2.5-Max          | $1.6        | $6.4         | 32k            | 8k            |            |
-| Azure     | phi-3.5              | $0.00013    | $0.00013     | 1k             | 1k            |            |
+| Azure     | phi-3.5              | $0.00013    | $0.00013     | 1k             | 1k            | ≈7         |
 | Anthropic | Claude 3.5 Haiku     | $0.8        | $4           | 200k           | 8k            |            |
 | Anthropic | Claude 3.5 Sonnet    | $3          | $15          | 200k           | 8k            | ≈175B      |
 | Anthropic | Claude 3 Haiku       | $0.25       | $1.25        | 200k           | 4k            |            |
