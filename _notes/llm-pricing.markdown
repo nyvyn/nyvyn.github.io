@@ -42,8 +42,8 @@ references:
 | DeepSeek  | DeepSeek-R1          | $0.55       | $2.19        | 64k            | 8k            |            |
 | DeepSeek  | DeepSeek-V3          | $0.27       | $1.1         | 64k            | 8k            |            |
 | Google    | Gemini 1.5 Pro       | $1.25       | $5           | 1m             | 8k            |            |
-| Google    | gemini-2.0-flash-exp | $0.15       | $0.15        | 1M             | 1M            |            |
-| Google    | gemini-2.5-pro-preview-03-25 | $1.25/$2.50    | $10/$15         | 1,048,576      | 8k            |            |
+| Google    | gemini-2.0-flash-exp | $0.15       | $0.15        | 1m             | 1m            |            |
+| Google    | gemini-2.5-pro       | $1.25       | $10          | 1m             | 8k            |            |
 | Meta      | Llama 3.2 90B        | $0.00204    | $0.00204     | 128k           | 2k            |            |
 | Mistral   | Mistral Large 24.11  | $2          | $6           | 128k           | 4k            |            |
 | OpenAI    | gpt-45               | $75         | $150         | 128k           | 16k           | ≈200B      | 
@@ -57,6 +57,7 @@ Cost Notes:
 1. Input and output prices are normalized at per million tokens
 2. Batch runs with OpenAI are 50% less expensive
 3. Cached input prompts are half cost as well
+4. The new gemini-2.5-pro-preview-03-25: Prompts more than 200k tokens: $2.50/m input and $15/million for output
 
 Size Notes:
 > 1. Phi-3-7B, a Small Language Model (SLM) with 7 billion parameters [Abdin et al., 2024]
