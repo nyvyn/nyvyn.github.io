@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Writing
+title: Posts
 permalink: /posts
 ---
 
 <h4 class="uk-text-large uk-text-light uk-margin-remove-bottom">
-    Writing
+    Posts
 </h4>
 <h4 class="uk-text-lighter uk-margin-remove-top">
     Thoughts and ideas; rarely rants
