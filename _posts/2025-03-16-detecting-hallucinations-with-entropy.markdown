@@ -4,8 +4,7 @@ title: Detecting Hallucinations with Entropy
 tags: [ "machine learning" ]
 references:
   - >-
-  [Co Tran (2025). Detecting Hallucinations in LLM Function Calling with Entropy](https://www.archgw.
-  com/blogs/detecting-hallucinations-in-llm-function-calling-with-entropy-and-varentropy)
+    [Co Tran (2025). Detecting Hallucinations in LLM Function Calling with Entropy](https://www.archgw.com/blogs/detecting-hallucinations-in-llm-function-calling-with-entropy-and-varentropy)
 ---
 
 In short, those models that provide log probability and function calling in theory can be used

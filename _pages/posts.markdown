@@ -4,7 +4,6 @@ title: Writing
 permalink: /posts
 ---
 
-
 <h4 class="uk-text-large uk-text-light uk-margin-remove-bottom">
     Writing
 </h4>

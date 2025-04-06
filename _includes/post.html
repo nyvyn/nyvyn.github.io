@@ -1,9 +1,9 @@
 {% capture link %}
-{% if include.link and include.full %}
-{{ include.link }}
-{% else %}
-{{ include.url }}
-{% endif %}
+    {% if include.link and include.full %}
+        {{ include.link }}
+    {% else %}
+        {{ include.url }}
+    {% endif %}
 {% endcapture %}
 
 <article class="uk-article">
