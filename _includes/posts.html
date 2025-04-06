@@ -1,50 +1,23 @@
-{% assign combined = site.posts | concat: site.notes %}
-{% assign sorted = combined | sort: 'date' | reverse %}
 <ul class="uk-list uk-list-large uk-margin-medium-top" id="post-list">
-    {% for item in sorted limit:include.limit %}
-    {% if item.collection == "notes" %}
-        {% if item.status == "Stable" %}
-            {% assign icon = "bookmark" %}
-        {% else %}
-            {% assign icon = "question" %}
-        {% endif %}
-    {% endif %}
-
+    {% for post in site.posts limit:include.limit %}
     {% capture markdown %}
-        {% if include.full %}
-            {{ item.content | markdownify }}
-        {% else %}
-            {{ item.excerpt }}
-        {% endif %}
+    {% if include.full %}
+    {{ post.content | markdownify }}
+    {% else %}
+    {{ post.excerpt }}
+    {% endif %}
     {% endcapture %}
-
     <li class="uk-width-xlarge">
-        {% if item.collection == "posts" %}
-            {% include post.html
-            content=item.content
-            date=item.date
-            full=include.full
-            link=item.link
-            markdown=markdown
-            references=item.references
-            title=item.title
-            url=item.url
-            %}
-        {% else %}
-            {% include note.html
-            content=item.content
-            date=item.date
-            description=item.description
-            full=include.full
-            icon=icon
-            link=item.link
-            markdown=markdown
-            references=item.references
-            status=item.status
-            title=item.title
-            url=item.url
-            %}
-        {% endif %}
+        {% include post.html
+        content=post.content
+        date=post.date
+        full=include.full
+        link=post.link
+        markdown=markdown
+        references=post.references
+        title=post.title
+        url=post.url
+        %}
     </li>
     {% endfor %}
 </ul>
