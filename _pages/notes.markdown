@@ -8,7 +8,7 @@ permalink: /notes
     Notes
 </h4>
 <h4 class="uk-text-lighter uk-margin-remove-top">
-    A place for ideas to spark and evolve
+    A place for ideas to evolve
 </h4>
 <hr class="uk-divider-small">
 
