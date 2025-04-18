@@ -90,8 +90,8 @@ M+ builds on MemoryLLM by introducing **hierarchical blocks**:
 
 ---
 
-## Takeaway
+## Final thoughts
 
-Prompt replay and RAG *extend* context; MemoryLLM and M+ *embed* it.  
-Internal memory delivers stronger reasoning, higher signal‑to‑noise, and built‑in privacy—benefits that matter more than
+Prompt replay and RAG *extend* context; MemoryLLM and M+ *embed* it. Internal memory delivers stronger reasoning, 
+higher signal‑to‑noise, and built‑in privacy—benefits that matter more than
 shaving a few milliseconds off latency.
