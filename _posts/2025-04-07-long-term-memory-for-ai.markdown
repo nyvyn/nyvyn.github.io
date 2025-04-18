@@ -11,9 +11,8 @@ references:
 ---
 
 Large language models (LLMs) can now read images, speak, and write code—yet every new session starts with **zero durable
-recollection**.  
-Developers fight this amnesia by replaying chat logs, injecting summaries, or attaching RAG snippets. These patches
-*extend* context but keep memory **outside** the transformer rather than *inside* it.
+recollection**. Developers fight this amnesia by replaying chat logs, injecting summaries, or attaching RAG snippets.
+These patches *extend* context but keep memory **outside** the transformer rather than *inside* it.
 
 ---
 
@@ -27,7 +26,8 @@ Developers fight this amnesia by replaying chat logs, injecting summaries, or at
 - **Built‑in privacy**— nothing leaves the model for a vector database.
 - **Quality first, cost second**— latency improves without an embedding‑and‑search round‑trip, but the real win is
   answer quality.  
-  *(Modarressi et al., 2025)*
+  
+*(Modarressi et al., 2025)*
 
 ---
 
@@ -47,8 +47,6 @@ These limitations motivate a shift from *prompt engineering* to **model‑level 
 ---
 
 ## Short‑term memory with **MemoryLLM**
-
-### Short‑term memory with **MemoryLLM**
 
 An initial step toward persistent agents is adding *short‑term* memory — 
 something like what MemoryLLM introduced in 2024 by
