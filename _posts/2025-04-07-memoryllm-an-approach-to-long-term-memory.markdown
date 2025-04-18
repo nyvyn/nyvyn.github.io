@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Long‑Term Memory for AI — From Ephemeral Chats to Persistent Minds
+title: MemoryLLM - an approach to long-term memory
 tags: [ memory ]
 references:
   - "[Yu Wang et al., *M+: Extending MemoryLLM with Scalable Long‑Term Memory* (2025)](https://arxiv.org/abs/2502.00592)"
