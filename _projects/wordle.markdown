@@ -52,7 +52,7 @@ date: 2025-04-20
 let WORDS, TARGET;
 const ROWS=6,COLS=5;
 
-fetch('https://gist.githubusercontent.com/cfreshman/d5fb56316158a1575898bba1eed3b5da/raw/wordle-nyt-allowed-guesses-update-12546.txt')
+fetch('https://raw.githubusercontent.com/nyvyn/wordle-list/main/words')
   .then(r => r.text())
   .then(t => {
     WORDS = t.trim().split(/\s+/);
