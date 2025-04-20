@@ -1,12 +1,12 @@
 ---
 layout: project
-title: Wordle Clone
-description: Guess the 5‑letter word in 6 tries
+title: Wordle Clone
+description: Guess the 5‑letter word in 6 tries
 date: 2025-04-20
 ---
 
 <div id="game">
-  <h2>Wordle Clone</h2>
+  <h2>Wordle Clone</h2>
   <div id="board"></div>
   <div id="message"></div>
   <div id="keys"></div>
