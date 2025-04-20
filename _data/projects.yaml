@@ -3,7 +3,7 @@ docs:
     description: Effortless agent-based workflows
     icon: github
     url: https://github.com/nyvyn/autonomais
-  - title: Oner Chat
-    description: AI-first notebook editor
+  - title: Mem-Moi
+    description: Really simple memory for AI
     icon: link-external
-    url: https://www.oner.chat
+    url: https://github.com/nyvyn/mem-moi
