@@ -55,7 +55,7 @@ const ROWS=6,COLS=5;
 fetch('https://raw.githubusercontent.com/nyvyn/wordle-list/main/words')
   .then(r => r.text())
   .then(t => {
-    WORDS = t.trim().split(/\s+/);
+    WORDS = t.split(/\r?\n/).filter(Boolean);
     TARGET = WORDS[Math.floor(Math.random()*WORDS.length)];
     startGame();
   });
