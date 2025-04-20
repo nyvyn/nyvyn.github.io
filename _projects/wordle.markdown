@@ -49,9 +49,18 @@ date: 2025-04-20
 </style>
 
 <script>
-const WORDS=["apple","grape","melon","berry","peach","mango","lemon","plums"]; // trim for brevity
-const TARGET=WORDS[Math.floor(Math.random()*WORDS.length)];
+let WORDS, TARGET;
 const ROWS=6,COLS=5;
+
+fetch('https://gist.githubusercontent.com/cfreshman/d5fb56316158a1575898bba1eed3b5da/raw/wordle-nyt-allowed-guesses-update-12546.txt')
+  .then(r => r.text())
+  .then(t => {
+    WORDS = t.trim().split(/\s+/);
+    TARGET = WORDS[Math.floor(Math.random()*WORDS.length)];
+    startGame();
+  });
+
+function startGame() {
 
 const board=document.getElementById('board');
 const msg  =document.getElementById('message');
@@ -127,4 +136,5 @@ function tintKey(ch,state){
     btn.className='key '+state;
 }
 function show(t){msg.textContent=t;setTimeout(()=>msg.textContent='',1500);}
+}
 </script>
