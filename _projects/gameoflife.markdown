@@ -17,7 +17,7 @@ This is a simple demonstration of emergent behavior inspired by Conway's Game of
 </div>
 
 <script>
-  const canvas = document.getElementById('gameCanvas');
+  const canvas: HTMLCanvasElement = document.getElementById('gameCanvas');
   const ctx = canvas.getContext('2d');
   const resolution = 10;
   canvas.width = 400;
