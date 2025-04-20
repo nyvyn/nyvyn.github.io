@@ -29,7 +29,8 @@ date: 2025-04-20
   .row   {display:grid;grid-template-columns:repeat(5,1fr);gap:4px}
   .tile  {width:48px;height:48px;border:2px solid #d3d6da;
           display:flex;align-items:center;justify-content:center;
-          font:20px/1 monospace;text-transform:uppercase}
+          font:20px/1 monospace;text-transform:uppercase;
+          background-color:#fff;color:#000}
   .active-row .tile {border:2px solid #8899aa; background-color:#f0f8ff;}
   .correct   {background:#6aaa64;color:#fff;border:none}
   .present   {background:#c9b458;color:#fff;border:none}
