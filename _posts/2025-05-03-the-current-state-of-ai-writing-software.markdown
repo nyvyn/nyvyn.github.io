@@ -1,3 +1,4 @@
+---
 layout: post
 title: The current state of AI writing software
 tags: [ "artificial intelligence" ]
