@@ -4,7 +4,7 @@ title: "Initial thoughts on OpenAI Codex"
 tags: ["artificial intelligence", "software engineering"]
 ---
 
-Today I shared a note on LinkedIn about trying OpenAI's new Codex. Here is what I wrote:
+I recently shared a note on LinkedIn on the new Codex release:
 
 > In trying out OpenAI's newly released Codex (a software coding agent in the cloud), I realized that the ability to launch multiple simultaneous coding tasks is a superpower.
 >
@@ -14,4 +14,4 @@ Today I shared a note on LinkedIn about trying OpenAI's new Codex. Here is what 
 >
 > Overall: promising initial impression; but reserving judgement until I can better assess the results.
 
-Codex feels like a natural extension of the tools we already have for writing software. Being able to pose a single question and then spin up multiple agents to tackle separate tasks should make it easier to experiment and keep momentum. I'm looking forward to seeing how well it scales with larger and more complex projects.
+Another day in, and I'm even more excited about the potential.
