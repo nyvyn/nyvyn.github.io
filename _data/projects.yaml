@@ -3,6 +3,9 @@ docs:
     description: Effortless agent-based workflows
     icon: github
     url: https://github.com/nyvyn/autonomais
+  - title: Helpful Computer
+    description: Interactive voice agent to Excalidraw and Lexical
+    url: https://github.com/nyvyn/helpful.computer
   - title: Mem-Moi
     description: Really simple memory for AI
     icon: link-external
