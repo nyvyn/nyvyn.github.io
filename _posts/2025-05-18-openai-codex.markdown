@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Initial thoughts on OpenAI Codex"
+title: Initial thoughts on OpenAI Codex
 tags: ["artificial intelligence", "software engineering"]
 ---
 

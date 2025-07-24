@@ -1,6 +1,6 @@
 ---
 layout: post
-title: “o3 plus Aider is my daily coder”
+title: o3 plus Aider is my daily coder
 tags: ["artificial intelligence", "software engineering"]
 ---
 

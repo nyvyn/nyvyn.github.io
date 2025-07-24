@@ -1,6 +1,6 @@
 ---
 layout: post
-title: “AI Tinkerers Twin Cities Inaugural”
+title: AI Tinkerers Twin Cities Inaugural
 tags: ["artificial intelligence", "meetups"]
 ---
 
