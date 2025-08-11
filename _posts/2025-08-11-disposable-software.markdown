@@ -20,8 +20,6 @@ Because building software has traditionally been time and expertise intensive, w
 
 But with AI, anyone with an idea can describe it, generate working code, and have a usable tool in minutes or hours.
 
-This shift is about empowering more people to be builders and creators.
-
 It frees you to:
 
 * Solve a problem that exists only this week
