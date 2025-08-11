@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Disposable Software - Empowering Everyone to Create Software
+title: Disposable Software
 tags: ["artificial intelligence", "software engineering", "democratization"]
 ---
 
-For the first few years of my career, I drove home most days thinking, I can't believe they're paying me to do this. I love writing software. It is the joy of turning thought into reality.
+For the first few years of my career, I drove home most days thinking, "I can't believe they're paying me to do this." I love writing software. It is the joy of turning thought into reality.
 
-Because of AI - tools like Canvas in ChatGPT, Gemini, or Claude - that joy is now available to everyone and opening a new category of software that can be purpose-built and thrown away when not needed.
+Because of AI — tools like Canvas in ChatGPT, Gemini, or Claude — that joy is now available to everyone and opening a new category of software that can be purpose-built and thrown away when not needed.
 
 Disposable software refers to small, self-contained applications that:
 
@@ -27,5 +27,5 @@ It frees you to:
 * Build personal tools without waiting on a roadmap
 * Prototype and share ideas quickly
 
-When the cost of making software nears zero, what counts as worth building expands. More people will try ideas, learn from them and let the rest go.
+When the cost of making software nears zero, what counts as worth building expands. More people will try ideas, learn from them, and let the rest go.
 
