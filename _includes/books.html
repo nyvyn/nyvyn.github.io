@@ -1,19 +1,16 @@
 <div class="uk-margin-medium-top uk-flex uk-flex-center" data-uk-grid>
+    {% assign cover_remote_base = 'https://covers.openlibrary.org/b/isbn/' %}
     {% for book in site.data.books.docs limit:include.limit %}
-    {% assign cover_path = '/assets/covers/' | append: book.isbn | append: '.jpg' %}
-    {% assign cover_static = site.static_files | where: 'path', cover_path | first %}
-    {% if cover_static %}
-        {% assign cover_src = cover_path %}
-    {% else %}
-        {% assign cover_src = 'https://covers.openlibrary.org/b/isbn/' | append: book.isbn | append: '-M.jpg?default=false' %}
-    {% endif %}
+    {% assign cover_local = '/assets/covers/' | append: book.isbn | append: '.jpg' %}
+    {% assign cover_remote = cover_remote_base | append: book.isbn | append: '-M.jpg?default=false' %}
     <a class="uk-link uk-link-reset" href="https://openlibrary.org/isbn/{{- book.isbn -}}">
         <div class="uk-card uk-card-small" style="width: 165px">
             <div class="uk-card-media-top uk-flex uk-flex-center uk-flex-middle">
                 <div class="uk-cover-container" style="height: 225px; width: 165px">
                     <img alt="{{- book.title -}} book cover"
                          data-uk-cover
-                         src="{{ cover_src }}"
+                         loading="lazy"
+                         src="{{ cover_local | relative_url }}"
                     >
                 </div>
             </div>
