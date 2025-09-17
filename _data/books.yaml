@@ -13,121 +13,109 @@ docs:
     isbn: 0961392126
   - title: Goliath's Revenge
     author: Todd Hewlin, Scott Snyder
-    isbn: 9781119541875  #  [oai_citation:0‡porchlightbooks.com](https://www.porchlightbooks.com/products/goliaths-revenge-todd-hewlin-9781119541875#:~:text=)
+    isbn: 9781119541875
   - title: A Mind for Numbers
     author: Barbara Oakley, Ph.D.
-    isbn: 9780399165245  #  [oai_citation:1‡valore.com](https://www.valore.com/products/a-mind-for-numbers/9780399165245#:~:text=A%20Mind%20for%20Numbers)
+    isbn: 9780399165245
   - title: On Writing Well
     author: William Zinsser
-    isbn: 9780060891541  #  [oai_citation:2‡christianbook.com](https://www.christianbook.com/writing-well-the-classic-guide-nonfiction/william-zinsser/9780060891541/pd/91544#:~:text=%E2%96%BC%E2%96%B2)
+    isbn: 9780060891541
   - title: Save the Cat! Writes a Novel
     author: Jessica Brody
-    isbn: 9780399579745  #  [oai_citation:3‡penguinrandomhouse.com](https://www.penguinrandomhouse.com/books/554039/save-the-cat-writes-a-novel-by-jessica-brody/#:~:text=See%20More)
-  - title:
-      The Goal: A Process of Ongoing Improvement
+    isbn: 9780399579745
+  - title: "The Goal: A Process of Ongoing Improvement"
     author: Eliyahu M. Goldratt, Jeff Cox
-    isbn: 9780884271956  #  [oai_citation:4‡valore.com](https://www.valore.com/products/the-goal/9780884271956#:~:text=The%20Goal)
-  - title:
-      Team Topologies: Organizing Business and Technology Teams for Fast Flow
+    isbn: 9780884271956
+  - title: "Team Topologies: Organizing Business and Technology Teams for Fast Flow"
     author: Matthew Skelton, Manuel Pais
-    isbn: 9781942788812  #  [oai_citation:5‡teamtopologies.com](https://teamtopologies.com/book#:~:text=Details)
+    isbn: 9781942788812
   - title: Lean Enterprise
     author: Jez Humble, Joanne Molesky, Barry O'Reilly
-    isbn: 9781492091776  #  [oai_citation:6‡barnesandnoble.com](https://www.barnesandnoble.com/w/lean-enterprise-jez-humble/1120852823#:~:text=,Table%20of%20Contents)
+    isbn: 9781492091776
   - title: A Thousand Brains
     author: Jeff Hawkins
-    isbn: 9781541675797  #  [oai_citation:7‡hachettebookgroup.com](https://www.hachettebookgroup.com/titles/jeff-hawkins/a-thousand-brains/9781541675797/#:~:text=Publisher%20Basic%20Books)
-  - title:
-      Artificial Intelligence: A Modern Approach (4th Edition)
+    isbn: 9781541675797
+  - title: "Artificial Intelligence: A Modern Approach"
     author: Stuart Russell, Peter Norvig
-    isbn: 9780134610993  #  [oai_citation:8‡en.wikipedia.org](https://en.wikipedia.org/wiki/Artificial_Intelligence:_A_Modern_Approach#:~:text=Publication%20date)
+    isbn: 9780134610993
   - title: Superintelligence
     author: Nick Bostrom
-    isbn: 9780198739838  #  [oai_citation:9‡alibris.com](https://www.alibris.com/Superintelligence-Paths-Dangers-Strategies-Nick-Bostrom/book/28272185#:~:text=,Language%3A%20English)
+    isbn: 9780198739838
   - title: Obviously Awesome
     author: April Dunford
-    isbn: 9781999023003  #  [oai_citation:10‡porchlightbooks.com](https://www.porchlightbooks.com/products/obviously-awesome-april-dunford-9781999023003#:~:text=)
+    isbn: 9781999023003
   - title: The First 90 Days
     author: Michael D. Watkins
-    isbn: 9781422188613  #  [oai_citation:11‡bookpal.com](https://bookpal.com/the-first-90-days-updated-and-expanded-critical-success-strategies-for-new-leaders-at-all-levels-9781422188613#:~:text=Product%20Name%3A%20The%20First%2090,New%20Leaders%20at%20All%20Levels)
-  - title:
-      Strategy: A History
+    isbn: 9781422188613
+  - title: "Strategy: A History"
     author: Lawrence Freedman
-    isbn: 9780190229238  #  [oai_citation:12‡shakespeareandcompany.com](https://www.shakespeareandcompany.com/books/strategy#:~:text=Publication%20date%3A%2010%20Sept%202015)
-  - title:
-      Predictive HR Analytics: Mastering the HR Metric (3rd Edition)
+    isbn: 9780190229238
+  - title: "Predictive HR Analytics: Mastering the HR Metric"
     author: Martin Edwards, Kirsten Edwards
-    isbn: 9781398615908  #  [oai_citation:13‡wiley.com](https://www.wiley.com/en-au/Predictive+HR+Analytics%3A+Mastering+the+HR+Metric%2C+3rd+Edition-p-9781398615908#:~:text=Martin%20Edwards%20%2C%20%C2%A0%202%C2%A0Daisung,Jang)
+    isbn: 9781398615908
   - title: Holacracy
     author: Brian J. Robertson
-    isbn: 9781627794282  #  [oai_citation:14‡porchlightbooks.com](https://www.porchlightbooks.com/products/holacracy-brian-j-robertson-9781627794282#:~:text=)
+    isbn: 9781627794282
   - title: Fast. Feast. Repeat.
     author: Gin Stephens
-    isbn: 9781250757623  #  [oai_citation:15‡us.macmillan.com](https://us.macmillan.com/books/9781250757623/fastfeastrepeat/#:~:text=Imprint%20Publisher)
+    isbn: 9781250757623
   - title: Nature’s Best Hope
     author: Douglas W. Tallamy
-    isbn: 9781604699005  #  [oai_citation:16‡hachettebookgroup.com](https://www.hachettebookgroup.com/titles/douglas-w-tallamy/natures-best-hope/9781604699005/#:~:text=Publisher%20Timber%20Press)
+    isbn: 9781604699005
   - title: Sprint
     author: Jake Knapp, John Zeratsky, Braden Kowitz
-    isbn: 9781501121746  #  [oai_citation:17‡porchlightbooks.com](https://www.porchlightbooks.com/products/sprint-jake-knapp-9781501121746#:~:text=)
+    isbn: 9781501121746
   - title: Clean Code
     author: Robert C. Martin
-    isbn: 9780132350884  #  [oai_citation:18‡ptgmedia.pearsoncmg.com](https://ptgmedia.pearsoncmg.com/images/9780132350884/samplepages/9780132350884.pdf#:~:text=ISBN,at%20Courier%20in%20Westford%2C%20Massachusetts)
-  - title: Discover Your True North (Expanded and Updated Edition)
+    isbn: 9780132350884
+  - title: Discover Your True North
     author: Bill George
-    isbn: 9781119082941  #  [oai_citation:19‡shaparak.associates](https://shaparak.associates/files/hCJH47kJv3wrlPTdCRJtj8OJdlqywE6P9IHF7R9h.pdf#:~:text=pages%20cm%20Revised%20edition%20of,ePub%29%201)
+    isbn: 9781119082941
   - title: The New Leaders’ 100-Day Action Plan
     author: George B. Bradt, Jayme A. Check, Jorge E. Pedraza
-    isbn: 9781119884538  #  [oai_citation:20‡shakespeareandcompany.com](https://www.shakespeareandcompany.com/books/the-new-leaders-100-day-action-plan#:~:text=Publication%20date%3A%2025%20Aug%202022)
+    isbn: 9781119884538
   - title: Principles
     author: Ray Dalio
-    isbn: 9781501124020  #  [oai_citation:21‡worldofbooks.com](https://www.worldofbooks.com/products/principles-book-ray-dalio-9781501124020#:~:text=ISBN%2013%209781501124020%20ISBN%2010,Title%20Principles%20Author%20Ray%20Dalio)
+    isbn: 9781501124020
   - title: Principles for Dealing with the Changing World Order
     author: Ray Dalio
-    isbn: 9781982160272  #  [oai_citation:22‡porchlightbooks.com](https://www.porchlightbooks.com/products/principles-for-dealing-with-the-changing-world-order-ray-dalio-9781982160272#:~:text=)
+    isbn: 9781982160272
   - title: The End of Jobs
     author: Taylor Pearson
-    isbn: 9781619613355  #  [oai_citation:23‡books.google.com](https://books.google.com/books/about/The_End_of_Jobs.html#:~:text=Title%20The%20End%20of%20Jobs%3A,1619613352%2C%209781619613355%20Length%20300%20pages)
+    isbn: 9781619613355
   - title: 21 Lessons for the 21st Century
     author: Yuval Noah Harari
-    isbn: 9780525512196  #  [oai_citation:24‡citylights.com](https://citylights.com/true-crime-strange-phenomena/21-lessons-for-the-21st-century/#:~:text=Details)
+    isbn: 9780525512196
   - title: Sapiens
     author: Yuval Noah Harari
-    isbn: 9780062316097  #  [oai_citation:25‡valore.com](https://www.valore.com/products/sapiens/9780062316097#:~:text=Sapiens)
+    isbn: 9780062316097
   - title: Outlive
     author: Peter Attia, MD
-    isbn: 9780593236598  #  [oai_citation:26‡penguinrandomhouse.com](https://www.penguinrandomhouse.com/books/705161/outlive-by-peter-attia-md-with-bill-gifford/#:~:text=Product%20Details%20)
+    isbn: 9780593236598
   - title: The Messy Middle
     author: Scott Belsky
-    isbn: 9780735218079  #  [oai_citation:27‡penguinrandomhouse.com](https://www.penguinrandomhouse.com/books/557330/the-messy-middle-by-scott-belsky/#:~:text=ISBN%209780735218079)
+    isbn: 9780735218079
   - title: Strengths Based Leadership
     author: Tom Rath, Barry Conchie
-    isbn: 9781595620255  #  [oai_citation:28‡simonandschuster.com](https://www.simonandschuster.com/books/Strengths-Based-Leadership/Gallup/9781595620255#:~:text=,ISBN13%3A%209781595620255)
-  - title:
-      Why We Remember: Unlocking Memory’s Power to Hold on to What Matters
+    isbn: 9781595620255
+  - title: "Why We Remember: Unlocking Memory’s Power to Hold on to What Matters"
     author: Charan Ranganath, PhD
-    isbn: 9780593467831  #  [oai_citation:29‡penguinrandomhouse.com](https://www.penguinrandomhouse.com/books/705542/why-we-remember-by-charan-ranganath-phd/#:~:text=ISBN%209780593467831)
-  - title:
-      Customer Success: How Innovative Companies Are Reducing Churn and Growing Recurring Revenue
+    isbn: 9780593467831
+  - title: "Customer Success: How Innovative Companies Are Reducing Churn and Growing Recurring Revenue"
     author: Nick Mehta, Dan Steinman, Lincoln Murphy
-    isbn: 9781119167969  #  [oai_citation:30‡oreilly.com](https://www.oreilly.com/library/view/customer-success/9781119167969/#:~:text=ISBN%3A%209781119167969Purchase%20book)
-  - title:
-      Startup Boards: A Field Guide to Building and Leading an Effective Board of Directors (2nd Edition)
+    isbn: 9781119167969
+  - title: "Startup Boards: A Field Guide to Building and Leading an Effective Board of Directors"
     author: Brad Feld, Matt Blumberg, Mahendra Ramsinghani
-    isbn: 9781119859284  #  [oai_citation:31‡oreilly.com](https://www.oreilly.com/library/view/startup-boards-2nd/9781119859284/#:~:text=The%20Startup%20Playbook%2C%202nd%20EditionRajat,Bhargava%2C%20Will%20Herman)
-  - title:
-      Startup CEO: A Field Guide to Scaling Up Your Business (Techstars, 2nd Edition)
+    isbn: 9781119859284
+  - title: "Startup CEO: A Field Guide to Scaling Up Your Business"
     author: Matt Blumberg
-    isbn: 9781119723660  #  [oai_citation:32‡wiley.com](https://www.wiley.com/en-us/Startup%20CEO:%20A%20Field%20Guide%20to%20Scaling%20Up%20Your%20Business%20(Techstars),%202nd%20Edition-p-9781119723660#:~:text=ISBN%3A%20978)
-  - title:
-      Startup CXO: A Field Guide to Scaling Up Your Company’s Critical Functions and Teams
+    isbn: 9781119723660
+  - title: "Startup CXO: A Field Guide to Scaling Up Your Company’s Critical Functions and Teams"
     author: Matt Blumberg, Peter M. Birkeland, Scott Dorsey
-    isbn: 9781119772576  #  [oai_citation:33‡oreilly.com](https://www.oreilly.com/library/view/startup-cxo/9781119772576/c109a.xhtml#:~:text=ISBN%3A%209781119772576Purchase%20Link)
-  - title:
-      Investing in People: Financial Impact of Human Resource Initiatives (2nd Edition)
+    isbn: 9781119772576
+  - title: "Investing in People: Financial Impact of Human Resource Initiatives"
     author: Wayne F. Cascio, John W. Boudreau
-    isbn: 9780137070923  #  [oai_citation:34‡ptgmedia.pearsoncmg.com](https://ptgmedia.pearsoncmg.com/images/9780137070923/samplepages/9780137070923.pdf#:~:text=ISBN,President%20Publisher)
-  - title:
-      The Power of People: Learn How Successful Organizations Use Workforce Analytics to Improve Business Performance
+    isbn: 9780137070923
+  - title: "The Power of People: Learn How Successful Organizations Use Workforce Analytics to Improve Business Performance"
     author: Nigel Guenole, Jonathan Ferrar, Sheri Feinzig
-    isbn: 9780134546001  #  [oai_citation:35‡pikecounty.evergreenindiana.org](https://pikecounty.evergreenindiana.org/GroupedWork/8d0c1982-2e4d-d97e-0593-ac5c1df87362-eng/Home#:~:text=ISBN)
+    isbn: 9780134546001
