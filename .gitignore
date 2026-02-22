@@ -10,3 +10,4 @@ vendor/
 *.Ulysses*
 .aider*
 .env
+.DS_Store
